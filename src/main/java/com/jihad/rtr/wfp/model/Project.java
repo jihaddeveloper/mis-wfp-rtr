@@ -12,4 +12,9 @@ public class Project {
 	private String donor;
 	private String start_date;
 	private String end_date;
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 }

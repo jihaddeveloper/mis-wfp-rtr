@@ -5,11 +5,16 @@
 
 package com.jihad.rtr.wfp.model;
 
-public class LibraryIndicator {
+public class LibraryObservationIndicator {
 	private long id;
 	private int serial;
 	private String indicator;
 	private String priority;
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 }
 
 

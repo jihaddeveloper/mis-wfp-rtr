@@ -10,5 +10,9 @@ public class TeacherTraining {
 	private String name;
 	private String description;
 	private String date;
-
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 }

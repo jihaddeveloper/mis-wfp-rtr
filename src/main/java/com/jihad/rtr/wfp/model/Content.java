@@ -11,4 +11,9 @@ public class Content {
 	private String name;
 	private String description;
 	private long grade_id;
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 }

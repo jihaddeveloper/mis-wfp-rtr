@@ -20,6 +20,10 @@ public class Student {
 	private String school_id;
 	private String class_id;
 	private String section_id;
-	
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 
 }

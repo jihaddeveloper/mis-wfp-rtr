@@ -8,18 +8,22 @@ package com.jihad.rtr.wfp.model;
 public class Employee {
 	
 	private long id;
-	private String employee_reg_id;
+	private String employeeRegId;
 	private String name;
 	private String gender;
-	private String designation;
-	private String supervisor_id;
-	private String country_office_id;
-	private String field_office_id;
+	private long designationId;
+	private long supervisorId;
+	private long fieldOfficeId;
 	private String join_date;
 	private String email;
 	private String phone1;
 	private String phone2;
 	private String address_current;
 	private String address_permanent;
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 
 }

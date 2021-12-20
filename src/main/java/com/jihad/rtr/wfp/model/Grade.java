@@ -18,5 +18,9 @@ public class Grade {
 	private int special_boy;
 	private int total_special_student;
 	private long class_id;
-	
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 }

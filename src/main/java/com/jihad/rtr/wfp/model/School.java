@@ -15,5 +15,10 @@ public class School {
 	private String literacy_program_officer;
 	private String gps_data;
 	private String emis_id;
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 
 }

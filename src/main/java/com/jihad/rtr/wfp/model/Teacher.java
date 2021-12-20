@@ -19,4 +19,9 @@ public class Teacher {
 	private String school_id;
 	private String grade_id;
 	private String section_id;
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 }

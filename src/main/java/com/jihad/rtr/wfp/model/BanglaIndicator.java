@@ -11,4 +11,9 @@ public class BanglaIndicator {
 	private int serial;
 	private String indicator;
 	private String priority;
+	private String isActive;
+	private String isDeleted;
+	private String createDate;
+	private String updateDate;
+	private String deleteDate;
 }
