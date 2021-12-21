@@ -1,10 +1,12 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 21/11/2021
+//  Modify Date: 21/12/2021
 //  Description: Student  model file
 
 
 package com.jihad.rtr.wfp.model;
+
+import java.sql.Date;
 
 public class Student {
 	private long id;
@@ -14,16 +16,16 @@ public class Student {
 	private String mother;
 	private String father;
 	private String phone;
-	private String date_of_birth;
+	private String dateOfBirth;
 	private String address;
-	private String special_child;
-	private String school_id;
-	private String class_id;
-	private String section_id;
+	private String specialChild;
+	private String schoolId;
+	private String gradeId;
+	private String sectionId;
 	private String isActive;
 	private String isDeleted;
-	private String createDate;
-	private String updateDate;
-	private String deleteDate;
+	private Date createDate;
+	private Date updateDate;
+	private Date deleteDate;
 
 }

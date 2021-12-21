@@ -6,6 +6,8 @@
 
 package com.jihad.rtr.wfp.model;
 
+import java.sql.Date;
+
 public class BanglaIndicator {
 	private long id;
 	private int serial;
@@ -13,7 +15,7 @@ public class BanglaIndicator {
 	private String priority;
 	private String isActive;
 	private String isDeleted;
-	private String createDate;
-	private String updateDate;
-	private String deleteDate;
+	private Date createDate;
+	private Date updateDate;
+	private Date deleteDate;
 }

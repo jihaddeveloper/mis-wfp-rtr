@@ -24,7 +24,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 @Entity
-@Table(name = "upzila")
+@Table(name = "upazila")
 @Data
 public class Upazila {
 	@Id
