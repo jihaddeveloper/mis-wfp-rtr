@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 21/11/2021
+//  Modify Date: 23/12/2021
 //  Description: Upzila  model file
 
 package com.jihad.rtr.wfp.model;
@@ -30,7 +30,7 @@ public class Upazila {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	
+	@Column(unique = true)
 	private String name;
 	
 	private String isActive;

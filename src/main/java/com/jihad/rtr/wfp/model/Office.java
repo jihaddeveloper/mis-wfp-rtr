@@ -1,14 +1,14 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 21/12/2021
-//  Description: Field office  model file
+//  Modify Date: 23/12/2021
+//  Description: Office  model file
 
 
 package com.jihad.rtr.wfp.model;
 
 import java.sql.Date;
 
-public class FieldOffice {
+public class Office {
 	private long id;
 	private String name;
 	private long upzilaId;

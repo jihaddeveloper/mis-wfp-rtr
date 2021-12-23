@@ -15,8 +15,7 @@ public class Employee {
 	private String gender;
 	private long designationId;
 	private long supervisorId;
-	private long fieldOfficeId;
-	private long countryOfficeId;
+	private long OfficeId;
 	private Date joinDate;
 	private String email;
 	private String phone1;
