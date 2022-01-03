@@ -9,7 +9,7 @@ package com.jihad.rtr.wfp.model;
 import java.sql.Date;
 
 public class BanglaIndicator {
-	private long id;
+	private Long id;
 	private int serial;
 	private String indicator;
 	private String priority;

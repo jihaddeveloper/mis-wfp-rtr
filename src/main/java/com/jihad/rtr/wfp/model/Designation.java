@@ -5,14 +5,21 @@
 
 package com.jihad.rtr.wfp.model;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.sql.Date;
 
-public class Designation {
+public class Designation extends BaseEntity {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+	@Column(name = "name")
 	private String name;
+	@Column(name = "is_active")
 	private String isActive;
+	@Column(name = "is_deleted")
 	private String isDeleted;
-	private Date createDate;
-	private Date updateDate;
-	private Date deleteDate;
 }

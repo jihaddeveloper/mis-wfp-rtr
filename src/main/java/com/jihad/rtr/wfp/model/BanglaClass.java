@@ -1,14 +1,21 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 28/11/2021
+//  Modify Date: 02/01/2021
 //  Description: Bangla class  model file
 
 package com.jihad.rtr.wfp.model;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.sql.Date;
+
 public class BanglaClass {
-	
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	private String date;
+	private Date date;
 	private long field_offfice_id;
 	private long project_name_id;
 	private long district_id;
@@ -100,9 +107,6 @@ public class BanglaClass {
 	private String wrong_result_for_5;
 	private String isActive;
 	private String isDeleted;
-	private String createDate;
-	private String updateDate;
-	private String deleteDate;
 	
 	
 }

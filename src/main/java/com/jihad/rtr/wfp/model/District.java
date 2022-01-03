@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 23/12/2021
+//  Modify Date: 03/01/2022
 //  Description: District  model file
 
 package com.jihad.rtr.wfp.model;
@@ -10,35 +10,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.Generated;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import lombok.Data;
 
 @Entity
-@Table(name = "district")
+@Table(name = "districts")
 @Data
-public class District {
-	
+public class District extends BaseEntity {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	@Column(unique = true)
+	@Column(name = "name",unique = true)
 	private String name;
+	@Column(name = "bn_name")
+	private String bn_name;
+	@Column(name = "lat")
+	private  String lat;
+	@Column(name = "lon")
+	private String lon;
+	@Column(name = "url")
+	private String url;
+	@Column(name = "is_active")
 	private String isActive;
+	@Column(name = "is_deleted")
 	private String isDeleted;
-	private Date createDate;
-	private Date updateDate;
-	private Date deleteDate;
-	
-	@OneToMany
-	@JoinColumn(name = "district_id")
-    private List<Upazila> upazilas = new ArrayList<>();
+
+	@ManyToOne
+	@JoinColumn(name = "division_id")
+	private Division division;
+
+	@OneToMany(mappedBy = "district", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Upazila> upazilas;
 }

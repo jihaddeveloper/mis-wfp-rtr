@@ -1,21 +1,14 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 23/12/2021
+//  Modify Date: 03/01/2022
 //  Description: Upzila  model file
 
 package com.jihad.rtr.wfp.model;
 
 import java.sql.Date;
+import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import org.springframework.boot.context.properties.bind.Name;
 
@@ -24,21 +17,32 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 @Entity
-@Table(name = "upazila")
+@Table(name = "upazilas")
 @Data
-public class Upazila {
+public class Upazila extends BaseEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	@Column(unique = true)
+	@Column(name = "name", unique = true)
 	private String name;
-	
+	@Column(name = "bn_name")
+	private String bnName;
+	@Column(name = "lat")
+	private  String lat;
+	@Column(name = "lon")
+	private String lon;
+	@Column(name = "url")
+	private String url;
+	@Column(name = "is_active")
 	private String isActive;
+	@Column(name = "is_deleted")
 	private String isDeleted;
-	private Date createDate;
-	private Date updateDate;
-	private Date deleteDate;
+
 	
 	@ManyToOne
+	@JoinColumn(name = "district_id")
     private District district;
+
+	@OneToMany(mappedBy = "upazila", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Union> unions;
 }
