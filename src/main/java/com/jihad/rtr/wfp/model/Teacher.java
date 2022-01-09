@@ -6,9 +6,17 @@
 
 package com.jihad.rtr.wfp.model;
 
+import lombok.Data;
+
+import javax.persistence.*;
 import java.sql.Date;
 
-public class Teacher {
+@Entity
+@Table(name = "teachers")
+@Data
+public class Teacher extends BaseEntity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String name;
 	private String gender;
@@ -17,13 +25,10 @@ public class Teacher {
 	private String phone2;
 	private String currentAddress;
 	private String parmanentAddress;
-	private long teacherTrainingId;
-	private long schoolId;
-	private long gradeId;
-	private long sectionId;
+	private long teacherTraining;
+	private long school;
+	private long grade;
+	private long section;
 	private String isActive;
 	private String isDeleted;
-	private Date createDate;
-	private Date updateDate;
-	private Date deleteDate;
 }

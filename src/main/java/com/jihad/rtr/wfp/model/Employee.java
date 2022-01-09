@@ -24,10 +24,10 @@ public class Employee extends BaseEntity {
 	private String name;
 	@Column(name = "gender")
 	private String gender;
-	private long designationId;
-	private long supervisorId;
-	private long OfficeId;
-	private long projectId;
+	private long designation;
+	private long supervisor;
+	private long office;
+	private long project;
 	@Column(name = "join_date")
 	private Date joinDate;
 	@Column(name = "email")

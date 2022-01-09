@@ -43,4 +43,8 @@ public class District extends BaseEntity {
 
 	@OneToMany(mappedBy = "district", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Upazila> upazilas;
+
+	@OneToOne
+	@JoinColumn(name = "library_observation_id")
+	private LibraryObservation libraryObservation;
 }

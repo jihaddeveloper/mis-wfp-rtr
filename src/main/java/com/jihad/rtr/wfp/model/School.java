@@ -19,11 +19,11 @@ public class School {
 	private long id;
 	@Column(name = "name")
 	private String name;
-	private long upazilaId;
-	private long districtId;
-	private long headTeacherId;
-	private long literacyFacilitatorId;
-	private long literacyProgramOfficerId;
+	private long upazila;
+	private long district;
+	private long headTeacher;
+	private long literacyFacilitator;
+	private long literacyProgramOfficer;
 	@Column(name = "gps_data")
 	private String gpsData;
 	@Column(name = "emis_id")

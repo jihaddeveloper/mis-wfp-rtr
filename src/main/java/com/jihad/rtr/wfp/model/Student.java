@@ -8,7 +8,7 @@ package com.jihad.rtr.wfp.model;
 
 import java.sql.Date;
 
-public class Student {
+public class Student extends BaseEntity {
 	private long id;
 	private String name;
 	private String gender;
