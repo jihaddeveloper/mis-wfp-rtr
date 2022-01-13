@@ -1,29 +1,36 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 02/01/2022
+//  Modify Date: 13/01/2022
 //  Description: School  model file
 
 package com.jihad.rtr.wfp.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.sql.Date;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "schools")
 @Data
-public class School {
+public class School extends BaseEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	@Column(name = "name")
 	private String name;
+	@Column(name = "bn_name")
+	private String bnName;
 	private long upazila;
 	private long district;
 	private long headTeacher;
-	private long literacyFacilitator;
-	private long literacyProgramOfficer;
+	private long lf;
+	private long lpo;
 	@Column(name = "gps_data")
 	private String gpsData;
 	@Column(name = "emis_id")

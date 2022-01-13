@@ -17,14 +17,14 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/")
+@RequestMapping(value = "/api/v1/", produces = "application/json")
 public class LibraryObservationController {
 
     @Autowired
     private LibraryObservationService libraryObservationService;
 
     // Create new Library-Observation
-    @RequestMapping(value = "/library-observations", method = RequestMethod.POST)
+    @RequestMapping(value = "/library-observations", method = RequestMethod.POST, produces = "application/json")
     public ResponseEntity <LibraryObservation> createLibraryObservation(@RequestBody LibraryObservation libraryObservation) {
         return ResponseEntity.ok().body(this.libraryObservationService.createLibraryObservation(libraryObservation));
     }

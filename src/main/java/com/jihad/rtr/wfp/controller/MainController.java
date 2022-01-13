@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MainController {
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET, produces = "application/json")
     public ResponseEntity rootResponse() {
         String welcomeMessage = "Welcome to the WFP-RtR MIS api";
         return new ResponseEntity<String>(welcomeMessage, HttpStatus.OK);

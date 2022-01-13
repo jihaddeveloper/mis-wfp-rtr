@@ -20,7 +20,7 @@ public class LibraryObservation extends BaseEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	@Column(name = "visit_no")
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	@GeneratedValue(strategy= GenerationType.SEQUENCE)
 	private long visitNo;
 	@Column(name = "date")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -59,8 +59,8 @@ public class LibraryObservation extends BaseEntity {
 	private String ind1IsTrainedAllTeacher;
 	@Column(name = "ind1_1_is_trained_srm_teacher_incharge")
 	private String ind11IsTrainedSRMTeacherIncharge;
-	@Column(name = "ind1_2_is_trained_headteacher")
-	private String ind12IsTrainedHeadteacher;
+	@Column(name = "ind1_2_is_trained_head_teacher")
+	private String ind12IsTrainedHeadTeacher;
 
 	@Column(name="ind2_classroom_suitable_srm")
 	private String ind2ClassroomSuitableSRM;
@@ -71,8 +71,8 @@ public class LibraryObservation extends BaseEntity {
 
 	@Column(name = "ind3_bookself_useable")
 	private String ind3BookselfUseable;
-	@Column(name = "ind3_1_bookself_accessable")
-	private String ind31BookselfAccessable;
+	@Column(name = "ind3_1_bookself_accessible")
+	private String ind31BookselfAccessible;
 	@Column(name = "ind3_2_bookself_environment_protected")
 	private String ind32BookselfEnvironmentProtected;
 	@Column(name = "ind3_3_bookself_table_condition")
@@ -180,12 +180,12 @@ public class LibraryObservation extends BaseEntity {
 		this.lastFollowupIndicator3 = lastFollowupIndicator3;
 		this.ind1IsTrainedAllTeacher = ind1IsTrainedAllTeacher;
 		this.ind11IsTrainedSRMTeacherIncharge = ind11IsTrainedSRMTeacherIncharge;
-		this.ind12IsTrainedHeadteacher = ind12IsTrainedHeadteacher;
+		this.ind12IsTrainedHeadTeacher = ind12IsTrainedHeadteacher;
 		this.ind2ClassroomSuitableSRM = ind2ClassroomSuitableSRM;
 		this.ind21ClassroomDoorWindowLock = ind21ClassroomDoorWindowLock;
 		this.ind22ClassroomSafeClean = ind22ClassroomSafeClean;
 		this.ind3BookselfUseable = ind3BookselfUseable;
-		this.ind31BookselfAccessable = ind31BookselfAccessable;
+		this.ind31BookselfAccessible = ind31BookselfAccessable;
 		this.ind32BookselfEnvironmentProtected = ind32BookselfEnvironmentProtected;
 		this.ind33BookselfTableCondition = ind33BookselfTableCondition;
 		this.ind4BookRegisterUpdated = ind4BookRegisterUpdated;
@@ -369,12 +369,12 @@ public class LibraryObservation extends BaseEntity {
 		this.ind11IsTrainedSRMTeacherIncharge = ind11IsTrainedSRMTeacherIncharge;
 	}
 
-	public String getInd12IsTrainedHeadteacher() {
-		return ind12IsTrainedHeadteacher;
+	public String getInd12IsTrainedHeadTeacher() {
+		return ind12IsTrainedHeadTeacher;
 	}
 
-	public void setInd12IsTrainedHeadteacher(String ind12IsTrainedHeadteacher) {
-		this.ind12IsTrainedHeadteacher = ind12IsTrainedHeadteacher;
+	public void setInd12IsTrainedHeadTeacher(String ind12IsTrainedHeadTeacher) {
+		this.ind12IsTrainedHeadTeacher = ind12IsTrainedHeadTeacher;
 	}
 
 	public String getInd2ClassroomSuitableSRM() {
@@ -409,12 +409,12 @@ public class LibraryObservation extends BaseEntity {
 		this.ind3BookselfUseable = ind3BookselfUseable;
 	}
 
-	public String getInd31BookselfAccessable() {
-		return ind31BookselfAccessable;
+	public String getInd31BookselfAccessible() {
+		return ind31BookselfAccessible;
 	}
 
-	public void setInd31BookselfAccessable(String ind31BookselfAccessable) {
-		this.ind31BookselfAccessable = ind31BookselfAccessable;
+	public void setInd31BookselfAccessible(String ind31BookselfAccessible) {
+		this.ind31BookselfAccessible = ind31BookselfAccessible;
 	}
 
 	public String getInd32BookselfEnvironmentProtected() {

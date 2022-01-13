@@ -1,15 +1,22 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 02/01/2022
+//  Modify Date: 12/01/2022
 //  Description: Employee  model file
 
 package com.jihad.rtr.wfp.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.sql.Date;
 
+
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "employees")
 @Data
@@ -22,6 +29,8 @@ public class Employee extends BaseEntity {
 	private String employeeRegId;
 	@Column(name = "name")
 	private String name;
+	@Column(name = "bn_name")
+	private String bnName;
 	@Column(name = "gender")
 	private String gender;
 	private long designation;

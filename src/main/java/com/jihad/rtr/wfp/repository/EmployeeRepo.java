@@ -1,15 +1,14 @@
 //  Author: Mohammad Jihad Hossain
-//  Create Date: 09/01/2022
+//  Create Date: 12/01/2021
 //  Modify Date: 12/01/2022
-//  Description: Division repo file
+//  Description: Employee repo file
 
 package com.jihad.rtr.wfp.repository;
 
-import com.jihad.rtr.wfp.model.Division;
+import com.jihad.rtr.wfp.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DivisionRepo extends JpaRepository<Division, Long> {
-
+public interface EmployeeRepo extends JpaRepository<Employee, Long> {
 }
