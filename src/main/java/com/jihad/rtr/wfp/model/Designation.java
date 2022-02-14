@@ -1,16 +1,24 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 21/12/2021
+//  Modify Date: 14/02/2022
 //  Description: Employee  model file
 
 package com.jihad.rtr.wfp.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.*;
+
+import javax.persistence.*;
 import java.sql.Date;
 
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name = "designations")
+@Data
 public class Designation extends BaseEntity {
 
 	@Id
@@ -18,6 +26,8 @@ public class Designation extends BaseEntity {
 	private long id;
 	@Column(name = "name")
 	private String name;
+	@Column(name = "bn_name")
+	private String bnName;
 	@Column(name = "is_active")
 	private String isActive;
 	@Column(name = "is_deleted")

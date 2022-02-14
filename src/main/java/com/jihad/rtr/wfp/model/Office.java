@@ -1,16 +1,22 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 04/01/2022
+//  Modify Date: 14/02/2022
 //  Description: Office  model file
 
 
 package com.jihad.rtr.wfp.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.sql.Date;
 
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "offices")
 @Data
@@ -20,6 +26,8 @@ public class Office extends BaseEntity {
 	private long id;
 	@Column(name = "name")
 	private String name;
+	@Column(name ="bn_name" )
+	private String bnName;
 	@Column(name = "detail")
 	private String detail;
 	@Column(name = "address")
