@@ -7,6 +7,7 @@
 package com.jihad.rtr.wfp.controller;
 
 import com.jihad.rtr.wfp.model.Designation;
+import com.jihad.rtr.wfp.model.Office;
 import com.jihad.rtr.wfp.service.DesignationService;
 import com.jihad.rtr.wfp.service.OfficeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,35 +28,35 @@ public class OfficeController {
     @Autowired
     private OfficeService officeService;
 
-    //Create new designation
+    //Create new office
     @RequestMapping(value = "/offices", method = RequestMethod.POST)
-    public ResponseEntity<Designation> createNewDesignation(@RequestBody Designation designation) {
-        return ResponseEntity.ok().body(this.designationService.createDesignation(designation));
+    public ResponseEntity<Office> createNewOffice(@RequestBody Office office) {
+        return ResponseEntity.ok().body(this.officeService.createOffice(office));
     }
 
-    //Get all designations
+    //Get all office
     @RequestMapping(value = "/offices", method = RequestMethod.GET)
-    public ResponseEntity <List<Designation>> fetchAllDivisions(){
-        return ResponseEntity.ok().body(designationService.getAllDesignations()) ;
+    public ResponseEntity <List<Office>> fetchAllOffices(){
+        return ResponseEntity.ok().body(officeService.getAllOffices()) ;
     }
 
-    //Get designation with id
+    //Get office with id
     @RequestMapping(value = "/offices/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Designation> getDesignationByID(@PathVariable long id) {
-        return ResponseEntity.ok().body(designationService.getDesignationById(id)) ;
+    public ResponseEntity<Office> getOfficeByID(@PathVariable long id) {
+        return ResponseEntity.ok().body(officeService.getOfficeById(id)) ;
     }
 
-    //Update designation
+    //Update office
     @RequestMapping(value = "/offices/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Designation> updateDesignation(@PathVariable long id, @RequestBody Designation designation) {
-        designation.setId(id);
-        return ResponseEntity.ok().body(designationService.updateDesignation(designation));
+    public ResponseEntity<Office> updateOffice(@PathVariable long id, @RequestBody Office office) {
+        office.setId(id);
+        return ResponseEntity.ok().body(officeService.updateOffice(office));
     }
 
-    //Delete designation
+    //Delete office
     @RequestMapping(value = "/offices/{id}", method = RequestMethod.DELETE)
-    public HttpStatus deleteDesignation(@PathVariable long id) {
-        this.designationService.deleteDesignation(id);
+    public HttpStatus deleteOffice(@PathVariable long id) {
+        this.officeService.deleteOffice(id);
         return HttpStatus.OK;
     }
 }

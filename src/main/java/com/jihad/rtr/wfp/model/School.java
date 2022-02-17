@@ -8,7 +8,7 @@ package com.jihad.rtr.wfp.model;
 import lombok.*;
 
 import javax.persistence.*;
-import java.sql.Date;
+
 
 @Getter
 @Setter
@@ -26,7 +26,7 @@ public class School extends BaseEntity {
 	private String name;
 	@Column(name = "bn_name")
 	private String bnName;
-	private long upazila;
+	private long upazilla;
 	private long district;
 	private long headTeacher;
 	private long lf;

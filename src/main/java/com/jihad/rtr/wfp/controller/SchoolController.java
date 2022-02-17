@@ -7,9 +7,7 @@
 
 package com.jihad.rtr.wfp.controller;
 
-import com.jihad.rtr.wfp.model.Division;
 import com.jihad.rtr.wfp.model.School;
-import com.jihad.rtr.wfp.service.DivisionService;
 import com.jihad.rtr.wfp.service.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,8 +23,6 @@ public class SchoolController {
     @Autowired
     private SchoolService schoolService;
 
-    @Autowired
-    private DivisionService divisionService;
 
     //Create new school
     @RequestMapping(value = "/schools", method = RequestMethod.POST)
@@ -37,20 +33,20 @@ public class SchoolController {
     //Get all school
     @RequestMapping(value = "/schools", method = RequestMethod.GET)
     public ResponseEntity <List<School>> fetchAllSchools(){
-        return ResponseEntity.ok().body(schoolService.getAllSchool()) ;
+        return ResponseEntity.ok().body(this.schoolService.getAllSchool()) ;
     }
 
     //One school with id
     @RequestMapping(value = "/schools/{id}", method = RequestMethod.GET)
     public ResponseEntity<School> getSingleSchool(@PathVariable long id) {
-        return ResponseEntity.ok().body(schoolService.getSchoolById(id)) ;
+        return ResponseEntity.ok().body(this.schoolService.getSchoolById(id)) ;
     }
 
     //Update school
     @RequestMapping(value = "/schools/{id}", method = RequestMethod.PUT)
     public ResponseEntity<School> updateSchool(@PathVariable long id, @RequestBody School school) {
         school.setId(id);
-        return ResponseEntity.ok().body(schoolService.updateSchool(school));
+        return ResponseEntity.ok().body(this.schoolService.updateSchool(school));
     }
 
     //Delete school

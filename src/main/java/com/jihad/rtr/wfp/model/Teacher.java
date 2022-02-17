@@ -1,34 +1,44 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 21/12/2021
+//  Modify Date: 16/02/2022
 //  Description: Teacher  model file
-
 
 package com.jihad.rtr.wfp.model;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
-import java.sql.Date;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "teachers")
 @Data
-public class Teacher extends BaseEntity {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
-	private String name;
-	private String gender;
-	private String designation;
-	private String phone1;
-	private String phone2;
-	private String currentAddress;
-	private String parmanentAddress;
-	private long teacherTraining;
-	private long school;
-	private long grade;
-	private long section;
-	private String isActive;
-	private String isDeleted;
+public class Teacher {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "bn_name")
+    private String bnName;
+    @Column(name = "gender")
+    private String gender;
+    @Column(name = "designation")
+    private String designation;
+    @Column(name = "phone_1")
+    private String phone1;
+    @Column(name = "phone_2")
+    private String phone2;
+    private String currentAddress;
+    private String permanentAddress;
+    private long teacherTrainingId;
+    private long schoolId;
+    private long gradeId;
+    private long sectionId;
+    private String isActive;
+    private String isDeleted;
 }
