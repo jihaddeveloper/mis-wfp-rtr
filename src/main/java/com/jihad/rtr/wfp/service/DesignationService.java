@@ -50,9 +50,14 @@ public class DesignationService {
 
         if(designationDB.isPresent()){
             Designation designationUpdate = designationDB.get();
+
             designationUpdate.setId(designation.getId());
             designationUpdate.setName(designation.getName());
             designationUpdate.setBnName(designation.getBnName());
+            designationUpdate.setIsActive(designation.getIsActive());
+            designationUpdate.setIsDeleted(designation.getIsDeleted());
+            designationUpdate.setCreateDate(designation.getCreateDate());
+            designationUpdate.setUpdateDate(designation.getUpdateDate());
 
             designationRepo.save(designationUpdate);
 

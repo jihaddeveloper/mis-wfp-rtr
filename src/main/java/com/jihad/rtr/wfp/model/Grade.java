@@ -1,16 +1,32 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 21/12/2021
+//  Modify Date: 28/02/2022
 //  Description: Grade  model file
 
 
 package com.jihad.rtr.wfp.model;
 
+import lombok.*;
+
+import javax.persistence.*;
 import java.sql.Date;
 
-public class Grade {
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name = "grades")
+@Data
+public class Grade extends BaseEntity {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	private String grade;
+	@Column(name = "grade_name")
+	private String gradeName;
+	private String gradeBnName;
 	private long schoolId;
 	private long teacherId;
 	private int girl;
@@ -22,7 +38,4 @@ public class Grade {
 	private long classId;
 	private String isActive;
 	private String isDeleted;
-	private Date createDate;
-	private Date updateDate;
-	private Date deleteDate;
 }

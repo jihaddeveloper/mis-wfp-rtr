@@ -1,15 +1,32 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 21/12/2021
+//  Modify Date: 01/03/2022
 //  Description: Section  model file
 
 package com.jihad.rtr.wfp.model;
 
+import lombok.*;
+
+import javax.persistence.*;
 import java.sql.Date;
 
-public class Section {
+
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name = "sections")
+@Data
+public class Section extends BaseEntity {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	private String section;
+	@Column(name = "section_name")
+	private String sectionName;
 	private long gradeId;
 	private long schoolId;
 	private long teacherId;
@@ -21,7 +38,4 @@ public class Section {
 	private int totalSpecialStudent;
 	private String isActive;
 	private String isDeleted;
-	private Date createDate;
-	private Date updateDate;
-	private Date deleteDate;
 }

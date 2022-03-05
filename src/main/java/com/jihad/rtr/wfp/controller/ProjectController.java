@@ -21,9 +21,6 @@ import java.util.List;
 public class ProjectController {
 
     @Autowired
-    private DivisionService divisionService;
-
-    @Autowired
     private ProjectService projectService;
 
     //Create new project

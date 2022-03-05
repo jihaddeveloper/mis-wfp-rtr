@@ -50,12 +50,17 @@ public class DivisionService {
 
         if(divisionDB.isPresent()){
             Division divisionUpdate = divisionDB.get();
+
             divisionUpdate.setId(division.getId());
             divisionUpdate.setName(division.getName());
             divisionUpdate.setBnName(division.getBnName());
             divisionUpdate.setLat(division.getLat());
             divisionUpdate.setLon(division.getLon());
             divisionUpdate.setUrl(division.getUrl());
+            divisionUpdate.setIsActive(division.getIsActive());
+            divisionUpdate.setIsDeleted(division.getIsDeleted());
+            divisionUpdate.setCreateDate(division.getCreateDate());
+            divisionUpdate.setUpdateDate(division.getUpdateDate());
 
             divisionRepo.save(divisionUpdate);
 
