@@ -26,11 +26,11 @@ public class School extends BaseEntity {
 	private String name;
 	@Column(name = "bn_name")
 	private String bnName;
-	private long upazilla;
-	private long district;
-	private long headTeacher;
-	private long lf;
-	private long lpo;
+	private String upazilla;
+	private String district;
+	private String headTeacher;
+	private String lf;
+	private String lpo;
 	@Column(name = "gps_data")
 	private String gpsData;
 	@Column(name = "emis_id")

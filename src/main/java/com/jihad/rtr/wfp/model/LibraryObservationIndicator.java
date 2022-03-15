@@ -15,14 +15,14 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "library_indicators")
+@Table(name = "library_observation_indicators")
 @Data
 public class LibraryObservationIndicator extends BaseEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	@Column(name = "serial")
-	private int serial;
+	private String serial;
 	@Column(name = "indicator_detail")
 	private String indicatorDetail;
 	@Column(name = "priority")

@@ -35,10 +35,10 @@ public class Teacher {
     private String phone2;
     private String currentAddress;
     private String permanentAddress;
-    private long teacherTrainingId;
-    private long schoolId;
-    private long gradeId;
-    private long sectionId;
+    private String teacherTraining;
+    private String school;
+    private String grade;
+    private String section;
     private String isActive;
     private String isDeleted;
 }

@@ -5,6 +5,7 @@
 
 package com.jihad.rtr.wfp.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import javax.persistence.*;
@@ -33,12 +34,15 @@ public class Employee extends BaseEntity {
 	private String bnName;
 	@Column(name = "gender")
 	private String gender;
-	private long designation;
-	private long supervisor;
-	private long office;
-	private long project;
+	private String designation;
+	private String supervisor;
+	private String office;
+	private String project;
+
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	@Column(name = "join_date")
 	private Date joinDate;
+
 	@Column(name = "email")
 	private String email;
 	@Column(name = "phone1")

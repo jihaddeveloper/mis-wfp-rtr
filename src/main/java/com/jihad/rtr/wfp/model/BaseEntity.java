@@ -5,6 +5,7 @@
 
 package com.jihad.rtr.wfp.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
@@ -22,11 +23,13 @@ import java.util.Date;
 public abstract class BaseEntity {
     @CreationTimestamp
     @CreatedDate
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(name = "create_date")
     private Date createDate;
 
     @CreationTimestamp
     @LastModifiedDate
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(name = "update_date")
     private Date updateDate;
 
