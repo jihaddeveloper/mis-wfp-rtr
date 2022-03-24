@@ -6,6 +6,7 @@
 
 package com.jihad.rtr.wfp.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import javax.persistence.*;
@@ -32,8 +33,10 @@ public class Project extends BaseEntity {
 	private String projectDetail;
 	@Column(name = "donor")
 	private String donor;
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	@Column(name = "start_date")
 	private Date startDate;
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	@Column(name = "end_date")
 	private Date endDate;
 	@Column(name = "is_active")
