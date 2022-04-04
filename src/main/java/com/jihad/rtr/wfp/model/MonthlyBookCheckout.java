@@ -1,7 +1,7 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 17/01/2022
-//  Modify Date: 17/01/2022
-//  Description: District  model file
+//  Modify Date: 03/04/2022
+//  Description: MonthlyBookCheckout model file
 
 package com.jihad.rtr.wfp.model;
 
@@ -22,12 +22,13 @@ import java.util.Date;
 public class MonthlyBookCheckout extends BaseEntity {
 
 
+    //General data
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @Column(name = "visit_no")
-    @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long visitNo;
     @Column(name = "date")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
@@ -40,8 +41,8 @@ public class MonthlyBookCheckout extends BaseEntity {
     private String project;
     @Column(name = "district")
     private String district;
-    @Column(name = "upazila")
-    private String upazila;
+    @Column(name = "upazilla")
+    private String upazilla;
     @Column(name = "school")
     private String school;
     @Column(name = "head_teacher")
@@ -58,7 +59,15 @@ public class MonthlyBookCheckout extends BaseEntity {
     private String lf;
     @Column(name = "lpo")
     private String lpo;
+    @Column(name = "community_volunteer")
+    private String communityVolunteer;
+    //General data
 
+
+    //School Data
+
+
+    // Book checkout data
     private Integer priPrimaryBoy;
     private Integer priPrimaryGirl;
     private Integer priPrimaryTotal;
@@ -77,6 +86,7 @@ public class MonthlyBookCheckout extends BaseEntity {
     private Integer priPrimaryNoBookSpBoyBC;
     private Integer priPrimaryNoBookSpGirlBC;
     private Integer priPrimaryNoBookSpTotalBC;
+
     private Integer classOneBoy;
     private Integer classOneGirl;
     private Integer classOneTotal;
@@ -95,6 +105,7 @@ public class MonthlyBookCheckout extends BaseEntity {
     private Integer classOneNoBookSpBoyBC;
     private Integer classOneNoBookSpGirlBC;
     private Integer classOneNoBookSpTotalBC;
+
     private Integer classTwoBoy;
     private Integer classTwoGirl;
     private Integer classTwoTotal;
@@ -113,6 +124,7 @@ public class MonthlyBookCheckout extends BaseEntity {
     private Integer classTwoNoBookSpBoyBC;
     private Integer classTwoNoBookSpGirlBC;
     private Integer classTwoNoBookSpTotalBC;
+
     private Integer classThreeBoy;
     private Integer classThreeGirl;
     private Integer classThreeTotal;
@@ -131,6 +143,7 @@ public class MonthlyBookCheckout extends BaseEntity {
     private Integer classThreeNoBookSpBoyBC;
     private Integer classThreeNoBookSpGirlBC;
     private Integer classThreeNoBookSpTotalBC;
+
     private Integer classFourBoy;
     private Integer classFourGirl;
     private Integer classFourTotal;
@@ -149,6 +162,7 @@ public class MonthlyBookCheckout extends BaseEntity {
     private Integer classFourNoBookSpBoyBC;
     private Integer classFourNoBookSpGirlBC;
     private Integer classFourNoBookSpTotalBC;
+
     private Integer classFiveBoy;
     private Integer classFiveGirl;
     private Integer classFiveTotal;
@@ -167,5 +181,98 @@ public class MonthlyBookCheckout extends BaseEntity {
     private Integer classFiveNoBookSpBoyBC;
     private Integer classFiveNoBookSpGirlBC;
     private Integer classFiveNoBookSpTotalBC;
+    // Book checkout data
+
+    // Book check-in data
+    private Integer priPrimaryNoBoyBCIn;
+    private Integer priPrimaryNoGirlBCIn;
+    private Integer priPrimaryNoTotalBCIn;
+    private Integer priPrimaryNoBookBoyBCIn;
+    private Integer priPrimaryNoBookGirlBCIn;
+    private Integer priPrimaryNoBookTotalBCIn;
+    private Integer priPrimaryNoSpBoyBCIn;
+    private Integer priPrimaryNoSpGirlBCIn;
+    private Integer priPrimaryNoSpTotalBCIn;
+    private Integer priPrimaryNoBookSpBoyBCIn;
+    private Integer priPrimaryNoBookSpGirlBCIn;
+    private Integer priPrimaryNoBookSpTotalBCIn;
+
+
+    private Integer classOneNoBoyBCIn;
+    private Integer classOneNoGirlBCIn;
+    private Integer classOneNoTotalBCIn;
+    private Integer classOneNoBookBoyBCIn;
+    private Integer classOneNoBookGirlBCIn;
+    private Integer classOneNoBookTotalBCIn;
+    private Integer classOneNoSpBoyBCIn;
+    private Integer classOneNoSpGirlBCIn;
+    private Integer classOneNoSpTotalBCIn;
+    private Integer classOneNoBookSpBoyBCIn;
+    private Integer classOneNoBookSpGirlBCIn;
+    private Integer classOneNoBookSpTotalBCIn;
+
+
+    private Integer classTwoNoBoyBCIn;
+    private Integer classTwoNoGirlBCIn;
+    private Integer classTwoNoTotalBCIn;
+    private Integer classTwoNoBookBoyBCIn;
+    private Integer classTwoNoBookGirlBCIn;
+    private Integer classTwoNoBookTotalBCIn;
+    private Integer classTwoNoSpBoyBCIn;
+    private Integer classTwoNoSpGirlBCIn;
+    private Integer classTwoNoSpTotalBCIn;
+    private Integer classTwoNoBookSpBoyBCIn;
+    private Integer classTwoNoBookSpGirlBCIn;
+    private Integer classTwoNoBookSpTotalBCIn;
+
+
+    private Integer classThreeNoBoyBCIn;
+    private Integer classThreeNoGirlBCIn;
+    private Integer classThreeNoTotalBCIn;
+    private Integer classThreeNoBookBoyBCIn;
+    private Integer classThreeNoBookGirlBCIn;
+    private Integer classThreeNoBookTotalBCIn;
+    private Integer classThreeNoSpBoyBCIn;
+    private Integer classThreeNoSpGirlBCIn;
+    private Integer classThreeNoSpTotalBCIn;
+    private Integer classThreeNoBookSpBoyBCIn;
+    private Integer classThreeNoBookSpGirlBCIn;
+    private Integer classThreeNoBookSpTotalBCIn;
+
+
+    private Integer classFourNoBoyBCIn;
+    private Integer classFourNoGirlBCIn;
+    private Integer classFourNoTotalBCIn;
+    private Integer classFourNoBookBoyBCIn;
+    private Integer classFourNoBookGirlBCIn;
+    private Integer classFourNoBookTotalBCIn;
+    private Integer classFourNoSpBoyBCIn;
+    private Integer classFourNoSpGirlBCIn;
+    private Integer classFourNoSpTotalBCIn;
+    private Integer classFourNoBookSpBoyBCIn;
+    private Integer classFourNoBookSpGirlBCIn;
+    private Integer classFourNoBookSpTotalBCIn;
+
+
+    private Integer classFiveNoBoyBCIn;
+    private Integer classFiveNoGirlBCIn;
+    private Integer classFiveNoTotalBCIn;
+    private Integer classFiveNoBookBoyBCIn;
+    private Integer classFiveNoBookGirlBCIn;
+    private Integer classFiveNoBookTotalBCIn;
+    private Integer classFiveNoSpBoyBCIn;
+    private Integer classFiveNoSpGirlBCIn;
+    private Integer classFiveNoSpTotalBCIn;
+    private Integer classFiveNoBookSpBoyBCIn;
+    private Integer classFiveNoBookSpGirlBCIn;
+    private Integer classFiveNoBookSpTotalBCIn;
+    // Book check-in data
+
+    //Total data
+
+    //Total data
+
+    //School Data
+
 
 }
