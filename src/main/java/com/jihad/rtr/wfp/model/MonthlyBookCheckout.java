@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 17/01/2022
-//  Modify Date: 03/04/2022
+//  Modify Date: 12/04/2022
 //  Description: MonthlyBookCheckout model file
 
 package com.jihad.rtr.wfp.model;
@@ -59,12 +59,8 @@ public class MonthlyBookCheckout extends BaseEntity {
     private String lf;
     @Column(name = "lpo")
     private String lpo;
-    @Column(name = "community_volunteer")
-    private String communityVolunteer;
+    
     //General data
-
-
-    //School Data
 
 
     // Book checkout data
@@ -269,10 +265,18 @@ public class MonthlyBookCheckout extends BaseEntity {
     // Book check-in data
 
     //Total data
+    private Integer schoolTotalNoStudent;
+    private Integer schoolTotalNoStudentBC;
+    private Integer schoolTotalNoBookBC;
+    private Integer schoolTotalNoStudentBCIn;
+    private Integer schoolTotalNoBookBCIn;
 
+    private Integer schoolTotalNoSpStudent;
+    private Integer schoolTotalNoSpStudentBC;
+    private Integer schoolTotalNoSpBookBC;
+    private Integer schoolTotalNoSpStudentBCIn;
+    private Integer schoolTotalNoSpBookBCIn;
     //Total data
-
-    //School Data
 
 
 }
