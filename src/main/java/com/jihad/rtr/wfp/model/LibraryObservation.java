@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 05/01/2022
+//  Modify Date: 19/05/2022
 //  Description: Library observation  model file
 
 package com.jihad.rtr.wfp.model;
@@ -160,6 +160,10 @@ public class LibraryObservation extends BaseEntity {
     private String agreedStatement1;
     @Column(name = "agreed_statement2")
     private String agreedStatement2;
+
+    @Column(name = "library_status")
+    private String libraryStatus;
+
     @Column(name = "is_active")
     private String isActive;
     @Column(name = "is_deleted")

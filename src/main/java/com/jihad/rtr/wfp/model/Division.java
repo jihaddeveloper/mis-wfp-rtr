@@ -11,6 +11,7 @@ import javax.persistence.*;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+
 import lombok.*;
 
 @Getter
@@ -25,12 +26,12 @@ public class Division extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name = "name",unique = true)
+    @Column(name = "name", unique = true)
     private String name;
     @Column(name = "bn_name")
     private String bnName;
     @Column(name = "lat")
-    private  String lat;
+    private String lat;
     @Column(name = "lon")
     private String lon;
     @Column(name = "url")
@@ -40,6 +41,5 @@ public class Division extends BaseEntity {
     @Column(name = "is_deleted")
     private String isDeleted;
 
-    @OneToMany(mappedBy = "division", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<District> districts;
+
 }

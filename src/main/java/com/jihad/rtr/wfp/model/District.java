@@ -22,12 +22,12 @@ public class District extends BaseEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-	@Column(name = "name",unique = true)
+	@Column(name = "name", unique = true)
 	private String name;
 	@Column(name = "bn_name")
 	private String bn_name;
 	@Column(name = "lat")
-	private  String lat;
+	private String lat;
 	@Column(name = "lon")
 	private String lon;
 	@Column(name = "url")
@@ -37,14 +37,5 @@ public class District extends BaseEntity {
 	@Column(name = "is_deleted")
 	private String isDeleted;
 
-	@ManyToOne
-	@JoinColumn(name = "division_id")
-	private Division division;
 
-	@OneToMany(mappedBy = "district", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Upazila> upazilas;
-
-	@OneToOne
-	@JoinColumn(name = "library_observation_id")
-	private LibraryObservation libraryObservation;
 }

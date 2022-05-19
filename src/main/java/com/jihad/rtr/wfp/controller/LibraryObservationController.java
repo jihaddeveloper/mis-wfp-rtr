@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 04/01/2022
-//  Modify Date: 09/01/2022
+//  Modify Date: 19/05/2022
 //  Description: Library observation  controller file
 
 package com.jihad.rtr.wfp.controller;
@@ -25,20 +25,20 @@ public class LibraryObservationController {
 
     // Create new Library-Observation
     @RequestMapping(value = "/library-observations", method = RequestMethod.POST, produces = "application/json")
-    public ResponseEntity <LibraryObservation> createLibraryObservation(@RequestBody LibraryObservation libraryObservation) {
+    public ResponseEntity<LibraryObservation> createLibraryObservation(@RequestBody LibraryObservation libraryObservation) {
         return ResponseEntity.ok().body(this.libraryObservationService.createLibraryObservation(libraryObservation));
     }
 
     // Get all Library-Observations
     @RequestMapping(value = "/library-observations", method = RequestMethod.GET)
-    public ResponseEntity <List<LibraryObservation>> fetchAllLibraryObservations(){
-        return ResponseEntity.ok().body(libraryObservationService.getAllLibraryObservation()) ;
+    public ResponseEntity<List<LibraryObservation>> fetchAllLibraryObservations() {
+        return ResponseEntity.ok().body(libraryObservationService.getAllLibraryObservation());
     }
 
     // One Library-Observation with id
     @RequestMapping(value = "/library-observations/{id}", method = RequestMethod.GET)
     public ResponseEntity<LibraryObservation> getSingleLibraryObservation(@PathVariable long id) {
-        return ResponseEntity.ok().body(libraryObservationService.getLibraryObservationById(id)) ;
+        return ResponseEntity.ok().body(libraryObservationService.getLibraryObservationById(id));
     }
 
 //    // Update LibraryObservation with PATCH
@@ -53,7 +53,8 @@ public class LibraryObservationController {
         libraryObservation.setId(id);
         return ResponseEntity.ok().body(libraryObservationService.updateLibraryObservation(libraryObservation));
     }
-//
+
+    //
     // Delete LibraryObservation
     @RequestMapping(value = "library-observations/{id}", method = RequestMethod.DELETE)
     public HttpStatus deleteLibraryObservation(@PathVariable long id) {

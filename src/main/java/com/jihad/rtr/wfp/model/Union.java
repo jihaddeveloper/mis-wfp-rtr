@@ -19,12 +19,12 @@ public class Union extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name = "name",unique = true)
+    @Column(name = "name", unique = true)
     private String name;
     @Column(name = "bn_name")
     private String bnName;
     @Column(name = "lat")
-    private  String lat;
+    private String lat;
     @Column(name = "lon")
     private String lon;
     @Column(name = "url")
@@ -34,7 +34,5 @@ public class Union extends BaseEntity {
     @Column(name = "is_deleted")
     private String isDeleted;
 
-    @ManyToOne
-    @JoinColumn(name = "upazila_id")
-    private Upazila upazila;
+
 }
