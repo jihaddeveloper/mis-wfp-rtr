@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/",  produces = "application/json")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/api/v1/", produces = "application/json")
 public class LibraryObservationIndController {
 
     @Autowired
@@ -32,14 +33,14 @@ public class LibraryObservationIndController {
 
     //Get all LibraryObservationIndicator
     @RequestMapping(value = "/library-observation-indicators", method = RequestMethod.GET)
-    public ResponseEntity <List<LibraryObservationIndicator>> fetchAllLibraryObInd(){
-        return ResponseEntity.ok().body(this.libraryObservationIndService.getAllLibraryObservationIndicators()) ;
+    public ResponseEntity<List<LibraryObservationIndicator>> fetchAllLibraryObInd() {
+        return ResponseEntity.ok().body(this.libraryObservationIndService.getAllLibraryObservationIndicators());
     }
 
     //Get LibraryObservationIndicator with id
     @RequestMapping(value = "/library-observation-indicators/{id}", method = RequestMethod.GET)
     public ResponseEntity<LibraryObservationIndicator> getLibraryObIndByID(@PathVariable long id) {
-        return ResponseEntity.ok().body(this.libraryObservationIndService.getLibraryObservationIndicatorById(id)) ;
+        return ResponseEntity.ok().body(this.libraryObservationIndService.getLibraryObservationIndicatorById(id));
     }
 
     //Update LibraryObservationIndicator

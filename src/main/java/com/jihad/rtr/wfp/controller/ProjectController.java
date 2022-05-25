@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/",  produces = "application/json")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/api/v1/", produces = "application/json")
 public class ProjectController {
 
     @Autowired
@@ -31,14 +32,14 @@ public class ProjectController {
 
     //Get all projects
     @RequestMapping(value = "/projects", method = RequestMethod.GET)
-    public ResponseEntity <List<Project>> fetchAllProjects(){
-        return ResponseEntity.ok().body(this.projectService.getAllProjects()) ;
+    public ResponseEntity<List<Project>> fetchAllProjects() {
+        return ResponseEntity.ok().body(this.projectService.getAllProjects());
     }
 
     //One project with id
     @RequestMapping(value = "/projects/{id}", method = RequestMethod.GET)
     public ResponseEntity<Project> getSingleProject(@PathVariable long id) {
-        return ResponseEntity.ok().body(this.projectService.getProjectById(id)) ;
+        return ResponseEntity.ok().body(this.projectService.getProjectById(id));
     }
 
     //Update project

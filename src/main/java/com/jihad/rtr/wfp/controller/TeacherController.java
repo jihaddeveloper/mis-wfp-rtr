@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/",  produces = "application/json")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/api/v1/", produces = "application/json")
 public class TeacherController {
 
     @Autowired
@@ -31,14 +32,14 @@ public class TeacherController {
 
     //Get all teachers
     @RequestMapping(value = "/teachers", method = RequestMethod.GET)
-    public ResponseEntity <List<Teacher>> fetchAllTeachers(){
-        return ResponseEntity.ok().body(this.teacherService.getAllTeachers()) ;
+    public ResponseEntity<List<Teacher>> fetchAllTeachers() {
+        return ResponseEntity.ok().body(this.teacherService.getAllTeachers());
     }
 
     //One teacher with id
     @RequestMapping(value = "/teachers/{id}", method = RequestMethod.GET)
     public ResponseEntity<Teacher> getSingleTeacher(@PathVariable long id) {
-        return ResponseEntity.ok().body(this.teacherService.getTeacherById(id)) ;
+        return ResponseEntity.ok().body(this.teacherService.getTeacherById(id));
     }
 
     //Update teacher

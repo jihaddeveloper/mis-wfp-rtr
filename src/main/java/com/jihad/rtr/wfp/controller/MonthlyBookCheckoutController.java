@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping(value = "/api/v1/", produces = "application/json")
 public class MonthlyBookCheckoutController {
 
@@ -35,14 +36,14 @@ public class MonthlyBookCheckoutController {
 
     // Get all Book-checkout
     @RequestMapping(value = "/book-checkouts", method = RequestMethod.GET)
-    public ResponseEntity <List<MonthlyBookCheckout>> fetchAllBookCheckouts(){
-        return ResponseEntity.ok().body(monthlyBookCheckoutService.getAllBookCheckout()) ;
+    public ResponseEntity<List<MonthlyBookCheckout>> fetchAllBookCheckouts() {
+        return ResponseEntity.ok().body(monthlyBookCheckoutService.getAllBookCheckout());
     }
 
     // One Book-checkout with id
     @RequestMapping(value = "/book-checkouts/{id}", method = RequestMethod.GET)
     public ResponseEntity<MonthlyBookCheckout> getSingleBookCheckout(@PathVariable long id) {
-        return ResponseEntity.ok().body(monthlyBookCheckoutService.getBookCheckoutById(id)) ;
+        return ResponseEntity.ok().body(monthlyBookCheckoutService.getBookCheckoutById(id));
     }
 
 //    // Update Book-checkout with PATCH

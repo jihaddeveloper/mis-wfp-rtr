@@ -4,7 +4,6 @@
 //  Description: School controller file
 
 
-
 package com.jihad.rtr.wfp.controller;
 
 import com.jihad.rtr.wfp.model.School;
@@ -17,7 +16,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/",  produces = "application/json")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/api/v1/", produces = "application/json")
 public class SchoolController {
 
     @Autowired
@@ -32,14 +32,14 @@ public class SchoolController {
 
     //Get all school
     @RequestMapping(value = "/schools", method = RequestMethod.GET)
-    public ResponseEntity <List<School>> fetchAllSchools(){
-        return ResponseEntity.ok().body(this.schoolService.getAllSchool()) ;
+    public ResponseEntity<List<School>> fetchAllSchools() {
+        return ResponseEntity.ok().body(this.schoolService.getAllSchool());
     }
 
     //One school with id
     @RequestMapping(value = "/schools/{id}", method = RequestMethod.GET)
     public ResponseEntity<School> getSingleSchool(@PathVariable long id) {
-        return ResponseEntity.ok().body(this.schoolService.getSchoolById(id)) ;
+        return ResponseEntity.ok().body(this.schoolService.getSchoolById(id));
     }
 
     //Update school

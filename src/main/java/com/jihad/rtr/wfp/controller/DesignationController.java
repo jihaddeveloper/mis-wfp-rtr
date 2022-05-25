@@ -16,7 +16,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/",  produces = "application/json")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/api/v1/", produces = "application/json")
 public class DesignationController {
 
     @Autowired
@@ -30,14 +31,14 @@ public class DesignationController {
 
     //Get all designations
     @RequestMapping(value = "/designations", method = RequestMethod.GET)
-    public ResponseEntity <List<Designation>> fetchAllDivisions(){
-        return ResponseEntity.ok().body(designationService.getAllDesignations()) ;
+    public ResponseEntity<List<Designation>> fetchAllDivisions() {
+        return ResponseEntity.ok().body(designationService.getAllDesignations());
     }
 
     //Get designation with id
     @RequestMapping(value = "/designations/{id}", method = RequestMethod.GET)
     public ResponseEntity<Designation> getDesignationByID(@PathVariable long id) {
-        return ResponseEntity.ok().body(designationService.getDesignationById(id)) ;
+        return ResponseEntity.ok().body(designationService.getDesignationById(id));
     }
 
     //Update designation

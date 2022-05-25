@@ -4,7 +4,6 @@
 //  Description: Employee controller file
 
 
-
 package com.jihad.rtr.wfp.controller;
 
 import com.jihad.rtr.wfp.model.Division;
@@ -19,7 +18,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/",  produces = "application/json")
+@CrossOrigin(origins = "*")
+@RequestMapping(value = "/api/v1/", produces = "application/json")
 public class EmployeeController {
 
     @Autowired
@@ -35,14 +35,14 @@ public class EmployeeController {
 
     //Get all employees
     @RequestMapping(value = "/employees", method = RequestMethod.GET)
-    public ResponseEntity <List<Employee>> fetchAllEmployees(){
-        return ResponseEntity.ok().body(this.employeeService.getAllEmployee()) ;
+    public ResponseEntity<List<Employee>> fetchAllEmployees() {
+        return ResponseEntity.ok().body(this.employeeService.getAllEmployee());
     }
 
     //One employee with id
     @RequestMapping(value = "/employees/{id}", method = RequestMethod.GET)
     public ResponseEntity<Employee> getSingleEmployee(@PathVariable long id) {
-        return ResponseEntity.ok().body(this.employeeService.getEmployeeById(id)) ;
+        return ResponseEntity.ok().body(this.employeeService.getEmployeeById(id));
     }
 
     //Update employee
