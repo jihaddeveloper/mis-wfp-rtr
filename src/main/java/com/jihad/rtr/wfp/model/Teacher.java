@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 16/02/2022
+//  Modify Date: 29/06/2022
 //  Description: Teacher  model file
 
 package com.jihad.rtr.wfp.model;
@@ -25,6 +25,11 @@ public class Teacher {
     private String name;
     @Column(name = "bn_name")
     private String bnName;
+    private String project;
+    @Column(name = "district")
+    private String district;
+    @Column(name = "upazilla")
+    private String upazilla;
     @Column(name = "gender")
     private String gender;
     @Column(name = "designation")
@@ -39,6 +44,16 @@ public class Teacher {
     private String school;
     private String grade;
     private String section;
+
+    private String instruction_g1;
+    private String instruction_g2;
+    private String instruction_srm_preprimary;
+    private String library_management_training;
+    private String headteacher_training;
+    private String good_governance_headteacher;
+    private String school_performance_headteacher;
+
+
     private String isActive;
     private String isDeleted;
 }

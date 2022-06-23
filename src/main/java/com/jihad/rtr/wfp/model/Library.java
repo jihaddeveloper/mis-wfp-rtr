@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 17/01/2022
-//  Modify Date: 03/04/2022
+//  Modify Date: 29/06/2022
 //  Description: Library model file
 
 package com.jihad.rtr.wfp.model;
@@ -51,4 +51,7 @@ public class Library extends BaseEntity {
     private Integer titleNoYellow;
     private Integer bookNoYellow;
     //Library Register Data
+
+    @Column(name = "activity")
+    private String activity;
 }

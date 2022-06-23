@@ -59,7 +59,7 @@ public class MonthlyBookCheckout extends BaseEntity {
     private String lf;
     @Column(name = "lpo")
     private String lpo;
-    
+
     //General data
 
 
@@ -265,7 +265,11 @@ public class MonthlyBookCheckout extends BaseEntity {
     // Book check-in data
 
     //Total data
+    private Integer schoolTotalNoGirl;
+    private Integer schoolTotalNoBoy;
     private Integer schoolTotalNoStudent;
+    private Integer schoolTotalNoGirlBC;
+    private Integer schoolTotalNoBoyBC;
     private Integer schoolTotalNoStudentBC;
     private Integer schoolTotalNoBookBC;
     private Integer schoolTotalNoStudentBCIn;
