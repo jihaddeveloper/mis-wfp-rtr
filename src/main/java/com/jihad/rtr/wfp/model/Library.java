@@ -35,6 +35,9 @@ public class Library extends BaseEntity {
     @Column(name = "class_name")
     private String className;
 
+    private Integer number_book_self;
+    private Integer number_self_active;
+
     //Library Register Data
     private Integer titleTotal;
     private Integer bookTotal;
@@ -52,6 +55,5 @@ public class Library extends BaseEntity {
     private Integer bookNoYellow;
     //Library Register Data
 
-    @Column(name = "activity")
-    private String activity;
+    private Integer bookTotal_now;
 }
