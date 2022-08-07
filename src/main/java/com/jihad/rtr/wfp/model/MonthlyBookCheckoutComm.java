@@ -41,6 +41,8 @@ public class MonthlyBookCheckoutComm extends BaseEntity {
     private String district;
     @Column(name = "upazilla")
     private String upazilla;
+    @Column(name = "school")
+    private String school;
     @Column(name = "community_reading_forum")
     private String communityReadingForum;
     @Column(name = "community_volunteer")
