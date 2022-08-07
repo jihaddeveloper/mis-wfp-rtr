@@ -24,9 +24,7 @@ public class MonthlyBookCheckoutController {
 
     @Autowired
     private MonthlyBookCheckoutService monthlyBookCheckoutService;
-
-    @Autowired
-    private LibraryObservationService libraryObservationService;
+    
 
     // Create new Book-checkout
     @RequestMapping(value = "/book-checkouts", method = RequestMethod.POST, produces = "application/json")

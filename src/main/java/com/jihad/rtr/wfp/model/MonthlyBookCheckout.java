@@ -59,6 +59,9 @@ public class MonthlyBookCheckout extends BaseEntity {
     private String lf;
     @Column(name = "lpo")
     private String lpo;
+    @Column(name = "month")
+    private String month;
+
 
     //General data
 

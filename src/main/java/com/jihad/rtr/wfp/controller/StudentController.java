@@ -6,6 +6,7 @@
 package com.jihad.rtr.wfp.controller;
 
 import com.jihad.rtr.wfp.model.Library;
+import com.jihad.rtr.wfp.model.Student;
 import com.jihad.rtr.wfp.service.DivisionService;
 import com.jihad.rtr.wfp.service.LibraryService;
 import com.jihad.rtr.wfp.service.StudentService;
@@ -28,34 +29,34 @@ public class StudentController {
     private LibraryService libraryService;
 
     //Create new Student
-    @RequestMapping(value = "/library", method = RequestMethod.POST)
-    public ResponseEntity<Library> createLibrary(@RequestBody Library library) {
-        return ResponseEntity.ok().body(this.libraryService.createLibrary(library));
+    @RequestMapping(value = "/student", method = RequestMethod.POST)
+    public ResponseEntity<Student> createStudent(@RequestBody Student student) {
+        return ResponseEntity.ok().body(this.studentService.createStudent(student));
     }
 
     //Get all Student
-    @RequestMapping(value = "/library", method = RequestMethod.GET)
-    public ResponseEntity<List<Library>> fetchAllLibrary() {
-        return ResponseEntity.ok().body(this.libraryService.getAllLibrary());
+    @RequestMapping(value = "/student", method = RequestMethod.GET)
+    public ResponseEntity<List<Student>> fetchAllStudent() {
+        return ResponseEntity.ok().body(this.studentService.getAllStudents());
     }
 
     //One Student with id
-    @RequestMapping(value = "/library/{id}", method = RequestMethod.GET)
-    public ResponseEntity<Library> getSingleLibrary(@PathVariable long id) {
-        return ResponseEntity.ok().body(this.libraryService.getLibraryById(id));
+    @RequestMapping(value = "/student/{id}", method = RequestMethod.GET)
+    public ResponseEntity<Student> getStudent(@PathVariable long id) {
+        return ResponseEntity.ok().body(this.studentService.getStudentById(id));
     }
 
     //Update Student
-    @RequestMapping(value = "/library/{id}", method = RequestMethod.PUT)
-    public ResponseEntity<Library> updateLibrary(@PathVariable long id, @RequestBody Library library) {
-        library.setId(id);
-        return ResponseEntity.ok().body(this.libraryService.updateLibrary(library));
+    @RequestMapping(value = "/student/{id}", method = RequestMethod.PUT)
+    public ResponseEntity<Student> updateStudent(@PathVariable long id, @RequestBody Student student) {
+        student.setId(id);
+        return ResponseEntity.ok().body(this.studentService.updateStudent(student));
     }
 
     //Delete Student
-    @RequestMapping(value = "/library/{id}", method = RequestMethod.DELETE)
-    public HttpStatus deleteLibrary(@PathVariable long id) {
-        this.libraryService.deleteLibrary(id);
+    @RequestMapping(value = "/student/{id}", method = RequestMethod.DELETE)
+    public HttpStatus deleteStudent(@PathVariable long id) {
+        this.studentService.deleteStudent(id);
         return HttpStatus.OK;
     }
 }

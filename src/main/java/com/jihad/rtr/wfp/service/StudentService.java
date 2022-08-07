@@ -24,8 +24,6 @@ public class StudentService {
     @Autowired
     private StudentRepo studentRepo;
 
-    @Autowired
-    private SchoolRepo schoolRepo;
 
     //Create new student
     public Student createStudent(Student student) {
