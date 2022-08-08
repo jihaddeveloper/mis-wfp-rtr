@@ -43,12 +43,16 @@ public class MonthlyBookCheckoutComm extends BaseEntity {
     private String upazilla;
     @Column(name = "school")
     private String school;
+    @Column(name = "head_teacher")
+    private String headTeacher;
+    @Column(name = "gender")
+    private String gender;
     @Column(name = "community_reading_forum")
     private String communityReadingForum;
     @Column(name = "community_volunteer")
     private String communityVolunteer;
-    @Column(name = "gender")
-    private String gender;
+    @Column(name = "gender_cv")
+    private String genderCV;
     @Column(name = "visitor")
     private String visitor;
     @Column(name = "visitor_designation")
