@@ -65,6 +65,8 @@ public class MonthlyBookCheckoutComm extends BaseEntity {
     private String lpo;
     @Column(name = "month")
     private String month;
+    @Column(name = "year")
+    private String year;
 
     //General data
 

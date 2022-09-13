@@ -31,8 +31,6 @@ public class LibraryObservation extends BaseEntity {
     @Column(name = "date")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date date;
-
-
     @Column(name = "office")
     private String office;
     @Column(name = "project")
@@ -53,6 +51,11 @@ public class LibraryObservation extends BaseEntity {
     private String lpo;
     @Column(name = "school")
     private String school;
+    @Column(name = "month")
+    private String month;
+    @Column(name = "year")
+    private String year;
+
 
     @Column(name = "last_followup_indicator1")
     private String lastFollowupIndicator1;

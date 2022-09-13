@@ -37,10 +37,12 @@ public class Student extends BaseEntity {
     private String schoolName;
     private String upazilla;
     private String lf;
+    private String lfName;
     private String lpo;
+    private String lpoName;
     private String gradeId;
     private String sectionId;
     private String isActive;
     private String isDeleted;
-    
+
 }

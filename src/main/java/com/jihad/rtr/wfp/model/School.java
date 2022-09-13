@@ -19,26 +19,29 @@ import javax.persistence.*;
 @Table(name = "schools")
 @Data
 public class School extends BaseEntity {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long id;
-	@Column(name = "name")
-	private String name;
-	@Column(name = "bn_name")
-	private String bnName;
-	private String upazilla;
-	private String district;
-	private String headTeacher;
-	private String lf;
-	private String lpo;
-	@Column(name = "gps_data")
-	private String gpsData;
-	@Column(name = "emis_id")
-	private String emisId;
-	@Column(name = "gsd_id")
-	private String gsdId;
-	@Column(name = "is_active")
-	private String isActive;
-	@Column(name = "is_deleted")
-	private String isDeleted;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    @Column(name = "name")
+    private String name;
+    @Column(name = "bn_name")
+    private String bnName;
+    private String upazilla;
+    private String district;
+    private String headTeacher;
+    private String lf;
+    private String lfName;
+    private String lpo;
+    private String lpoName;
+    @Column(name = "gps_data")
+    private String gpsData;
+    @Column(name = "emis_id")
+    private String emisId;
+    @Column(name = "gsd_id")
+    private String gsdId;
+    private String address;
+    @Column(name = "is_active")
+    private String isActive;
+    @Column(name = "is_deleted")
+    private String isDeleted;
 }
