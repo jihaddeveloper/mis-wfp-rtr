@@ -55,5 +55,8 @@ public class Library extends BaseEntity {
     private Integer bookNoYellow;
     //Library Register Data
 
+    private Integer book_llp;
+    private Integer book_nllp;
+
     private Integer bookTotal_now;
 }
