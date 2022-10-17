@@ -47,8 +47,10 @@ public class LibraryObservation extends BaseEntity {
     private String visitorOffice;
     @Column(name = "lf")
     private String lf;
+    private String lfName;
     @Column(name = "lpo")
     private String lpo;
+    private String lpoName;
     @Column(name = "school")
     private String school;
     @Column(name = "month")
