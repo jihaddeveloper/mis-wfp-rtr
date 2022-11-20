@@ -18,15 +18,14 @@ import java.util.Date;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "library_observations")
 @Data
+@Table(name = "library_observations")
 public class LibraryObservation extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     @Column(name = "visit_no")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long visitNo;
     @Column(name = "date")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
