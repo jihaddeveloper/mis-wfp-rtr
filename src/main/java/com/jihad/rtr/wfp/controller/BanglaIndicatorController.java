@@ -50,7 +50,7 @@ public class BanglaIndicatorController {
     }
 
     //Delete BanglaIndicator
-    @RequestMapping(value = "bangla-indicator/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/bangla-indicator/{id}", method = RequestMethod.DELETE)
     public HttpStatus deleteBanglaIndicator(@PathVariable long id) {
         this.banglaIndicatorService.deleteBanglaIndicator(id);
         return HttpStatus.OK;

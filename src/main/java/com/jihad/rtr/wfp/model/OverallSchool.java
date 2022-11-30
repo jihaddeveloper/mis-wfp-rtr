@@ -1,7 +1,7 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 29/11/2022
 //  Modify Date: 29/11/2022
-//  Description: Library observation  model file
+//  Description: Overall School observation  model file
 
 package com.jihad.rtr.wfp.model;
 
@@ -19,9 +19,8 @@ import java.util.Date;
 @Builder
 @Entity
 @Data
-@Table(name = "library_observations")
-public class LibraryObservation extends BaseEntity {
-
+@Table(name = "overallschool_observations")
+public class OverallSchool extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

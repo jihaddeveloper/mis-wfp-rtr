@@ -1,7 +1,7 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 20/11/2022
-//  Description: Bangla Indicator  model file
+//  Modify Date: 24/11/2022
+//  Description: SRM Indicator  model file
 
 
 package com.jihad.rtr.wfp.model;
@@ -9,7 +9,6 @@ package com.jihad.rtr.wfp.model;
 import lombok.*;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 @Getter
 @Setter
@@ -17,9 +16,10 @@ import java.sql.Date;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "bangla_indicators")
+@Table(name = "srm_indicators")
 @Data
-public class BanglaIndicator extends BaseEntity {
+public class SRMIndicator extends BaseEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;

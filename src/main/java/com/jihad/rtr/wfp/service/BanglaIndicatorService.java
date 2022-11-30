@@ -22,7 +22,6 @@ import java.util.Optional;
 @Transactional
 public class BanglaIndicatorService {
 
-
     @Autowired
     private BanglaIndicatorRepo banglaIndicatorRepo;
 

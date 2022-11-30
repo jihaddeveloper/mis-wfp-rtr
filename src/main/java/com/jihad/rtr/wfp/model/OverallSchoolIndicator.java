@@ -5,16 +5,34 @@
 
 package com.jihad.rtr.wfp.model;
 
-public class OverallSchoolIndicator {
-	private long id;
-	private int serial;
-	private String indicator;
-	private String priority;
-	private String isActive;
-	private String isDeleted;
-	private String createDate;
-	private String updateDate;
-	private String deleteDate;
+import lombok.*;
+
+import javax.persistence.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
+@Table(name = "overallschool_indicators")
+@Data
+public class OverallSchoolIndicator extends BaseEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    @Column(name = "serial", length = 10)
+    private String serial;
+    @Column(name = "indicator_detail", length = 300)
+    private String indicatorDetail;
+    @Column(name = "indicator_detail_eng", length = 300)
+    private String indicatorDetailEng;
+    @Column(name = "priority", length = 10)
+    private String priority;
+    @Column(name = "is_active", length = 10)
+    private String isActive;
+    @Column(name = "is_deleted", length = 10)
+    private String isDeleted;
 }
 
 
