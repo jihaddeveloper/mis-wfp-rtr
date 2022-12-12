@@ -49,7 +49,7 @@ public class BanglaClass extends BaseEntity {
     private String lpo;
     @Column(name = "lpo_name", length = 50)
     private String lpoName;
-    @Column(name = "school", length = 100)
+    @Column(name = "school", length = 200)
     private String school;
     @Column(name = "visitor", length = 50)
     private String visitor;
@@ -88,11 +88,11 @@ public class BanglaClass extends BaseEntity {
     @Column(name = "total_present_boy")
     private int totalPresentBoy;
 
-    @Column(name = "last_followup_topic1", length = 250)
+    @Column(name = "last_followup_topic1", length = 400)
     private String lastFollowupTopic1;
-    @Column(name = "last_followup_topic2", length = 250)
+    @Column(name = "last_followup_topic2", length = 400)
     private String lastFollowupTopic2;
-    @Column(name = "last_followup_topic3", length = 250)
+    @Column(name = "last_followup_topic3", length = 400)
     private String lastFollowupTopic3;
 
     @Column(name = "ind1_phonemic_awareness_status", length = 10)
@@ -156,25 +156,25 @@ public class BanglaClass extends BaseEntity {
     private String ind12AssessmentNotes;
 
 
-    @Column(name = "best_practice_ind1", length = 250)
+    @Column(name = "best_practice_ind1", length = 400)
     private String bestPracticeInd1;
-    @Column(name = "best_practice_ind2", length = 250)
+    @Column(name = "best_practice_ind2", length = 400)
     private String bestPracticeInd2;
-    @Column(name = "best_practice_ind3", length = 250)
+    @Column(name = "best_practice_ind3", length = 400)
     private String bestPracticeInd3;
 
-    @Column(name = "coaching_support_ind1", length = 250)
+    @Column(name = "coaching_support_ind1", length = 400)
     private String coachingSupportInd1;
-    @Column(name = "coaching_support_ind2", length = 250)
+    @Column(name = "coaching_support_ind2", length = 400)
     private String coachingSupportInd2;
-    @Column(name = "coaching_support_details_ind1", length = 100)
+    @Column(name = "coaching_support_details_ind1", length = 200)
     private String coachingSupportDetailsInd1;
-    @Column(name = "coaching_support_details_ind2", length = 100)
+    @Column(name = "coaching_support_details_ind2", length = 200)
     private String coachingSupportDetailsInd2;
 
-    @Column(name = "agreed_statement1", length = 100)
+    @Column(name = "agreed_statement1", length = 200)
     private String agreedStatement1;
-    @Column(name = "agreed_statement2", length = 100)
+    @Column(name = "agreed_statement2", length = 200)
     private String agreedStatement2;
 
     @Column(name = "question1", length = 100)
