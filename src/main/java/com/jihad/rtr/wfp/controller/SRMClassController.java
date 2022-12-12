@@ -11,6 +11,7 @@ import com.jihad.rtr.wfp.service.BanglaClassService;
 import com.jihad.rtr.wfp.service.SRMClassService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,7 +26,7 @@ public class SRMClassController {
     private SRMClassService srmClassService;
 
     //Create new SRMClass
-    @RequestMapping(value = "/srm-class", method = RequestMethod.POST)
+    @RequestMapping(value = "/srm-class", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SRMClass> createSRMClass(@RequestBody SRMClass srmClass) {
         return ResponseEntity.ok().body(this.srmClassService.createSRMClass(srmClass));
     }
@@ -43,7 +44,7 @@ public class SRMClassController {
     }
 
     //Update SRMClass
-    @RequestMapping(value = "/srm-class/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/srm-class/{id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SRMClass> updateSRMClass(@PathVariable long id, @RequestBody SRMClass srmClass) {
         srmClass.setId(id);
         return ResponseEntity.ok().body(this.srmClassService.updateSRMClass(srmClass));

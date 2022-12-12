@@ -12,6 +12,7 @@ import com.jihad.rtr.wfp.service.DivisionService;
 import com.jihad.rtr.wfp.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,12 +22,12 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RequestMapping(value = "/api/v1/", produces = "application/json")
 public class BanglaClassController {
-    
+
     @Autowired
     private BanglaClassService banglaClassService;
 
     //Create new BanglaClass
-    @RequestMapping(value = "/bangla-class", method = RequestMethod.POST)
+    @RequestMapping(value = "/bangla-class", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<BanglaClass> createBanglaClass(@RequestBody BanglaClass banglaClass) {
         return ResponseEntity.ok().body(this.banglaClassService.createBanglaClass(banglaClass));
     }
@@ -44,7 +45,7 @@ public class BanglaClassController {
     }
 
     //Update BanglaClass
-    @RequestMapping(value = "/bangla-class/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/bangla-class/{id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<BanglaClass> updateBanglaClass(@PathVariable long id, @RequestBody BanglaClass banglaClass) {
         banglaClass.setId(id);
         return ResponseEntity.ok().body(this.banglaClassService.updateBanglaClass(banglaClass));
