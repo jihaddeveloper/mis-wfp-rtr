@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 17/01/2022
-//  Modify Date: 12/04/2022
+//  Modify Date: 05/01/2023
 //  Description: MonthlyBookCheckout model file
 
 package com.jihad.rtr.wfp.model;
@@ -66,6 +66,8 @@ public class MonthlyBookCheckout extends BaseEntity {
     @Column(name = "year")
     private String year;
 
+    @Column(name = "note", length = 150)
+    private String note;
 
     //General data
 

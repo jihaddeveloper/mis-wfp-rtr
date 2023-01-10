@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 29/11/2022
-//  Modify Date: 29/11/2022
+//  Modify Date: 05/01/2023
 //  Description: SRM class  model file
 
 package com.jihad.rtr.wfp.model;
@@ -87,6 +87,9 @@ public class SRMClass extends BaseEntity {
     private int totalPresentGirl;
     @Column(name = "total_present_boy")
     private int totalPresentBoy;
+
+    @Column(name = "note", length = 150)
+    private String note;
 
     @Column(name = "last_followup_topic1", length = 400)
     private String lastFollowupTopic1;

@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 21/11/2021
-//  Modify Date: 09/11/2022
+//  Modify Date: 05/01/2023
 //  Description: Bangla class  model file
 
 package com.jihad.rtr.wfp.model;
@@ -87,6 +87,9 @@ public class BanglaClass extends BaseEntity {
     private int totalPresentGirl;
     @Column(name = "total_present_boy")
     private int totalPresentBoy;
+
+    @Column(name = "note", length = 150)
+    private String note;
 
     @Column(name = "last_followup_topic1", length = 400)
     private String lastFollowupTopic1;

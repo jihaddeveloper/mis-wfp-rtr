@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 29/11/2022
-//  Modify Date: 29/11/2022
+//  Modify Date: 08/01/2023
 //  Description: Overall School observation  model file
 
 package com.jihad.rtr.wfp.model;
@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Date;
 
 
 @Getter
@@ -24,152 +24,281 @@ public class OverallSchool extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name = "visit_no")
-    private long visitNo;
     @Column(name = "date")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date date;
-    @Column(name = "office")
-    private String office;
-    @Column(name = "project")
-    private String project;
-    @Column(name = "district")
-    private String district;
-    @Column(name = "upazilla")
-    private String upazilla;
-    @Column(name = "visitor")
-    private String visitor;
-    @Column(name = "visitor_designation")
-    private String visitorDesignation;
-    @Column(name = "visitor_office")
-    private String visitorOffice;
-    @Column(name = "lf")
-    private String lf;
-    private String lfName;
-    @Column(name = "lpo")
-    private String lpo;
-    private String lpoName;
-    @Column(name = "school")
-    private String school;
-    @Column(name = "month")
+    @Column(name = "month", length = 20)
     private String month;
-    @Column(name = "year")
+    @Column(name = "year", length = 20)
     private String year;
+    @Column(name = "district", length = 30)
+    private String district;
+    @Column(name = "upazilla", length = 30)
+    private String upazilla;
+    @Column(name = "field_office", length = 30)
+    private String fieldOffice;
+    @Column(name = "project", length = 50)
+    private String project;
+    @Column(name = "visit_no")
+    private int visitNo;
+    @Column(name = "lf", length = 20)
+    private String lf;
+    @Column(name = "lf_name", length = 50)
+    private String lfName;
+    @Column(name = "lpo", length = 20)
+    private String lpo;
+    @Column(name = "lpo_name", length = 50)
+    private String lpoName;
+    @Column(name = "school", length = 100)
+    private String school;
+    @Column(name = "visitor", length = 50)
+    private String visitor;
+    @Column(name = "visitor_designation", length = 30)
+    private String visitorDesignation;
+    @Column(name = "visitor_office", length = 20)
+    private String visitorOffice;
+    @Column(name = "head_teacher", length = 50)
+    private String headTeacher;
+    @Column(name = "teacher_gender", length = 20)
+    private String teacherGender;
+
+    @Column(name = "note", length = 150)
+    private String note;
 
 
-    @Column(name = "last_followup_indicator1")
+    @Column(name = "last_followup_indicator1", length = 150)
     private String lastFollowupIndicator1;
-    @Column(name = "last_followup_indicator2")
+    @Column(name = "last_followup_indicator2", length = 150)
     private String lastFollowupIndicator2;
-    @Column(name = "last_followup_indicator3")
+    @Column(name = "last_followup_indicator3", length = 150)
     private String lastFollowupIndicator3;
 
-    @Column(name = "ind1_is_trained_all_teacher")
-    private String ind1IsTrainedAllTeacher;
-    @Column(name = "ind1_1_is_trained_srm_teacher_incharge")
-    private String ind11IsTrainedSRMTeacherIncharge;
-    @Column(name = "ind1_2_is_trained_head_teacher")
-    private String ind12IsTrainedHeadTeacher;
 
-    @Column(name = "ind2_classroom_suitable_srm")
-    private String ind2ClassroomSuitableSRM;
-    @Column(name = "ind2_1_classroom_door_window_lock")
-    private String ind21ClassroomDoorWindowLock;
-    @Column(name = "ind2_2_classroom_safe_clean")
-    private String ind22ClassroomSafeClean;
+    @Column(name = "preprimary_class_observation", length = 10)
+    private String prePrimaryClassObservation;
+    @Column(name = "preprimary_bangla_class_observation_1", length = 10)
+    private String prePrimaryBanglaClassObservation1;
+    @Column(name = "preprimary_bangla_class_observation_2", length = 10)
+    private String prePrimaryBanglaClassObservation2;
+    @Column(name = "preprimary_srm_class_observation_1", length = 10)
+    private String prePrimarySRMClassObservation1;
+    @Column(name = "preprimary_srm_class_observation_2", length = 10)
+    private String prePrimarySRMClassObservation2;
+    @Column(name = "preprimary_library_observation", length = 10)
+    private String prePrimaryLibraryObservation;
+    @Column(name = "preprimary_teacher_priority", length = 10)
+    private String prePrimaryTeacherPriority;
 
-    @Column(name = "ind3_bookself_useable")
-    private String ind3BookselfUseable;
-    @Column(name = "ind3_1_bookself_accessible")
-    private String ind31BookselfAccessible;
-    @Column(name = "ind3_2_bookself_environment_protected")
-    private String ind32BookselfEnvironmentProtected;
-    @Column(name = "ind3_3_bookself_table_condition")
-    private String ind33BookselfTableCondition;
+    @Column(name = "one_class_observation", length = 10)
+    private String oneClassObservation;
+    @Column(name = "one_bangla_class_observation_1", length = 10)
+    private String oneBanglaClassObservation1;
+    @Column(name = "one_bangla_class_observation_2", length = 10)
+    private String oneBanglaClassObservation2;
+    @Column(name = "one_srm_class_observation_1", length = 10)
+    private String oneSRMClassObservation1;
+    @Column(name = "one_srm_class_observation_2", length = 10)
+    private String oneSRMClassObservation2;
+    @Column(name = "one_library_observation", length = 10)
+    private String oneLibraryObservation;
+    @Column(name = "one_teacher_priority", length = 10)
+    private String oneTeacherPriority;
 
-    @Column(name = "ind4_book_register_updated")
-    private String ind4BookRegisterUpdated;
+    @Column(name = "two_class_observation", length = 10)
+    private String twoClassObservation;
+    @Column(name = "two_bangla_class_observation_1", length = 10)
+    private String twoBanglaClassObservation1;
+    @Column(name = "two_bangla_class_observation_2", length = 10)
+    private String twoBanglaClassObservation2;
+    @Column(name = "two_srm_class_observation_1", length = 10)
+    private String twoSRMClassObservation1;
+    @Column(name = "two_srm_class_observation_2", length = 10)
+    private String twoSRMClassObservation2;
+    @Column(name = "two_library_observation", length = 10)
+    private String twoLibraryObservation;
+    @Column(name = "two_teacher_priority", length = 10)
+    private String twoTeacherPriority;
 
-    @Column(name = "ind5_bookself_organized")
-    private String ind5BookselfOrganized;
-    @Column(name = "ind5_1_bookself_book_organized_open")
-    private String ind51BookselfBookOrganizedOpen;
-    @Column(name = "ind5_2_bookself_book_level_viewable")
-    private String ind52BookselfBookLevelViewable;
-    @Column(name = "ind5_3_bookself_book_accessible")
-    private String ind53BookselfBookAccessible;
-
-    @Column(name = "ind6_printrich_displayed")
-    private String ind6PrintRichDisplayed;
-
-    @Column(name = "ind7_book_checkout_functional")
-    private String ind7BookCheckoutFunctional;
-    @Column(name = "ind7_1_book_checkout_procedure_displayed")
-    private String ind71BookCheckoutProcedureDisplayed;
-    @Column(name = "ind7_2_book_checkout_register_usable")
-    private String ind72BookCheckoutRegisterUsable;
-    @Column(name = "ind7_3_book_checkout_register_updated")
-    private String ind73BookCheckoutRegisterUpdated;
-    @Column(name = "ind7_4_book_checkout_pending_booklist")
-    private String ind74BookCheckoutPendingBooklist;
-
-    @Column(name = "ind8_srm_class_routine")
-    private String ind8SRMClassRoutine;
-    @Column(name = "ind8_1_srm_class_weekly")
-    private String ind81SRMClassWeekly;
-    @Column(name = "ind8_2_daily_book_checkout_opportunity")
-    private String ind82DailyBookCheckoutOpportunity;
-
-    @Column(name = "ind9_srm_register_updated")
-    private String ind9SRMRegisterUpdated;
-
-    @Column(name = "ind10_parents_meeting")
-    private String ind10ParentsMeeting;
-
-    @Column(name = "ind11_read_festival")
-    private String ind11ReadFestival;
-
-    @Column(name = "ind12_sustainability_plan")
-    private String ind12SustainabilityPlan;
-    @Column(name = "ind12_1_collective_plan")
-    private String ind121CollectivePlan;
-    @Column(name = "ind12_2_responsibility_plan")
-    private String ind122ResponsibilityPlan;
+    @Column(name = "three_class_observation", length = 10)
+    private String threeClassObservation;
+    @Column(name = "three_bangla_class_observation_1", length = 10)
+    private String threeBanglaClassObservation1;
+    @Column(name = "three_bangla_class_observation_2", length = 10)
+    private String threeBanglaClassObservation2;
+    @Column(name = "three_srm_class_observation_1", length = 10)
+    private String threeSRMClassObservation1;
+    @Column(name = "three_srm_class_observation_2", length = 10)
+    private String threeSRMClassObservation2;
+    @Column(name = "three_library_observation", length = 10)
+    private String threeLibraryObservation;
+    @Column(name = "three_teacher_priority", length = 10)
+    private String threeTeacherPriority;
 
 
-    @Column(name = "best_practice_indicator1")
-    private String bestPracticeIndicator1;
-    @Column(name = "best_practice_indicator1_details")
-    private String bestPracticeIndicator1Details;
-    @Column(name = "best_practice_indicator2")
-    private String bestPracticeIndicator2;
-    @Column(name = "best_practice_indicator2_details")
-    private String bestPracticeIndicator2Details;
-    @Column(name = "best_practice_indicator3")
-    private String bestPracticeIndicator3;
-    @Column(name = "best_practice_indicator3_details")
-    private String bestPracticeIndicator3Details;
+    @Column(name = "four_class_observation", length = 10)
+    private String fourClassObservation;
+    @Column(name = "four_bangla_class_observation_1", length = 10)
+    private String fourBanglaClassObservation1;
+    @Column(name = "four_bangla_class_observation_2", length = 10)
+    private String fourBanglaClassObservation2;
+    @Column(name = "four_srm_class_observation_1", length = 10)
+    private String fourSRMClassObservation1;
+    @Column(name = "four_srm_class_observation_2", length = 10)
+    private String fourSRMClassObservation2;
+    @Column(name = "four_library_observation", length = 10)
+    private String fourLibraryObservation;
+    @Column(name = "four_teacher_priority", length = 10)
+    private String fourTeacherPriority;
 
 
-    @Column(name = "coaching_support_indicator1")
-    private String coachingSupportIndicator1;
-    @Column(name = "coaching_support_indicator1_details")
-    private String coachingSupportIndicator1Details;
-    @Column(name = "coaching_support_indicator2")
-    private String coachingSupportIndicator2;
-    @Column(name = "coaching_support_indicator2_details")
-    private String coachingSupportIndicator2Details;
-    @Column(name = "agreed_statement1")
+    @Column(name = "five_class_observation", length = 10)
+    private String fiveClassObservation;
+    @Column(name = "five_bangla_class_observation_1", length = 10)
+    private String fiveBanglaClassObservation1;
+    @Column(name = "five_bangla_class_observation_2", length = 10)
+    private String fiveBanglaClassObservation2;
+    @Column(name = "five_srm_class_observation_1", length = 10)
+    private String fiveSRMClassObservation1;
+    @Column(name = "five_srm_class_observation_2", length = 10)
+    private String fiveSRMClassObservation2;
+    @Column(name = "five_library_observation", length = 10)
+    private String fiveLibraryObservation;
+    @Column(name = "five_teacher_priority", length = 10)
+    private String fiveTeacherPriority;
+
+
+    @Column(name = "school_priority_area", length = 10)
+    private String SchoolPriorityArea;
+
+    @Column(name = "comment", length = 100)
+    private String comment;
+
+    @Column(name = "other", length = 100)
+    private String other;
+
+    @Column(name = "ind1_all_teacher_trained_status", length = 10)
+    private String ind1AllTeacherTrainedStatus;
+    @Column(name = "ind1_all_teacher_trained_notes", length = 50)
+    private String ind1AllTeacherTrainedNotes;
+
+    @Column(name = "ind2_followed_rtr_training_sixty_status", length = 10)
+    private String ind2FollowedRTRTrainingSixtyStatus;
+    @Column(name = "ind2_followed_rtr_training_sixty_notes", length = 50)
+    private String ind2FollowedRTRTrainingSixtyNotes;
+
+    @Column(name = "ind3_rtr_material_status", length = 10)
+    private String ind3RTRMaterialStatus;
+    @Column(name = "ind3_rtr_material_notes", length = 50)
+    private String ind3RTRMaterialNotes;
+
+    @Column(name = "ind4_influence_to_bco_fifty_status", length = 10)
+    private String ind4InfluenceToBCOFiftyStatus;
+    @Column(name = "ind4_influence_to_bco_fifty_notes", length = 50)
+    private String ind4InfluenceToBCOFiftyNotes;
+
+    @Column(name = "ind5_preprimary_bangla_srm_seventy_status", length = 10)
+    private String ind5PrePrimaryBanglaSRMSeventyStatus;
+    @Column(name = "ind5_preprimary_bangla_srm_seventy_notes", length = 50)
+    private String ind5PrePrimaryBanglaSRMSeventyNotes;
+
+    @Column(name = "ind6_banglaclass_result_forty_status", length = 10)
+    private String ind6BanglaClassResultFortyStatus;
+    @Column(name = "ind6_banglaclass_result_forty_notes", length = 50)
+    private String ind6BanglaClassResultFortyNotes;
+
+    @Column(name = "ind7_bangla_srm_status", length = 10)
+    private String ind7BanglaSRMStatus;
+    @Column(name = "ind7_bangla_srm_notes", length = 50)
+    private String ind7BanglaSRMNotes;
+
+    @Column(name = "ind8_smc_meeting_status", length = 10)
+    private String ind8SMCMeetingStatus;
+    @Column(name = "ind8_smc_meeting_notes", length = 50)
+    private String ind8SMCMeetingNotes;
+
+    @Column(name = "ind9_reading_material_status", length = 10)
+    private String ind9ReadingMaterialStatus;
+    @Column(name = "ind9_reading_material_notes", length = 50)
+    private String ind9ReadingMaterialNotes;
+
+    @Column(name = "ind10_followed_rtr_training_eighty_status", length = 10)
+    private String ind10FollowedRtRTrainingEightyStatus;
+    @Column(name = "ind10_followed_rtr_training_eighty_notes", length = 50)
+    private String ind10FollowedRtRTrainingEightyNotes;
+
+    @Column(name = "ind11_influence_to_bco_seventy_status", length = 10)
+    private String ind11InfluenceToBCOSeventyStatus;
+    @Column(name = "ind11_influence_to_bco_seventy_notes", length = 50)
+    private String ind11InfluenceToBCOSeventyNotes;
+
+    @Column(name = "ind12_preprimary_bangla_srm_eighty_status", length = 10)
+    private String ind12PrePrimaryBanglaSRMEightyStatus;
+    @Column(name = "ind12_preprimary_bangla_srm_eighty_notes", length = 50)
+    private String ind12PrePrimaryBanglaSRMEightyNotes;
+
+    @Column(name = "ind13_banglaclass_result_sixty_status", length = 10)
+    private String ind13BanglaClassResultSixtyStatus;
+    @Column(name = "ind13_banglaclass_result_sixty_notes", length = 50)
+    private String ind13BanglaClassResultSixtyNotes;
+
+    @Column(name = "ind14_meeting_discussion_status", length = 10)
+    private String ind14MeetingDiscussionStatus;
+    @Column(name = "ind14_meeting_discussion_notes", length = 50)
+    private String ind14MeetingDiscussionNotes;
+
+    @Column(name = "ind15_last_month_observation_status", length = 10)
+    private String ind15LastMonthObservationStatus;
+    @Column(name = "ind15_last_month_observation_notes", length = 50)
+    private String ind15LastMonthObservationNotes;
+
+    @Column(name = "ind16_student_tracking_status", length = 10)
+    private String ind16StudentTrackingStatus;
+    @Column(name = "ind16_student_tracking_notes", length = 50)
+    private String ind16StudentTrackingNotes;
+
+    @Column(name = "ind17_govt_official_visit_status", length = 10)
+    private String ind17GovtOfficialVisitStatus;
+    @Column(name = "ind17_govt_official_visit_notes", length = 50)
+    private String ind17GovtOfficialVisitNotes;
+
+    @Column(name = "ind18_parents_smc_participation_status", length = 10)
+    private String ind18ParentsSMCParticipationStatus;
+    @Column(name = "ind18_parents_smc_participation_notes", length = 50)
+    private String ind18ParentsSMCParticipationNotes;
+
+
+    @Column(name = "best_practice_ind1", length = 150)
+    private String bestPracticeInd1;
+    @Column(name = "best_practice_ind2", length = 150)
+    private String bestPracticeInd2;
+    @Column(name = "best_practice_ind3", length = 150)
+    private String bestPracticeInd3;
+
+    @Column(name = "coaching_support_ind1", length = 150)
+    private String coachingSupportInd1;
+    @Column(name = "coaching_support_ind2", length = 150)
+    private String coachingSupportInd2;
+    @Column(name = "coaching_support_ind3", length = 150)
+    private String coachingSupportInd3;
+
+    @Column(name = "coaching_support_details_ind1", length = 150)
+    private String coachingSupportDetailsInd1;
+    @Column(name = "coaching_support_details_ind2", length = 150)
+    private String coachingSupportDetailsInd2;
+    @Column(name = "coaching_support_details_ind3", length = 150)
+    private String coachingSupportDetailsInd3;
+
+    @Column(name = "agreed_statement1", length = 100)
     private String agreedStatement1;
-    @Column(name = "agreed_statement2")
+    @Column(name = "agreed_statement2", length = 100)
     private String agreedStatement2;
 
-    @Column(name = "library_status")
-    private String libraryStatus;
 
-    @Column(name = "is_active")
+    @Column(name = "school_status", length = 20)
+    private String schoolStatus;
+
+    @Column(name = "is_active", length = 10)
     private String isActive;
-    @Column(name = "is_deleted")
+    @Column(name = "is_deleted", length = 10)
     private String isDeleted;
 
 }
