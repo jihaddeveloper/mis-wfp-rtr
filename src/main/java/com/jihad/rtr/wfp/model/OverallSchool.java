@@ -65,12 +65,12 @@ public class OverallSchool extends BaseEntity {
     private String note;
 
 
-    @Column(name = "last_followup_indicator1", length = 150)
-    private String lastFollowupIndicator1;
-    @Column(name = "last_followup_indicator2", length = 150)
-    private String lastFollowupIndicator2;
-    @Column(name = "last_followup_indicator3", length = 150)
-    private String lastFollowupIndicator3;
+    @Column(name = "last_followup_topic1", length = 400)
+    private String lastFollowupTopic1;
+    @Column(name = "last_followup_topic2", length = 400)
+    private String lastFollowupTopic2;
+    @Column(name = "last_followup_topic3", length = 400)
+    private String lastFollowupTopic3;
 
 
     @Column(name = "preprimary_class_observation", length = 10)

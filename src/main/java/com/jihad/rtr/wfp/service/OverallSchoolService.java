@@ -74,9 +74,9 @@ public class OverallSchoolService {
 
             overallSchoolUpdate.setNote(overallSchool.getNote());
 
-            overallSchoolUpdate.setLastFollowupIndicator1(overallSchool.getLastFollowupIndicator1());
-            overallSchoolUpdate.setLastFollowupIndicator2(overallSchool.getLastFollowupIndicator2());
-            overallSchoolUpdate.setLastFollowupIndicator3(overallSchool.getLastFollowupIndicator3());
+            overallSchoolUpdate.setLastFollowupTopic1(overallSchool.getLastFollowupTopic1());
+            overallSchoolUpdate.setLastFollowupTopic2(overallSchool.getLastFollowupTopic2());
+            overallSchoolUpdate.setLastFollowupTopic3(overallSchool.getLastFollowupTopic3());
 
             overallSchoolUpdate.setPrePrimaryClassObservation(overallSchool.getPrePrimaryClassObservation());
             overallSchoolUpdate.setPrePrimaryBanglaClassObservation1(overallSchool.getPrePrimaryBanglaClassObservation1());
