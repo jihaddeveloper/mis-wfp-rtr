@@ -120,6 +120,14 @@ public class OverallSchoolService {
             overallSchoolUpdate.setFiveSRMClassObservation2(overallSchool.getFiveSRMClassObservation2());
             overallSchoolUpdate.setFiveLibraryObservation(overallSchool.getFiveLibraryObservation());
 
+            overallSchoolUpdate.setClassObservationComment(overallSchool.getClassObservationComment());
+            overallSchoolUpdate.setBanglaClassComment1(overallSchool.getBanglaClassComment1());
+            overallSchoolUpdate.setBanglaClassComment2(overallSchool.getBanglaClassComment2());
+            overallSchoolUpdate.setSrmComment1(overallSchool.getSrmComment1());
+            overallSchoolUpdate.setSrmComment2(overallSchool.getSrmComment2());
+            overallSchoolUpdate.setLibraryObservationComment(overallSchool.getLibraryObservationComment());
+
+
             overallSchoolUpdate.setClassObservationTeacherPriority(overallSchool.getClassObservationTeacherPriority());
             overallSchoolUpdate.setBanglaTeacherPriority1(overallSchool.getBanglaTeacherPriority1());
             overallSchoolUpdate.setBanglaTeacherPriority2(overallSchool.getBanglaTeacherPriority2());

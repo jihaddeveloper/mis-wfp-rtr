@@ -157,6 +157,19 @@ public class OverallSchool extends BaseEntity {
     private String fiveLibraryObservation;
 
 
+    @Column(name = "class_observation_comment", length = 50)
+    private String classObservationComment;
+    @Column(name = "bangla_class_comment_1", length = 50)
+    private String banglaClassComment1;
+    @Column(name = "bangla_class_comment_2", length = 50)
+    private String banglaClassComment2;
+    @Column(name = "srm_comment_1", length = 50)
+    private String srmComment1;
+    @Column(name = "srm_comment_2", length = 50)
+    private String srmComment2;
+    @Column(name = "library_observation_comment", length = 50)
+    private String libraryObservationComment;
+
     @Column(name = "class_observation_teacher_priority", length = 10)
     private String classObservationTeacherPriority;
     @Column(name = "bangla_teacher_priority_1", length = 10)
