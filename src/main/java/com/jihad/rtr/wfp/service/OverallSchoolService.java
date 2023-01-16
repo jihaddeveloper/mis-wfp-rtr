@@ -84,7 +84,6 @@ public class OverallSchoolService {
             overallSchoolUpdate.setPrePrimarySRMClassObservation1(overallSchool.getPrePrimarySRMClassObservation1());
             overallSchoolUpdate.setPrePrimarySRMClassObservation2(overallSchool.getPrePrimarySRMClassObservation2());
             overallSchoolUpdate.setPrePrimaryLibraryObservation(overallSchool.getPrePrimaryLibraryObservation());
-            overallSchoolUpdate.setPrePrimaryTeacherPriority(overallSchool.getPrePrimaryTeacherPriority());
 
             overallSchoolUpdate.setOneClassObservation(overallSchool.getOneClassObservation());
             overallSchoolUpdate.setOneBanglaClassObservation1(overallSchool.getOneBanglaClassObservation1());
@@ -92,7 +91,6 @@ public class OverallSchoolService {
             overallSchoolUpdate.setOneSRMClassObservation1(overallSchool.getOneSRMClassObservation1());
             overallSchoolUpdate.setOneSRMClassObservation2(overallSchool.getOneSRMClassObservation2());
             overallSchoolUpdate.setOneLibraryObservation(overallSchool.getOneLibraryObservation());
-            overallSchoolUpdate.setOneTeacherPriority(overallSchool.getOneTeacherPriority());
 
             overallSchoolUpdate.setTwoClassObservation(overallSchool.getTwoClassObservation());
             overallSchoolUpdate.setTwoBanglaClassObservation1(overallSchool.getTwoBanglaClassObservation1());
@@ -100,7 +98,6 @@ public class OverallSchoolService {
             overallSchoolUpdate.setTwoSRMClassObservation1(overallSchool.getTwoSRMClassObservation1());
             overallSchoolUpdate.setTwoSRMClassObservation2(overallSchool.getTwoSRMClassObservation2());
             overallSchoolUpdate.setTwoLibraryObservation(overallSchool.getTwoLibraryObservation());
-            overallSchoolUpdate.setTwoTeacherPriority(overallSchool.getTwoTeacherPriority());
 
             overallSchoolUpdate.setThreeClassObservation(overallSchool.getThreeClassObservation());
             overallSchoolUpdate.setThreeBanglaClassObservation1(overallSchool.getThreeBanglaClassObservation1());
@@ -108,7 +105,6 @@ public class OverallSchoolService {
             overallSchoolUpdate.setThreeSRMClassObservation1(overallSchool.getThreeSRMClassObservation1());
             overallSchoolUpdate.setThreeSRMClassObservation2(overallSchool.getThreeSRMClassObservation2());
             overallSchoolUpdate.setThreeLibraryObservation(overallSchool.getThreeLibraryObservation());
-            overallSchoolUpdate.setThreeTeacherPriority(overallSchool.getThreeTeacherPriority());
 
             overallSchoolUpdate.setFourClassObservation(overallSchool.getFourClassObservation());
             overallSchoolUpdate.setFourBanglaClassObservation1(overallSchool.getFourBanglaClassObservation1());
@@ -116,7 +112,6 @@ public class OverallSchoolService {
             overallSchoolUpdate.setFourSRMClassObservation1(overallSchool.getFourSRMClassObservation1());
             overallSchoolUpdate.setFourSRMClassObservation2(overallSchool.getFourSRMClassObservation2());
             overallSchoolUpdate.setFourLibraryObservation(overallSchool.getFourLibraryObservation());
-            overallSchoolUpdate.setFourTeacherPriority(overallSchool.getFourTeacherPriority());
 
             overallSchoolUpdate.setFiveClassObservation(overallSchool.getFiveClassObservation());
             overallSchoolUpdate.setFiveBanglaClassObservation1(overallSchool.getFiveBanglaClassObservation1());
@@ -124,7 +119,13 @@ public class OverallSchoolService {
             overallSchoolUpdate.setFiveSRMClassObservation1(overallSchool.getFiveSRMClassObservation1());
             overallSchoolUpdate.setFiveSRMClassObservation2(overallSchool.getFiveSRMClassObservation2());
             overallSchoolUpdate.setFiveLibraryObservation(overallSchool.getFiveLibraryObservation());
-            overallSchoolUpdate.setFiveTeacherPriority(overallSchool.getFiveTeacherPriority());
+
+            overallSchoolUpdate.setClassObservationTeacherPriority(overallSchool.getClassObservationTeacherPriority());
+            overallSchoolUpdate.setBanglaTeacherPriority1(overallSchool.getBanglaTeacherPriority1());
+            overallSchoolUpdate.setBanglaTeacherPriority2(overallSchool.getBanglaTeacherPriority2());
+            overallSchoolUpdate.setSrmTeacherPriority1(overallSchool.getSrmTeacherPriority1());
+            overallSchoolUpdate.setSrmTeacherPriority2(overallSchool.getSrmTeacherPriority2());
+            overallSchoolUpdate.setLibraryObservationTeacherPriority(overallSchool.getLibraryObservationTeacherPriority());
 
             overallSchoolUpdate.setSchoolStatus(overallSchool.getSchoolPriorityArea());
             overallSchoolUpdate.setComment(overallSchool.getComment());

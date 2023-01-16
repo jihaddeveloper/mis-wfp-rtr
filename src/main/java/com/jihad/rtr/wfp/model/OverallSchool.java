@@ -85,8 +85,7 @@ public class OverallSchool extends BaseEntity {
     private String prePrimarySRMClassObservation2;
     @Column(name = "preprimary_library_observation", length = 10)
     private String prePrimaryLibraryObservation;
-    @Column(name = "preprimary_teacher_priority", length = 10)
-    private String prePrimaryTeacherPriority;
+
 
     @Column(name = "one_class_observation", length = 10)
     private String oneClassObservation;
@@ -100,8 +99,7 @@ public class OverallSchool extends BaseEntity {
     private String oneSRMClassObservation2;
     @Column(name = "one_library_observation", length = 10)
     private String oneLibraryObservation;
-    @Column(name = "one_teacher_priority", length = 10)
-    private String oneTeacherPriority;
+
 
     @Column(name = "two_class_observation", length = 10)
     private String twoClassObservation;
@@ -115,8 +113,7 @@ public class OverallSchool extends BaseEntity {
     private String twoSRMClassObservation2;
     @Column(name = "two_library_observation", length = 10)
     private String twoLibraryObservation;
-    @Column(name = "two_teacher_priority", length = 10)
-    private String twoTeacherPriority;
+
 
     @Column(name = "three_class_observation", length = 10)
     private String threeClassObservation;
@@ -130,8 +127,6 @@ public class OverallSchool extends BaseEntity {
     private String threeSRMClassObservation2;
     @Column(name = "three_library_observation", length = 10)
     private String threeLibraryObservation;
-    @Column(name = "three_teacher_priority", length = 10)
-    private String threeTeacherPriority;
 
 
     @Column(name = "four_class_observation", length = 10)
@@ -146,8 +141,6 @@ public class OverallSchool extends BaseEntity {
     private String fourSRMClassObservation2;
     @Column(name = "four_library_observation", length = 10)
     private String fourLibraryObservation;
-    @Column(name = "four_teacher_priority", length = 10)
-    private String fourTeacherPriority;
 
 
     @Column(name = "five_class_observation", length = 10)
@@ -162,8 +155,20 @@ public class OverallSchool extends BaseEntity {
     private String fiveSRMClassObservation2;
     @Column(name = "five_library_observation", length = 10)
     private String fiveLibraryObservation;
-    @Column(name = "five_teacher_priority", length = 10)
-    private String fiveTeacherPriority;
+
+
+    @Column(name = "class_observation_teacher_priority", length = 10)
+    private String classObservationTeacherPriority;
+    @Column(name = "bangla_teacher_priority_1", length = 10)
+    private String banglaTeacherPriority1;
+    @Column(name = "bangla_teacher_priority_2", length = 10)
+    private String banglaTeacherPriority2;
+    @Column(name = "srm_teacher_priority_1", length = 10)
+    private String srmTeacherPriority1;
+    @Column(name = "srm_teacher_priority_2", length = 10)
+    private String srmTeacherPriority2;
+    @Column(name = "library_observation_teacher_priority", length = 10)
+    private String libraryObservationTeacherPriority;
 
 
     @Column(name = "school_priority_area", length = 10)
