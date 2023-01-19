@@ -185,7 +185,7 @@ public class OverallSchool extends BaseEntity {
 
 
     @Column(name = "school_priority_area", length = 10)
-    private String SchoolPriorityArea;
+    private String schoolPriorityArea;
 
     @Column(name = "comment", length = 100)
     private String comment;

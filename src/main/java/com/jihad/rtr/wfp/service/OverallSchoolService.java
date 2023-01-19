@@ -135,7 +135,7 @@ public class OverallSchoolService {
             overallSchoolUpdate.setSrmTeacherPriority2(overallSchool.getSrmTeacherPriority2());
             overallSchoolUpdate.setLibraryObservationTeacherPriority(overallSchool.getLibraryObservationTeacherPriority());
 
-            overallSchoolUpdate.setSchoolStatus(overallSchool.getSchoolPriorityArea());
+            overallSchoolUpdate.setSchoolPriorityArea(overallSchool.getSchoolPriorityArea());
             overallSchoolUpdate.setComment(overallSchool.getComment());
             overallSchoolUpdate.setOther(overallSchool.getOther());
 
