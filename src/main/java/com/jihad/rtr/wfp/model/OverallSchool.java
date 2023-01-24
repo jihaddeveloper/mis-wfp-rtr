@@ -284,16 +284,16 @@ public class OverallSchool extends BaseEntity {
     private String ind18ParentsSMCParticipationNotes;
 
 
-    @Column(name = "best_practice_ind1", length = 150)
+    @Column(name = "best_practice_ind1", length = 400)
     private String bestPracticeInd1;
-    @Column(name = "best_practice_ind2", length = 150)
+    @Column(name = "best_practice_ind2", length = 400)
     private String bestPracticeInd2;
-    @Column(name = "best_practice_ind3", length = 150)
+    @Column(name = "best_practice_ind3", length = 400)
     private String bestPracticeInd3;
 
-    @Column(name = "coaching_support_ind1", length = 150)
+    @Column(name = "coaching_support_ind1", length = 400)
     private String coachingSupportInd1;
-    @Column(name = "coaching_support_ind2", length = 150)
+    @Column(name = "coaching_support_ind2", length = 400)
     private String coachingSupportInd2;
     @Column(name = "coaching_support_ind3", length = 150)
     private String coachingSupportInd3;
