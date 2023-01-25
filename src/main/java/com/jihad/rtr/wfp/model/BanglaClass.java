@@ -67,13 +67,13 @@ public class BanglaClass extends BaseEntity {
     private String grade;
     @Column(name = "section", length = 20)
     private String section;
-    @Column(name = "class_start_time")
+    @Column(name = "class_start_time", length = 20)
     private String classStartTime;
-    @Column(name = "class_end_time")
+    @Column(name = "class_end_time", length = 20)
     private String classEndTime;
-    @Column(name = "content_name")
+    @Column(name = "content_name", length = 20)
     private String contentName;
-    @Column(name = "period_day")
+    @Column(name = "period_day", length = 20)
     private String periodDay;
     @Column(name = "total_admitted_student")
     private int totalAdmittedStudent;
