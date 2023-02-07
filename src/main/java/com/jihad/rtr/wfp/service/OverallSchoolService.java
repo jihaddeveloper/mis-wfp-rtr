@@ -79,64 +79,30 @@ public class OverallSchoolService {
             overallSchoolUpdate.setLastFollowupTopic3(overallSchool.getLastFollowupTopic3());
 
             overallSchoolUpdate.setPrePrimaryClassObservation(overallSchool.getPrePrimaryClassObservation());
-            overallSchoolUpdate.setPrePrimaryBanglaClassObservation1(overallSchool.getPrePrimaryBanglaClassObservation1());
-            overallSchoolUpdate.setPrePrimaryBanglaClassObservation2(overallSchool.getPrePrimaryBanglaClassObservation2());
-            overallSchoolUpdate.setPrePrimarySRMClassObservation1(overallSchool.getPrePrimarySRMClassObservation1());
-            overallSchoolUpdate.setPrePrimarySRMClassObservation2(overallSchool.getPrePrimarySRMClassObservation2());
-            overallSchoolUpdate.setPrePrimaryLibraryObservation(overallSchool.getPrePrimaryLibraryObservation());
-
-            overallSchoolUpdate.setOneClassObservation(overallSchool.getOneClassObservation());
-            overallSchoolUpdate.setOneBanglaClassObservation1(overallSchool.getOneBanglaClassObservation1());
-            overallSchoolUpdate.setOneBanglaClassObservation2(overallSchool.getOneBanglaClassObservation2());
-            overallSchoolUpdate.setOneSRMClassObservation1(overallSchool.getOneSRMClassObservation1());
-            overallSchoolUpdate.setOneSRMClassObservation2(overallSchool.getOneSRMClassObservation2());
-            overallSchoolUpdate.setOneLibraryObservation(overallSchool.getOneLibraryObservation());
-
-            overallSchoolUpdate.setTwoClassObservation(overallSchool.getTwoClassObservation());
-            overallSchoolUpdate.setTwoBanglaClassObservation1(overallSchool.getTwoBanglaClassObservation1());
-            overallSchoolUpdate.setTwoBanglaClassObservation2(overallSchool.getTwoBanglaClassObservation2());
-            overallSchoolUpdate.setTwoSRMClassObservation1(overallSchool.getTwoSRMClassObservation1());
-            overallSchoolUpdate.setTwoSRMClassObservation2(overallSchool.getTwoSRMClassObservation2());
-            overallSchoolUpdate.setTwoLibraryObservation(overallSchool.getTwoLibraryObservation());
-
-            overallSchoolUpdate.setThreeClassObservation(overallSchool.getThreeClassObservation());
-            overallSchoolUpdate.setThreeBanglaClassObservation1(overallSchool.getThreeBanglaClassObservation1());
-            overallSchoolUpdate.setThreeBanglaClassObservation2(overallSchool.getThreeBanglaClassObservation2());
-            overallSchoolUpdate.setThreeSRMClassObservation1(overallSchool.getThreeSRMClassObservation1());
-            overallSchoolUpdate.setThreeSRMClassObservation2(overallSchool.getThreeSRMClassObservation2());
-            overallSchoolUpdate.setThreeLibraryObservation(overallSchool.getThreeLibraryObservation());
-
-            overallSchoolUpdate.setFourClassObservation(overallSchool.getFourClassObservation());
-            overallSchoolUpdate.setFourBanglaClassObservation1(overallSchool.getFourBanglaClassObservation1());
-            overallSchoolUpdate.setFourBanglaClassObservation2(overallSchool.getFourBanglaClassObservation2());
-            overallSchoolUpdate.setFourSRMClassObservation1(overallSchool.getFourSRMClassObservation1());
-            overallSchoolUpdate.setFourSRMClassObservation2(overallSchool.getFourSRMClassObservation2());
-            overallSchoolUpdate.setFourLibraryObservation(overallSchool.getFourLibraryObservation());
-
-            overallSchoolUpdate.setFiveClassObservation(overallSchool.getFiveClassObservation());
-            overallSchoolUpdate.setFiveBanglaClassObservation1(overallSchool.getFiveBanglaClassObservation1());
-            overallSchoolUpdate.setFiveBanglaClassObservation2(overallSchool.getFiveBanglaClassObservation2());
-            overallSchoolUpdate.setFiveSRMClassObservation1(overallSchool.getFiveSRMClassObservation1());
-            overallSchoolUpdate.setFiveSRMClassObservation2(overallSchool.getFiveSRMClassObservation2());
-            overallSchoolUpdate.setFiveLibraryObservation(overallSchool.getFiveLibraryObservation());
-
+            overallSchoolUpdate.setOneBanglaClassObservation(overallSchool.getOneBanglaClassObservation());
+            overallSchoolUpdate.setTwoBanglaClassObservation(overallSchool.getTwoBanglaClassObservation());
+            overallSchoolUpdate.setPrePrimaryClassTeacherPriority(overallSchool.getPrePrimaryClassTeacherPriority());
+            overallSchoolUpdate.setOneBanglaClassTeacherPriority(overallSchool.getOneBanglaClassTeacherPriority());
+            overallSchoolUpdate.setTwoBanglaClassTeacherPriority(overallSchool.getTwoBanglaClassTeacherPriority());
             overallSchoolUpdate.setClassObservationComment(overallSchool.getClassObservationComment());
-            overallSchoolUpdate.setBanglaClassComment1(overallSchool.getBanglaClassComment1());
-            overallSchoolUpdate.setBanglaClassComment2(overallSchool.getBanglaClassComment2());
-            overallSchoolUpdate.setSrmComment1(overallSchool.getSrmComment1());
-            overallSchoolUpdate.setSrmComment2(overallSchool.getSrmComment2());
-            overallSchoolUpdate.setLibraryObservationComment(overallSchool.getLibraryObservationComment());
+
+            overallSchoolUpdate.setPrePrimarySRMObservation(overallSchool.getPrePrimarySRMObservation());
+            overallSchoolUpdate.setOneSRMObservation(overallSchool.getOneSRMObservation());
+            overallSchoolUpdate.setTwoSRMObservation(overallSchool.getTwoSRMObservation());
+            overallSchoolUpdate.setPrePrimarySRMTeacherPriority(overallSchool.getPrePrimarySRMTeacherPriority());
+            overallSchoolUpdate.setOneSRMTeacherPriority(overallSchool.getOneSRMTeacherPriority());
+            overallSchoolUpdate.setTwoSRMTeacherPriority(overallSchool.getTwoSRMTeacherPriority());
+            overallSchoolUpdate.setSrmCommentPPOneTwo(overallSchool.getSrmCommentPPOneTwo());
+
+            overallSchoolUpdate.setThreeSRMObservation(overallSchool.getThreeSRMObservation());
+            overallSchoolUpdate.setFourSRMObservation(overallSchool.getFourSRMObservation());
+            overallSchoolUpdate.setFiveSRMObservation(overallSchool.getFiveSRMObservation());
+            overallSchoolUpdate.setThreeSRMTeacherPriority(overallSchool.getThreeSRMTeacherPriority());
+            overallSchoolUpdate.setFourSRMTeacherPriority(overallSchool.getFourSRMTeacherPriority());
+            overallSchoolUpdate.setFiveSRMTeacherPriority(overallSchool.getFiveSRMTeacherPriority());
+            overallSchoolUpdate.setSrmCommentThreeFourFive(overallSchool.getSrmCommentThreeFourFive());
 
 
-            overallSchoolUpdate.setClassObservationTeacherPriority(overallSchool.getClassObservationTeacherPriority());
-            overallSchoolUpdate.setBanglaTeacherPriority1(overallSchool.getBanglaTeacherPriority1());
-            overallSchoolUpdate.setBanglaTeacherPriority2(overallSchool.getBanglaTeacherPriority2());
-            overallSchoolUpdate.setSrmTeacherPriority1(overallSchool.getSrmTeacherPriority1());
-            overallSchoolUpdate.setSrmTeacherPriority2(overallSchool.getSrmTeacherPriority2());
-            overallSchoolUpdate.setLibraryObservationTeacherPriority(overallSchool.getLibraryObservationTeacherPriority());
-
-            overallSchoolUpdate.setSchoolPriorityArea(overallSchool.getSchoolPriorityArea());
-            overallSchoolUpdate.setComment(overallSchool.getComment());
             overallSchoolUpdate.setOther(overallSchool.getOther());
 
             overallSchoolUpdate.setInd1AllTeacherTrainedStatus(overallSchool.getInd1AllTeacherTrainedStatus());

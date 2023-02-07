@@ -72,123 +72,50 @@ public class OverallSchool extends BaseEntity {
     @Column(name = "last_followup_topic3", length = 400)
     private String lastFollowupTopic3;
 
-
     @Column(name = "preprimary_class_observation", length = 10)
     private String prePrimaryClassObservation;
-    @Column(name = "preprimary_bangla_class_observation_1", length = 10)
-    private String prePrimaryBanglaClassObservation1;
-    @Column(name = "preprimary_bangla_class_observation_2", length = 10)
-    private String prePrimaryBanglaClassObservation2;
-    @Column(name = "preprimary_srm_class_observation_1", length = 10)
-    private String prePrimarySRMClassObservation1;
-    @Column(name = "preprimary_srm_class_observation_2", length = 10)
-    private String prePrimarySRMClassObservation2;
-    @Column(name = "preprimary_library_observation", length = 10)
-    private String prePrimaryLibraryObservation;
-
-
-    @Column(name = "one_class_observation", length = 10)
-    private String oneClassObservation;
-    @Column(name = "one_bangla_class_observation_1", length = 10)
-    private String oneBanglaClassObservation1;
-    @Column(name = "one_bangla_class_observation_2", length = 10)
-    private String oneBanglaClassObservation2;
-    @Column(name = "one_srm_class_observation_1", length = 10)
-    private String oneSRMClassObservation1;
-    @Column(name = "one_srm_class_observation_2", length = 10)
-    private String oneSRMClassObservation2;
-    @Column(name = "one_library_observation", length = 10)
-    private String oneLibraryObservation;
-
-
-    @Column(name = "two_class_observation", length = 10)
-    private String twoClassObservation;
-    @Column(name = "two_bangla_class_observation_1", length = 10)
-    private String twoBanglaClassObservation1;
-    @Column(name = "two_bangla_class_observation_2", length = 10)
-    private String twoBanglaClassObservation2;
-    @Column(name = "two_srm_class_observation_1", length = 10)
-    private String twoSRMClassObservation1;
-    @Column(name = "two_srm_class_observation_2", length = 10)
-    private String twoSRMClassObservation2;
-    @Column(name = "two_library_observation", length = 10)
-    private String twoLibraryObservation;
-
-
-    @Column(name = "three_class_observation", length = 10)
-    private String threeClassObservation;
-    @Column(name = "three_bangla_class_observation_1", length = 10)
-    private String threeBanglaClassObservation1;
-    @Column(name = "three_bangla_class_observation_2", length = 10)
-    private String threeBanglaClassObservation2;
-    @Column(name = "three_srm_class_observation_1", length = 10)
-    private String threeSRMClassObservation1;
-    @Column(name = "three_srm_class_observation_2", length = 10)
-    private String threeSRMClassObservation2;
-    @Column(name = "three_library_observation", length = 10)
-    private String threeLibraryObservation;
-
-
-    @Column(name = "four_class_observation", length = 10)
-    private String fourClassObservation;
-    @Column(name = "four_bangla_class_observation_1", length = 10)
-    private String fourBanglaClassObservation1;
-    @Column(name = "four_bangla_class_observation_2", length = 10)
-    private String fourBanglaClassObservation2;
-    @Column(name = "four_srm_class_observation_1", length = 10)
-    private String fourSRMClassObservation1;
-    @Column(name = "four_srm_class_observation_2", length = 10)
-    private String fourSRMClassObservation2;
-    @Column(name = "four_library_observation", length = 10)
-    private String fourLibraryObservation;
-
-
-    @Column(name = "five_class_observation", length = 10)
-    private String fiveClassObservation;
-    @Column(name = "five_bangla_class_observation_1", length = 10)
-    private String fiveBanglaClassObservation1;
-    @Column(name = "five_bangla_class_observation_2", length = 10)
-    private String fiveBanglaClassObservation2;
-    @Column(name = "five_srm_class_observation_1", length = 10)
-    private String fiveSRMClassObservation1;
-    @Column(name = "five_srm_class_observation_2", length = 10)
-    private String fiveSRMClassObservation2;
-    @Column(name = "five_library_observation", length = 10)
-    private String fiveLibraryObservation;
-
-
-    @Column(name = "class_observation_comment", length = 50)
+    @Column(name = "one_bangla_class_observation", length = 10)
+    private String oneBanglaClassObservation;
+    @Column(name = "two_bangla_class_observation", length = 10)
+    private String twoBanglaClassObservation;
+    @Column(name = "prePrimaryClassTeacherPriority", length = 10)
+    private String prePrimaryClassTeacherPriority;
+    @Column(name = "one_banglaclass_teacher_priority", length = 10)
+    private String oneBanglaClassTeacherPriority;
+    @Column(name = "two_banglaclass_teacher_priority", length = 10)
+    private String twoBanglaClassTeacherPriority;
+    @Column(name = "class_observation_comment", length = 100)
     private String classObservationComment;
-    @Column(name = "bangla_class_comment_1", length = 50)
-    private String banglaClassComment1;
-    @Column(name = "bangla_class_comment_2", length = 50)
-    private String banglaClassComment2;
-    @Column(name = "srm_comment_1", length = 50)
-    private String srmComment1;
-    @Column(name = "srm_comment_2", length = 50)
-    private String srmComment2;
-    @Column(name = "library_observation_comment", length = 50)
-    private String libraryObservationComment;
 
-    @Column(name = "class_observation_teacher_priority", length = 10)
-    private String classObservationTeacherPriority;
-    @Column(name = "bangla_teacher_priority_1", length = 10)
-    private String banglaTeacherPriority1;
-    @Column(name = "bangla_teacher_priority_2", length = 10)
-    private String banglaTeacherPriority2;
-    @Column(name = "srm_teacher_priority_1", length = 10)
-    private String srmTeacherPriority1;
-    @Column(name = "srm_teacher_priority_2", length = 10)
-    private String srmTeacherPriority2;
-    @Column(name = "library_observation_teacher_priority", length = 10)
-    private String libraryObservationTeacherPriority;
+    @Column(name = "preprimary_srm_observation", length = 10)
+    private String prePrimarySRMObservation;
+    @Column(name = "one_srm_observation", length = 10)
+    private String oneSRMObservation;
+    @Column(name = "two_srm_observation", length = 10)
+    private String twoSRMObservation;
+    @Column(name = "preprimary_srm_teacher_priority", length = 10)
+    private String prePrimarySRMTeacherPriority;
+    @Column(name = "one_srm_teacher_priority", length = 10)
+    private String oneSRMTeacherPriority;
+    @Column(name = "two_srm_teacher_priority", length = 10)
+    private String twoSRMTeacherPriority;
+    @Column(name = "srm_comment_pp_one_two", length = 100)
+    private String srmCommentPPOneTwo;
 
-
-    @Column(name = "school_priority_area", length = 10)
-    private String schoolPriorityArea;
-
-    @Column(name = "comment", length = 100)
-    private String comment;
+    @Column(name = "three_srm_observation", length = 10)
+    private String threeSRMObservation;
+    @Column(name = "four_srm_observation", length = 10)
+    private String fourSRMObservation;
+    @Column(name = "five_srm_observation", length = 10)
+    private String fiveSRMObservation;
+    @Column(name = "three_srm_teacher_priority", length = 10)
+    private String threeSRMTeacherPriority;
+    @Column(name = "four_srm_teacher_priority", length = 10)
+    private String fourSRMTeacherPriority;
+    @Column(name = "five_srm_teacher_priority", length = 10)
+    private String fiveSRMTeacherPriority;
+    @Column(name = "srm_comment_three_four_five", length = 100)
+    private String srmCommentThreeFourFive;
 
     @Column(name = "other", length = 100)
     private String other;
