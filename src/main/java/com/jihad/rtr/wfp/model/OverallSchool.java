@@ -65,11 +65,11 @@ public class OverallSchool extends BaseEntity {
     private String note;
 
 
-    @Column(name = "last_followup_topic1", length = 400)
+    @Column(name = "last_followup_topic1", length = 600)
     private String lastFollowupTopic1;
-    @Column(name = "last_followup_topic2", length = 400)
+    @Column(name = "last_followup_topic2", length = 600)
     private String lastFollowupTopic2;
-    @Column(name = "last_followup_topic3", length = 400)
+    @Column(name = "last_followup_topic3", length = 600)
     private String lastFollowupTopic3;
 
     @Column(name = "preprimary_class_observation", length = 10)
@@ -211,18 +211,18 @@ public class OverallSchool extends BaseEntity {
     private String ind18ParentsSMCParticipationNotes;
 
 
-    @Column(name = "best_practice_ind1", length = 400)
+    @Column(name = "best_practice_ind1", length = 600)
     private String bestPracticeInd1;
-    @Column(name = "best_practice_ind2", length = 400)
+    @Column(name = "best_practice_ind2", length = 600)
     private String bestPracticeInd2;
-    @Column(name = "best_practice_ind3", length = 400)
+    @Column(name = "best_practice_ind3", length = 600)
     private String bestPracticeInd3;
 
-    @Column(name = "coaching_support_ind1", length = 400)
+    @Column(name = "coaching_support_ind1", length = 600)
     private String coachingSupportInd1;
-    @Column(name = "coaching_support_ind2", length = 400)
+    @Column(name = "coaching_support_ind2", length = 600)
     private String coachingSupportInd2;
-    @Column(name = "coaching_support_ind3", length = 150)
+    @Column(name = "coaching_support_ind3", length = 600)
     private String coachingSupportInd3;
 
     @Column(name = "coaching_support_details_ind1", length = 150)

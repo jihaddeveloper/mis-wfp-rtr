@@ -91,11 +91,11 @@ public class SRMClass extends BaseEntity {
     @Column(name = "note", length = 150)
     private String note;
 
-    @Column(name = "last_followup_topic1", length = 400)
+    @Column(name = "last_followup_topic1", length = 600)
     private String lastFollowupTopic1;
-    @Column(name = "last_followup_topic2", length = 400)
+    @Column(name = "last_followup_topic2", length = 600)
     private String lastFollowupTopic2;
-    @Column(name = "last_followup_topic3", length = 400)
+    @Column(name = "last_followup_topic3", length = 600)
     private String lastFollowupTopic3;
 
     @Column(name = "type_of_reading", length = 50)
@@ -160,16 +160,16 @@ public class SRMClass extends BaseEntity {
     private String ind11AskingForBCONotes;
 
 
-    @Column(name = "best_practice_ind1", length = 400)
+    @Column(name = "best_practice_ind1", length = 600)
     private String bestPracticeInd1;
-    @Column(name = "best_practice_ind2", length = 400)
+    @Column(name = "best_practice_ind2", length = 600)
     private String bestPracticeInd2;
-    @Column(name = "best_practice_ind3", length = 400)
+    @Column(name = "best_practice_ind3", length = 600)
     private String bestPracticeInd3;
 
-    @Column(name = "coaching_support_ind1", length = 400)
+    @Column(name = "coaching_support_ind1", length = 600)
     private String coachingSupportInd1;
-    @Column(name = "coaching_support_ind2", length = 400)
+    @Column(name = "coaching_support_ind2", length = 600)
     private String coachingSupportInd2;
     @Column(name = "coaching_support_details_ind1", length = 200)
     private String coachingSupportDetailsInd1;
