@@ -71,7 +71,7 @@ public class BanglaClass extends BaseEntity {
     private String classStartTime;
     @Column(name = "class_end_time", length = 20)
     private String classEndTime;
-    @Column(name = "content_name", length = 20)
+    @Column(name = "content_name", length = 200)
     private String contentName;
     @Column(name = "period_day", length = 20)
     private String periodDay;
@@ -180,7 +180,7 @@ public class BanglaClass extends BaseEntity {
     @Column(name = "agreed_statement2", length = 200)
     private String agreedStatement2;
 
-    @Column(name = "question1", length = 100)
+    @Column(name = "question1", length = 200)
     private String question1;
 
     @Column(name = "student1", length = 50)
