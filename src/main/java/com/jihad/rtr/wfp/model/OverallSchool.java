@@ -61,15 +61,15 @@ public class OverallSchool extends BaseEntity {
     @Column(name = "teacher_gender", length = 20)
     private String teacherGender;
 
-    @Column(name = "note", length = 150)
+    @Column(name = "note", length = 200)
     private String note;
 
 
-    @Column(name = "last_followup_topic1", length = 600)
+    @Column(name = "last_followup_topic1", length = 800)
     private String lastFollowupTopic1;
-    @Column(name = "last_followup_topic2", length = 600)
+    @Column(name = "last_followup_topic2", length = 800)
     private String lastFollowupTopic2;
-    @Column(name = "last_followup_topic3", length = 600)
+    @Column(name = "last_followup_topic3", length = 800)
     private String lastFollowupTopic3;
 
     @Column(name = "preprimary_class_observation", length = 10)
@@ -84,7 +84,7 @@ public class OverallSchool extends BaseEntity {
     private String oneBanglaClassTeacherPriority;
     @Column(name = "two_banglaclass_teacher_priority", length = 10)
     private String twoBanglaClassTeacherPriority;
-    @Column(name = "class_observation_comment", length = 100)
+    @Column(name = "class_observation_comment", length = 200)
     private String classObservationComment;
 
     @Column(name = "preprimary_srm_observation", length = 10)
@@ -99,7 +99,7 @@ public class OverallSchool extends BaseEntity {
     private String oneSRMTeacherPriority;
     @Column(name = "two_srm_teacher_priority", length = 10)
     private String twoSRMTeacherPriority;
-    @Column(name = "srm_comment_pp_one_two", length = 100)
+    @Column(name = "srm_comment_pp_one_two", length = 200)
     private String srmCommentPPOneTwo;
 
     @Column(name = "three_srm_observation", length = 10)
@@ -114,127 +114,127 @@ public class OverallSchool extends BaseEntity {
     private String fourSRMTeacherPriority;
     @Column(name = "five_srm_teacher_priority", length = 10)
     private String fiveSRMTeacherPriority;
-    @Column(name = "srm_comment_three_four_five", length = 100)
+    @Column(name = "srm_comment_three_four_five", length = 200)
     private String srmCommentThreeFourFive;
 
-    @Column(name = "other", length = 100)
+    @Column(name = "other", length = 200)
     private String other;
 
     @Column(name = "ind1_all_teacher_trained_status", length = 10)
     private String ind1AllTeacherTrainedStatus;
-    @Column(name = "ind1_all_teacher_trained_notes", length = 50)
+    @Column(name = "ind1_all_teacher_trained_notes", length = 150)
     private String ind1AllTeacherTrainedNotes;
 
     @Column(name = "ind2_followed_rtr_training_sixty_status", length = 10)
     private String ind2FollowedRTRTrainingSixtyStatus;
-    @Column(name = "ind2_followed_rtr_training_sixty_notes", length = 50)
+    @Column(name = "ind2_followed_rtr_training_sixty_notes", length = 150)
     private String ind2FollowedRTRTrainingSixtyNotes;
 
     @Column(name = "ind3_rtr_material_status", length = 10)
     private String ind3RTRMaterialStatus;
-    @Column(name = "ind3_rtr_material_notes", length = 50)
+    @Column(name = "ind3_rtr_material_notes", length = 150)
     private String ind3RTRMaterialNotes;
 
     @Column(name = "ind4_influence_to_bco_fifty_status", length = 10)
     private String ind4InfluenceToBCOFiftyStatus;
-    @Column(name = "ind4_influence_to_bco_fifty_notes", length = 50)
+    @Column(name = "ind4_influence_to_bco_fifty_notes", length = 150)
     private String ind4InfluenceToBCOFiftyNotes;
 
     @Column(name = "ind5_preprimary_bangla_srm_seventy_status", length = 10)
     private String ind5PrePrimaryBanglaSRMSeventyStatus;
-    @Column(name = "ind5_preprimary_bangla_srm_seventy_notes", length = 50)
+    @Column(name = "ind5_preprimary_bangla_srm_seventy_notes", length = 150)
     private String ind5PrePrimaryBanglaSRMSeventyNotes;
 
     @Column(name = "ind6_banglaclass_result_forty_status", length = 10)
     private String ind6BanglaClassResultFortyStatus;
-    @Column(name = "ind6_banglaclass_result_forty_notes", length = 50)
+    @Column(name = "ind6_banglaclass_result_forty_notes", length = 150)
     private String ind6BanglaClassResultFortyNotes;
 
     @Column(name = "ind7_bangla_srm_status", length = 10)
     private String ind7BanglaSRMStatus;
-    @Column(name = "ind7_bangla_srm_notes", length = 50)
+    @Column(name = "ind7_bangla_srm_notes", length = 150)
     private String ind7BanglaSRMNotes;
 
     @Column(name = "ind8_smc_meeting_status", length = 10)
     private String ind8SMCMeetingStatus;
-    @Column(name = "ind8_smc_meeting_notes", length = 50)
+    @Column(name = "ind8_smc_meeting_notes", length = 150)
     private String ind8SMCMeetingNotes;
 
     @Column(name = "ind9_reading_material_status", length = 10)
     private String ind9ReadingMaterialStatus;
-    @Column(name = "ind9_reading_material_notes", length = 50)
+    @Column(name = "ind9_reading_material_notes", length = 150)
     private String ind9ReadingMaterialNotes;
 
     @Column(name = "ind10_followed_rtr_training_eighty_status", length = 10)
     private String ind10FollowedRtRTrainingEightyStatus;
-    @Column(name = "ind10_followed_rtr_training_eighty_notes", length = 50)
+    @Column(name = "ind10_followed_rtr_training_eighty_notes", length = 150)
     private String ind10FollowedRtRTrainingEightyNotes;
 
     @Column(name = "ind11_influence_to_bco_seventy_status", length = 10)
     private String ind11InfluenceToBCOSeventyStatus;
-    @Column(name = "ind11_influence_to_bco_seventy_notes", length = 50)
+    @Column(name = "ind11_influence_to_bco_seventy_notes", length = 150)
     private String ind11InfluenceToBCOSeventyNotes;
 
     @Column(name = "ind12_preprimary_bangla_srm_eighty_status", length = 10)
     private String ind12PrePrimaryBanglaSRMEightyStatus;
-    @Column(name = "ind12_preprimary_bangla_srm_eighty_notes", length = 50)
+    @Column(name = "ind12_preprimary_bangla_srm_eighty_notes", length = 150)
     private String ind12PrePrimaryBanglaSRMEightyNotes;
 
     @Column(name = "ind13_banglaclass_result_sixty_status", length = 10)
     private String ind13BanglaClassResultSixtyStatus;
-    @Column(name = "ind13_banglaclass_result_sixty_notes", length = 50)
+    @Column(name = "ind13_banglaclass_result_sixty_notes", length = 150)
     private String ind13BanglaClassResultSixtyNotes;
 
     @Column(name = "ind14_meeting_discussion_status", length = 10)
     private String ind14MeetingDiscussionStatus;
-    @Column(name = "ind14_meeting_discussion_notes", length = 50)
+    @Column(name = "ind14_meeting_discussion_notes", length = 150)
     private String ind14MeetingDiscussionNotes;
 
     @Column(name = "ind15_last_month_observation_status", length = 10)
     private String ind15LastMonthObservationStatus;
-    @Column(name = "ind15_last_month_observation_notes", length = 50)
+    @Column(name = "ind15_last_month_observation_notes", length = 150)
     private String ind15LastMonthObservationNotes;
 
     @Column(name = "ind16_student_tracking_status", length = 10)
     private String ind16StudentTrackingStatus;
-    @Column(name = "ind16_student_tracking_notes", length = 50)
+    @Column(name = "ind16_student_tracking_notes", length = 150)
     private String ind16StudentTrackingNotes;
 
     @Column(name = "ind17_govt_official_visit_status", length = 10)
     private String ind17GovtOfficialVisitStatus;
-    @Column(name = "ind17_govt_official_visit_notes", length = 50)
+    @Column(name = "ind17_govt_official_visit_notes", length = 150)
     private String ind17GovtOfficialVisitNotes;
 
     @Column(name = "ind18_parents_smc_participation_status", length = 10)
     private String ind18ParentsSMCParticipationStatus;
-    @Column(name = "ind18_parents_smc_participation_notes", length = 50)
+    @Column(name = "ind18_parents_smc_participation_notes", length = 150)
     private String ind18ParentsSMCParticipationNotes;
 
 
-    @Column(name = "best_practice_ind1", length = 600)
+    @Column(name = "best_practice_ind1", length = 800)
     private String bestPracticeInd1;
-    @Column(name = "best_practice_ind2", length = 600)
+    @Column(name = "best_practice_ind2", length = 800)
     private String bestPracticeInd2;
-    @Column(name = "best_practice_ind3", length = 600)
+    @Column(name = "best_practice_ind3", length = 800)
     private String bestPracticeInd3;
 
-    @Column(name = "coaching_support_ind1", length = 600)
+    @Column(name = "coaching_support_ind1", length = 800)
     private String coachingSupportInd1;
-    @Column(name = "coaching_support_ind2", length = 600)
+    @Column(name = "coaching_support_ind2", length = 800)
     private String coachingSupportInd2;
-    @Column(name = "coaching_support_ind3", length = 600)
+    @Column(name = "coaching_support_ind3", length = 800)
     private String coachingSupportInd3;
 
-    @Column(name = "coaching_support_details_ind1", length = 150)
+    @Column(name = "coaching_support_details_ind1", length = 200)
     private String coachingSupportDetailsInd1;
-    @Column(name = "coaching_support_details_ind2", length = 150)
+    @Column(name = "coaching_support_details_ind2", length = 200)
     private String coachingSupportDetailsInd2;
-    @Column(name = "coaching_support_details_ind3", length = 150)
+    @Column(name = "coaching_support_details_ind3", length = 200)
     private String coachingSupportDetailsInd3;
 
-    @Column(name = "agreed_statement1", length = 100)
+    @Column(name = "agreed_statement1", length = 200)
     private String agreedStatement1;
-    @Column(name = "agreed_statement2", length = 100)
+    @Column(name = "agreed_statement2", length = 200)
     private String agreedStatement2;
 
 

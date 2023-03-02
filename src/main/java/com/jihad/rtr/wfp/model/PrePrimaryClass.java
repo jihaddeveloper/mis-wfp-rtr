@@ -1,10 +1,9 @@
 //  Author: Mohammad Jihad Hossain
-//  Create Date: 29/11/2022
-//  Modify Date: 05/01/2023
-//  Description: SRM class  model file
+//  Create Date: 16/02/2023
+//  Modify Date: 16/02/2023
+//  Description: Preprimary class  model file
 
 package com.jihad.rtr.wfp.model;
-
 
 import lombok.*;
 
@@ -18,8 +17,8 @@ import java.sql.Date;
 @Builder
 @Entity
 @Data
-@Table(name = "srm_class")
-public class SRMClass extends BaseEntity {
+@Table(name = "preprimary_class")
+public class PrePrimaryClass extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -71,93 +70,82 @@ public class SRMClass extends BaseEntity {
     private String classStartTime;
     @Column(name = "class_end_time", length = 20)
     private String classEndTime;
-    @Column(name = "content_name", length = 50)
-    private String contentName;
-    @Column(name = "period_day", length = 50)
+    @Column(name = "content_name_1", length = 200)
+    private String contentName1;
+    @Column(name = "content_name_2", length = 200)
+    private String contentName2;
+    @Column(name = "content_name_3", length = 200)
+    private String contentName3;
+    @Column(name = "period_month", length = 20)
+    private String periodMonth;
+    @Column(name = "period_week", length = 20)
+    private String periodWeek;
+    @Column(name = "period_day", length = 20)
     private String periodDay;
-    @Column(name = "total_admitted_student")
-    private int totalAdmittedStudent;
-    @Column(name = "total_admitted_girl")
-    private int totalAdmittedGirl;
-    @Column(name = "total_admitted_boy")
-    private int totalAdmittedBoy;
+
     @Column(name = "total_present_student")
     private int totalPresentStudent;
     @Column(name = "total_present_girl")
     private int totalPresentGirl;
     @Column(name = "total_present_boy")
     private int totalPresentBoy;
+    @Column(name = "total_present_special")
+    private int totalPresentSpecial;
 
     @Column(name = "note", length = 150)
     private String note;
 
-    @Column(name = "last_followup_topic1", length = 800)
+    @Column(name = "last_followup_topic1", length = 600)
     private String lastFollowupTopic1;
-    @Column(name = "last_followup_topic2", length = 800)
+    @Column(name = "last_followup_topic2", length = 600)
     private String lastFollowupTopic2;
-    @Column(name = "last_followup_topic3", length = 800)
+    @Column(name = "last_followup_topic3", length = 600)
     private String lastFollowupTopic3;
 
-    @Column(name = "type_of_reading", length = 50)
-    private String typeOfReading;
+    @Column(name = "ind1_1_using_bigbook_status", length = 10)
+    private String ind11UsingBigbookStatus;
+    @Column(name = "ind1_1_using_bigbook_notes", length = 100)
+    private String ind11UsingBigbookNotes;
 
-    @Column(name = "time_of_reading", length = 50)
-    private String timeOfReading;
+    @Column(name = "ind1_2_picture_discussion_status", length = 10)
+    private String ind12PictureDiscussionStatus;
+    @Column(name = "ind1_2_picture_discussion_notes", length = 100)
+    private String ind12PictureDiscussionNotes;
 
-    @Column(name = "ind1_friendly_communication_status", length = 10)
-    private String ind1FriendlyCommunicationStatus;
-    @Column(name = "ind1_friendly_communication_notes", length = 100)
-    private String ind1FriendlyCommunicationNotes;
+    @Column(name = "ind1_3_followed_instruction_status", length = 10)
+    private String ind13FollowedInstructionStatus;
+    @Column(name = "ind1_3_followed_instruction_notes", length = 100)
+    private String ind13FollowedInstructionNotes;
 
-    @Column(name = "ind2_srm_inspiring_status", length = 10)
-    private String ind2SRMInspiringStatus;
-    @Column(name = "ind2_srm_inspiring_notes", length = 100)
-    private String ind2SRMInspiringNotes;
+    @Column(name = "ind2_1_using_talking_chart_status", length = 10)
+    private String ind21UsingTalkingChartStatus;
+    @Column(name = "ind2_1_using_talking_chart_notes", length = 100)
+    private String ind21UsingTalkingChartNotes;
 
-    @Column(name = "ind3_srm_instruction_status", length = 10)
-    private String ind3SRMInstructionStatus;
-    @Column(name = "ind3_srm_instruction_notes", length = 100)
-    private String ind3SRMInstructionNotes;
+    @Column(name = "ind2_2_using_picture_element_status", length = 10)
+    private String ind22UsingPictureElementStatus;
+    @Column(name = "ind2_2_using_picture_element_notes", length = 100)
+    private String ind22UsingPictureElementNotes;
 
-    @Column(name = "ind4_book_showing_status", length = 10)
-    private String ind4BookShowingStatus;
-    @Column(name = "ind4_book_showing_notes", length = 100)
-    private String ind4BookShowingNotes;
+    @Column(name = "ind2_3_followed_instruction_step_status", length = 10)
+    private String ind23FollowedInstructionStepStatus;
+    @Column(name = "ind2_3_followed_instruction_step_notes", length = 100)
+    private String ind23FollowedInstructionStepNotes;
 
-    @Column(name = "ind5_word_teaching_status", length = 10)
-    private String ind5WordTeachingStatus;
-    @Column(name = "ind5_word_teaching_notes", length = 100)
-    private String ind5WordTeachingNotes;
+    @Column(name = "ind3_1_language_game_status", length = 10)
+    private String ind31LanguageGameStatus;
+    @Column(name = "ind3_1_language_game_notes", length = 100)
+    private String ind31LanguageGameNotes;
 
-    @Column(name = "ind6_story_reading_status", length = 10)
-    private String ind6StoryReadingStatus;
-    @Column(name = "ind6_story_reading_notes", length = 100)
-    private String ind6StoryReadingNotes;
+    @Column(name = "ind3_2_language_game_iweyou_status", length = 10)
+    private String ind32LanguageGameIWeYouStatus;
+    @Column(name = "ind3_2_language_game_iweyou_notes", length = 100)
+    private String ind32LanguageGameIWeYouNotes;
 
-    @Column(name = "ind7_story_suitable_status", length = 10)
-    private String ind7StorySuitableStatus;
-    @Column(name = "ind7_story_suitable_Notes", length = 100)
-    private String ind7StorySuitableNotes;
-
-    @Column(name = "ind8_story_reading_combination_status", length = 10)
-    private String ind8StoryReadingCombinationStatus;
-    @Column(name = "ind8_story_reading_combination_notes", length = 100)
-    private String ind8StoryReadingCombinationNotes;
-
-    @Column(name = "ind9_all_student_engagement_status", length = 10)
-    private String ind9AllStudentEngagementStatus;
-    @Column(name = "ind9_all_student_engagement_notes", length = 100)
-    private String ind9AllStudentEngagementNotes;
-
-    @Column(name = "ind10_inclusive_assessment_status", length = 10)
-    private String ind10InclusiveAssessmentStatus;
-    @Column(name = "ind10_inclusive_assessment_notes", length = 100)
-    private String ind10InclusiveAssessmentNotes;
-
-    @Column(name = "ind11_asking_for_bco_status", length = 10)
-    private String ind11AskingForBCOStatus;
-    @Column(name = "ind11_asking_for_bco_notes", length = 100)
-    private String ind11AskingForBCONotes;
+    @Column(name = "ind3_3_language_game_extra_status", length = 10)
+    private String ind33LanguageGameExtraStatus;
+    @Column(name = "ind3_3_language_game_extra_notes", length = 100)
+    private String ind33LanguageGameExtraNotes;
 
 
     @Column(name = "best_practice_ind1", length = 800)

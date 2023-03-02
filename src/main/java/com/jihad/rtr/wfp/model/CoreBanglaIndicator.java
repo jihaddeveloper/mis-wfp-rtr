@@ -1,15 +1,13 @@
 //  Author: Mohammad Jihad Hossain
-//  Create Date: 21/11/2021
-//  Modify Date: 20/11/2022
-//  Description: Bangla Indicator  model file
-
+//  Create Date: 16/02/2023
+//  Modify Date: 16/02/2023
+//  Description: Core Bangla class indicator  model file
 
 package com.jihad.rtr.wfp.model;
 
 import lombok.*;
 
 import javax.persistence.*;
-import java.sql.Date;
 
 @Getter
 @Setter
@@ -18,8 +16,9 @@ import java.sql.Date;
 @Builder
 @Entity
 @Data
-@Table(name = "bangla_indicators")
-public class BanglaIndicator extends BaseEntity {
+@Table(name = "core_bangla_indicator")
+public class CoreBanglaIndicator extends BaseEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
