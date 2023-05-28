@@ -95,11 +95,11 @@ public class PrePrimaryClass extends BaseEntity {
     @Column(name = "note", length = 150)
     private String note;
 
-    @Column(name = "last_followup_topic1", length = 600)
+    @Column(name = "last_followup_topic1", length = 800)
     private String lastFollowupTopic1;
-    @Column(name = "last_followup_topic2", length = 600)
+    @Column(name = "last_followup_topic2", length = 800)
     private String lastFollowupTopic2;
-    @Column(name = "last_followup_topic3", length = 600)
+    @Column(name = "last_followup_topic3", length = 800)
     private String lastFollowupTopic3;
 
     @Column(name = "ind1_1_using_bigbook_status", length = 10)
