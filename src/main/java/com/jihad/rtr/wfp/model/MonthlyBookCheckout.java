@@ -291,5 +291,8 @@ public class MonthlyBookCheckout extends BaseEntity {
     private Integer schoolTotalNoSpBookBCIn;
     //Total data
 
-
+    @Column(name = "is_active", length = 10)
+    private String isActive;
+    @Column(name = "is_deleted", length = 10)
+    private String isDeleted;
 }
