@@ -45,7 +45,7 @@ public class BanglaClassController {
     }
 
     //Update BanglaClass
-    @RequestMapping(value = "/bangla-class/{id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/bangla-class/{id}", method = RequestMethod.PATCH, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<BanglaClass> updateBanglaClass(@PathVariable long id, @RequestBody BanglaClass banglaClass) {
         banglaClass.setId(id);
         return ResponseEntity.ok().body(this.banglaClassService.updateBanglaClass(banglaClass));
