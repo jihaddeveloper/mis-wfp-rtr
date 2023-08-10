@@ -175,9 +175,9 @@ public class BanglaClass extends BaseEntity {
     @Column(name = "coaching_support_details_ind2", length = 400)
     private String coachingSupportDetailsInd2;
 
-    @Column(name = "agreed_statement1", length = 400)
+    @Column(name = "agreed_statement1", length = 800)
     private String agreedStatement1;
-    @Column(name = "agreed_statement2", length = 400)
+    @Column(name = "agreed_statement2", length = 800)
     private String agreedStatement2;
 
     @Column(name = "question1", length = 200)

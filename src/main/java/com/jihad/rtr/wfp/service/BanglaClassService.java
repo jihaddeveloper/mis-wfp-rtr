@@ -23,7 +23,7 @@ public class BanglaClassService {
 
     @Autowired
     private BanglaClassRepo banglaClassRepo;
-    
+
     //Create new BanglaClass
     public BanglaClass createBanglaClass(BanglaClass banglaClass) {
         return banglaClassRepo.save(banglaClass);
@@ -58,7 +58,6 @@ public class BanglaClassService {
             banglaClassUpdate.setDistrict(banglaClass.getDistrict());
             banglaClassUpdate.setUpazilla(banglaClass.getUpazilla());
             banglaClassUpdate.setFieldOffice(banglaClass.getFieldOffice());
-            banglaClassUpdate.setProject(banglaClass.getProject());
             banglaClassUpdate.setProject(banglaClass.getProject());
             banglaClassUpdate.setVisitNo(banglaClass.getVisitNo());
             banglaClassUpdate.setLf(banglaClass.getLf());

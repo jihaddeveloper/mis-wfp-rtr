@@ -42,14 +42,14 @@ public class LibraryObservationController {
         return ResponseEntity.ok().body(libraryObservationService.getLibraryObservationById(id));
     }
 
-//    // Update LibraryObservation with PATCH
+//    // Update LibraryObservation with PUT
 //    @RequestMapping(value = "/library-observations/update", method = RequestMethod.PATCH)
 //    public LibraryObservation updateLibraryObservation(@RequestBody LibraryObservation libraryObservation) {
 //        return libraryObservationRepo.save( libraryObservation);
 //    }
 
-    // Update LibraryObservation with PUT
-    @RequestMapping(value = "library-observations/{id}", method = RequestMethod.PUT)
+    // Update LibraryObservation with PATCH
+    @RequestMapping(value = "library-observations/{id}", method = RequestMethod.PATCH)
     public ResponseEntity<LibraryObservation> updateLibraryObservation(@PathVariable long id, @RequestBody LibraryObservation libraryObservation) {
         libraryObservation.setId(id);
         return ResponseEntity.ok().body(libraryObservationService.updateLibraryObservation(libraryObservation));

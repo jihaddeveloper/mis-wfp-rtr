@@ -143,31 +143,31 @@ public class LibraryObservation extends BaseEntity {
     private String ind122ResponsibilityPlan;
 
 
-    @Column(name = "best_practice_indicator1", length = 600)
+    @Column(name = "best_practice_indicator1", length = 800)
     private String bestPracticeIndicator1;
-    @Column(name = "best_practice_indicator1_details", length = 200)
+    @Column(name = "best_practice_indicator1_details", length = 500)
     private String bestPracticeIndicator1Details;
-    @Column(name = "best_practice_indicator2", length = 600)
+    @Column(name = "best_practice_indicator2", length = 800)
     private String bestPracticeIndicator2;
-    @Column(name = "best_practice_indicator2_details", length = 200)
+    @Column(name = "best_practice_indicator2_details", length = 500)
     private String bestPracticeIndicator2Details;
-    @Column(name = "best_practice_indicator3", length = 600)
+    @Column(name = "best_practice_indicator3", length = 800)
     private String bestPracticeIndicator3;
-    @Column(name = "best_practice_indicator3_details", length = 200)
+    @Column(name = "best_practice_indicator3_details", length = 500)
     private String bestPracticeIndicator3Details;
 
 
-    @Column(name = "coaching_support_indicator1", length = 600)
+    @Column(name = "coaching_support_indicator1", length = 800)
     private String coachingSupportIndicator1;
-    @Column(name = "coaching_support_indicator1_details", length = 200)
+    @Column(name = "coaching_support_indicator1_details", length = 500)
     private String coachingSupportIndicator1Details;
-    @Column(name = "coaching_support_indicator2", length = 600)
+    @Column(name = "coaching_support_indicator2", length = 800)
     private String coachingSupportIndicator2;
-    @Column(name = "coaching_support_indicator2_details", length = 200)
+    @Column(name = "coaching_support_indicator2_details", length = 500)
     private String coachingSupportIndicator2Details;
-    @Column(name = "agreed_statement1", length = 200)
+    @Column(name = "agreed_statement1", length = 800)
     private String agreedStatement1;
-    @Column(name = "agreed_statement2", length = 200)
+    @Column(name = "agreed_statement2", length = 800)
     private String agreedStatement2;
 
     @Column(name = "library_status", length = 20)

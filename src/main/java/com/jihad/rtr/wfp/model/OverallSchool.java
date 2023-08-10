@@ -225,16 +225,16 @@ public class OverallSchool extends BaseEntity {
     @Column(name = "coaching_support_ind3", length = 800)
     private String coachingSupportInd3;
 
-    @Column(name = "coaching_support_details_ind1", length = 200)
+    @Column(name = "coaching_support_details_ind1", length = 500)
     private String coachingSupportDetailsInd1;
-    @Column(name = "coaching_support_details_ind2", length = 200)
+    @Column(name = "coaching_support_details_ind2", length = 500)
     private String coachingSupportDetailsInd2;
-    @Column(name = "coaching_support_details_ind3", length = 200)
+    @Column(name = "coaching_support_details_ind3", length = 500)
     private String coachingSupportDetailsInd3;
 
-    @Column(name = "agreed_statement1", length = 200)
+    @Column(name = "agreed_statement1", length = 800)
     private String agreedStatement1;
-    @Column(name = "agreed_statement2", length = 200)
+    @Column(name = "agreed_statement2", length = 800)
     private String agreedStatement2;
 
 
