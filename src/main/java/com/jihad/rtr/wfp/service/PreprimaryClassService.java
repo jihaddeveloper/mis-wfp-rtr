@@ -50,7 +50,9 @@ public class PreprimaryClassService {
         Optional<PrePrimaryClass> prePrimaryClassDB = preprimaryClassRepo.findById(prePrimaryClass.getId());
 
         if (prePrimaryClassDB.isPresent()) {
+
             PrePrimaryClass prePrimaryClassUpdate = prePrimaryClassDB.get();
+
             prePrimaryClassUpdate.setId(prePrimaryClass.getId());
             prePrimaryClassUpdate.setDate(prePrimaryClass.getDate());
             prePrimaryClassUpdate.setMonth(prePrimaryClass.getMonth());
@@ -86,6 +88,7 @@ public class PreprimaryClassService {
             prePrimaryClassUpdate.setTotalPresentBoy(prePrimaryClass.getTotalPresentBoy());
             prePrimaryClassUpdate.setTotalPresentSpecial(prePrimaryClass.getTotalPresentSpecial());
 
+            prePrimaryClassUpdate.setNote(prePrimaryClass.getNote());
 
             prePrimaryClassUpdate.setLastFollowupTopic1(prePrimaryClass.getLastFollowupTopic1());
             prePrimaryClassUpdate.setLastFollowupTopic2(prePrimaryClass.getLastFollowupTopic2());

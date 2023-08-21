@@ -44,7 +44,7 @@ public class PreprimaryController {
     }
 
     //Update BanglaClass
-    @RequestMapping(value = "/preprimary/{id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/preprimary/{id}", method = RequestMethod.PATCH, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<PrePrimaryClass> updatePrePrimaryClass(@PathVariable long id, @RequestBody PrePrimaryClass prePrimaryClass) {
         prePrimaryClass.setId(id);
         return ResponseEntity.ok().body(this.preprimaryClassService.updatePrePrimaryClass(prePrimaryClass));
