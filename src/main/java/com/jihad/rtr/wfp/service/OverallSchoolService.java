@@ -59,7 +59,7 @@ public class OverallSchoolService {
             overallSchoolUpdate.setUpazilla(overallSchool.getUpazilla());
             overallSchoolUpdate.setFieldOffice(overallSchool.getFieldOffice());
             overallSchoolUpdate.setProject(overallSchool.getProject());
-            overallSchoolUpdate.setProject(overallSchool.getProject());
+
             overallSchoolUpdate.setVisitNo(overallSchool.getVisitNo());
             overallSchoolUpdate.setLf(overallSchool.getLf());
             overallSchoolUpdate.setLfName(overallSchool.getLfName());

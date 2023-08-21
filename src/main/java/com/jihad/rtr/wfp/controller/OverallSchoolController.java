@@ -45,7 +45,7 @@ public class OverallSchoolController {
     }
 
     //Update OverallSchool
-    @RequestMapping(value = "/overall-school/{id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/overall-school/{id}", method = RequestMethod.PATCH, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<OverallSchool> updateOverallSchool(@PathVariable long id, @RequestBody OverallSchool overallSchool) {
         overallSchool.setId(id);
         return ResponseEntity.ok().body(this.overallSchoolService.updateOverallSchool(overallSchool));

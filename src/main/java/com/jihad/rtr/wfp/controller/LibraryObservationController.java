@@ -10,6 +10,7 @@ import com.jihad.rtr.wfp.repository.LibraryObservationRepo;
 import com.jihad.rtr.wfp.service.LibraryObservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -49,7 +50,7 @@ public class LibraryObservationController {
 //    }
 
     // Update LibraryObservation with PATCH
-    @RequestMapping(value = "library-observations/{id}", method = RequestMethod.PATCH)
+    @RequestMapping(value = "library-observations/{id}", method = RequestMethod.PATCH, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<LibraryObservation> updateLibraryObservation(@PathVariable long id, @RequestBody LibraryObservation libraryObservation) {
         libraryObservation.setId(id);
         return ResponseEntity.ok().body(libraryObservationService.updateLibraryObservation(libraryObservation));

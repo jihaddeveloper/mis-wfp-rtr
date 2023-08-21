@@ -48,7 +48,7 @@ public class MonthlyBookCheckoutCommController {
     }
 
     //Update MonthlyBookCheckoutComm
-    @RequestMapping(value = "/book-checkout-community/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/book-checkout-community/{id}", method = RequestMethod.PATCH)
     public ResponseEntity<MonthlyBookCheckoutComm> updateBookCheckoutComm(@PathVariable long id, @RequestBody MonthlyBookCheckoutComm monthlyBookCheckoutComm) {
         monthlyBookCheckoutComm.setId(id);
         return ResponseEntity.ok().body(this.monthlyBookCheckoutCommService.updateMonthlyBookCheckoutComm(monthlyBookCheckoutComm));

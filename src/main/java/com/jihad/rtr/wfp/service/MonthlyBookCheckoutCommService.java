@@ -63,9 +63,14 @@ public class MonthlyBookCheckoutCommService {
             monthlyBookCheckoutCommUpdate.setProject(monthlyBookCheckoutComm.getProject());
             monthlyBookCheckoutCommUpdate.setDistrict(monthlyBookCheckoutComm.getDistrict());
             monthlyBookCheckoutCommUpdate.setUpazilla(monthlyBookCheckoutComm.getUpazilla());
+            monthlyBookCheckoutCommUpdate.setUpazilla(monthlyBookCheckoutComm.getUpazilla());
+            monthlyBookCheckoutCommUpdate.setUpazilla(monthlyBookCheckoutComm.getUpazilla());
+
+
+
             monthlyBookCheckoutCommUpdate.setCommunityReadingForum(monthlyBookCheckoutComm.getCommunityReadingForum());
             monthlyBookCheckoutCommUpdate.setCommunityVolunteer(monthlyBookCheckoutComm.getCommunityVolunteer());
-            monthlyBookCheckoutCommUpdate.setGender(monthlyBookCheckoutComm.getGender());
+
             monthlyBookCheckoutCommUpdate.setVisitor(monthlyBookCheckoutComm.getVisitor());
             monthlyBookCheckoutCommUpdate.setVisitorDesignation(monthlyBookCheckoutComm.getVisitorDesignation());
             monthlyBookCheckoutCommUpdate.setVisitorOffice(monthlyBookCheckoutComm.getVisitorOffice());

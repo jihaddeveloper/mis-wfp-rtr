@@ -51,6 +51,7 @@ public class LibraryObservationService {
 
         if (libraryObservationDB.isPresent()) {
             LibraryObservation libraryObservationUpdate = libraryObservationDB.get();
+            
             libraryObservationUpdate.setId(libraryObservation.getId());
             libraryObservationUpdate.setVisitNo(libraryObservation.getVisitNo());
             libraryObservationUpdate.setDate(libraryObservation.getDate());

@@ -84,6 +84,7 @@ public class BanglaClassService {
             banglaClassUpdate.setTotalPresentGirl(banglaClass.getTotalPresentGirl());
             banglaClassUpdate.setTotalPresentBoy(banglaClass.getTotalPresentBoy());
 
+            banglaClassUpdate.setNote(banglaClass.getNote());
 
             banglaClassUpdate.setLastFollowupTopic1(banglaClass.getLastFollowupTopic1());
             banglaClassUpdate.setLastFollowupTopic2(banglaClass.getLastFollowupTopic2());
@@ -91,26 +92,37 @@ public class BanglaClassService {
 
             banglaClassUpdate.setInd1PhonemicAwarenessStatus(banglaClass.getInd1PhonemicAwarenessStatus());
             banglaClassUpdate.setInd1PhonemicAwarenessNotes(banglaClass.getInd1PhonemicAwarenessNotes());
+
             banglaClassUpdate.setInd2LetterIdentificationStatus(banglaClass.getInd2LetterIdentificationStatus());
             banglaClassUpdate.setInd2LetterIdentificationNotes(banglaClass.getInd2LetterIdentificationNotes());
+
             banglaClassUpdate.setInd3VocabularyIdentificationStatus(banglaClass.getInd3VocabularyIdentificationStatus());
             banglaClassUpdate.setInd3VocabularyIdentificationNotes(banglaClass.getInd3VocabularyIdentificationNotes());
+
             banglaClassUpdate.setInd4FluencyIdentificationStatus(banglaClass.getInd4FluencyIdentificationStatus());
             banglaClassUpdate.setInd4FluencyIdentificationNotes(banglaClass.getInd4FluencyIdentificationNotes());
+
             banglaClassUpdate.setInd5ComprehensionStatus(banglaClass.getInd5ComprehensionStatus());
             banglaClassUpdate.setInd5ComprehensionNotes(banglaClass.getInd5ComprehensionNotes());
+
             banglaClassUpdate.setInd6WritingActivitiesStatus(banglaClass.getInd6WritingActivitiesStatus());
             banglaClassUpdate.setInd6WritingActivitiesNotes(banglaClass.getInd6WritingActivitiesNotes());
+
             banglaClassUpdate.setInd7IDoWeDoYouDoStatus(banglaClass.getInd7IDoWeDoYouDoStatus());
             banglaClassUpdate.setInd7IDoWeDoYouDoNotes(banglaClass.getInd7IDoWeDoYouDoNotes());
+
             banglaClassUpdate.setInd8GroupWorkStatus(banglaClass.getInd8GroupWorkStatus());
             banglaClassUpdate.setInd8GroupWorkNotes(banglaClass.getInd8GroupWorkNotes());
+
             banglaClassUpdate.setInd9TimeOnTaskStatus(banglaClass.getInd9TimeOnTaskStatus());
             banglaClassUpdate.setInd9TimeOnTaskNotes(banglaClass.getInd9TimeOnTaskNotes());
+
             banglaClassUpdate.setInd10UseTeachingAidStatus(banglaClass.getInd10UseTeachingAidStatus());
             banglaClassUpdate.setInd10UseTeachingAidNotes(banglaClass.getInd10UseTeachingAidNotes());
+
             banglaClassUpdate.setInd11ContinuityOfLessonsStatus(banglaClass.getInd11ContinuityOfLessonsStatus());
             banglaClassUpdate.setInd11ContinuityOfLessonsNotes(banglaClass.getInd11ContinuityOfLessonsNotes());
+
             banglaClassUpdate.setInd12AssessmentStatus(banglaClass.getInd12AssessmentStatus());
             banglaClassUpdate.setInd12AssessmentNotes(banglaClass.getInd12AssessmentNotes());
 
@@ -128,6 +140,29 @@ public class BanglaClassService {
             banglaClassUpdate.setAgreedStatement2(banglaClass.getAgreedStatement2());
 
             banglaClassUpdate.setQuestion1(banglaClass.getQuestion1());
+
+            banglaClassUpdate.setStudent1(banglaClass.getStudent1());
+            banglaClassUpdate.setStudent2(banglaClass.getStudent2());
+            banglaClassUpdate.setStudent3(banglaClass.getStudent3());
+            banglaClassUpdate.setStudent4(banglaClass.getStudent4());
+            banglaClassUpdate.setStudent5(banglaClass.getStudent5());
+
+
+            banglaClassUpdate.setNoRightFor1(banglaClass.getNoRightFor1());
+            banglaClassUpdate.setNoWrongFor1(banglaClass.getNoWrongFor1());
+            banglaClassUpdate.setTotalFor1(banglaClass.getTotalFor1());
+            banglaClassUpdate.setNoRightFor2(banglaClass.getNoRightFor2());
+            banglaClassUpdate.setNoWrongFor2(banglaClass.getNoWrongFor2());
+            banglaClassUpdate.setTotalFor2(banglaClass.getTotalFor2());
+            banglaClassUpdate.setNoRightFor3(banglaClass.getNoRightFor3());
+            banglaClassUpdate.setNoWrongFor3(banglaClass.getNoWrongFor3());
+            banglaClassUpdate.setTotalFor3(banglaClass.getTotalFor3());
+            banglaClassUpdate.setNoRightFor4(banglaClass.getNoRightFor4());
+            banglaClassUpdate.setNoWrongFor4(banglaClass.getNoWrongFor4());
+            banglaClassUpdate.setTotalFor4(banglaClass.getTotalFor4());
+            banglaClassUpdate.setNoRightFor5(banglaClass.getNoRightFor5());
+            banglaClassUpdate.setNoWrongFor5(banglaClass.getNoWrongFor5());
+            banglaClassUpdate.setTotalFor5(banglaClass.getTotalFor5());
 
 
             banglaClassUpdate.setTeacherStatus(banglaClass.getTeacherStatus());
