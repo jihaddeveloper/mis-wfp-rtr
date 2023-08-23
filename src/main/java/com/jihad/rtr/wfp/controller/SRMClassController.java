@@ -44,7 +44,7 @@ public class SRMClassController {
     }
 
     //Update SRMClass
-    @RequestMapping(value = "/srm-class/{id}", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/srm-class/{id}", method = RequestMethod.PATCH, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SRMClass> updateSRMClass(@PathVariable long id, @RequestBody SRMClass srmClass) {
         srmClass.setId(id);
         return ResponseEntity.ok().body(this.srmClassService.updateSRMClass(srmClass));

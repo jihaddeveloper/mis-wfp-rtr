@@ -51,6 +51,7 @@ public class SRMClassService {
 
         if (srmClassDB.isPresent()) {
             SRMClass srmClassUpdate = srmClassDB.get();
+
             srmClassUpdate.setId(srmClass.getId());
             srmClassUpdate.setDate(srmClass.getDate());
             srmClassUpdate.setMonth(srmClass.getMonth());
@@ -85,7 +86,8 @@ public class SRMClassService {
             srmClassUpdate.setTotalPresentGirl(srmClass.getTotalPresentGirl());
             srmClassUpdate.setTotalPresentBoy(srmClass.getTotalPresentBoy());
 
-
+            srmClassUpdate.setNote(srmClass.getNote());
+            
             srmClassUpdate.setLastFollowupTopic1(srmClass.getLastFollowupTopic1());
             srmClassUpdate.setLastFollowupTopic2(srmClass.getLastFollowupTopic2());
             srmClassUpdate.setLastFollowupTopic3(srmClass.getLastFollowupTopic3());
