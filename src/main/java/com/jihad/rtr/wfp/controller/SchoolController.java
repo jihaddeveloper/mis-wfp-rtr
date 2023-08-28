@@ -10,6 +10,7 @@ import com.jihad.rtr.wfp.model.School;
 import com.jihad.rtr.wfp.service.SchoolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -43,7 +44,7 @@ public class SchoolController {
     }
 
     //Update school
-    @RequestMapping(value = "/schools/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/schools/{id}", method = RequestMethod.PATCH, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<School> updateSchool(@PathVariable long id, @RequestBody School school) {
         school.setId(id);
         return ResponseEntity.ok().body(this.schoolService.updateSchool(school));

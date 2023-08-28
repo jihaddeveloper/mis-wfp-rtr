@@ -12,6 +12,7 @@ import com.jihad.rtr.wfp.service.DivisionService;
 import com.jihad.rtr.wfp.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -46,7 +47,7 @@ public class EmployeeController {
     }
 
     //Update employee
-    @RequestMapping(value = "/employees/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/employees/{id}", method = RequestMethod.PATCH, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Employee> updateEmployee(@PathVariable long id, @RequestBody Employee employee) {
         employee.setId(id);
         return ResponseEntity.ok().body(this.employeeService.updateEmployee(employee));
