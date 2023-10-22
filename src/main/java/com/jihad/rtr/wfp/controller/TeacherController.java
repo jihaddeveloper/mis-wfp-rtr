@@ -11,6 +11,7 @@ import com.jihad.rtr.wfp.service.ProjectService;
 import com.jihad.rtr.wfp.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -43,7 +44,7 @@ public class TeacherController {
     }
 
     //Update teacher
-    @RequestMapping(value = "/teachers/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/teachers/{id}", method = RequestMethod.PATCH, consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Teacher> updateTeacher(@PathVariable long id, @RequestBody Teacher teacher) {
         teacher.setId(id);
         return ResponseEntity.ok().body(this.teacherService.updateTeacher(teacher));
