@@ -1,7 +1,7 @@
 //  Author: Mohammad Jihad Hossain
-//  Create Date: 16/02/2023
-//  Modify Date: 16/02/2023
-//  Description: Core Bangla class indicator  model file
+//  Create Date: 16/02/2024
+//  Modify Date: 16/02/2024
+//  Description: DI Bangla class indicator  model file
 
 package com.jihad.rtr.wfp.model;
 
@@ -16,17 +16,17 @@ import javax.persistence.*;
 @Builder
 @Entity
 @Data
-@Table(name = "core_bangla_indicator")
-public class CoreBanglaIndicator extends BaseEntity {
+@Table(name = "di_bangla_indicator")
+public class DIBanglaIndicator extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     @Column(name = "serial", length = 10)
     private String serial;
-    @Column(name = "indicator_detail", length = 300)
+    @Column(name = "indicator_detail", length = 600)
     private String indicatorDetail;
-    @Column(name = "indicator_detail_eng", length = 300)
+    @Column(name = "indicator_detail_eng", length = 600)
     private String indicatorDetailEng;
     @Column(name = "priority", length = 10)
     private String priority;

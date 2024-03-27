@@ -6,9 +6,7 @@
 package com.jihad.rtr.wfp.service;
 
 import com.jihad.rtr.wfp.exception.ResourceNotFoundException;
-import com.jihad.rtr.wfp.model.CoreBanglaClass;
 import com.jihad.rtr.wfp.model.PrePrimaryClass;
-import com.jihad.rtr.wfp.repository.CoreBanglaClassRepo;
 import com.jihad.rtr.wfp.repository.PreprimaryClassRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

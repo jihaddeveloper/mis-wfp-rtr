@@ -1,14 +1,14 @@
 //  Author: Mohammad Jihad Hossain
-//  Create Date: 09/01/2022
-//  Modify Date: 12/01/2022
-//  Description: Employee service file
+//  Create Date: 06/03/2024
+//  Modify Date: 06/03/2024
+//  Description: DIEmployee service file
 
 package com.jihad.rtr.wfp.service;
 
 import com.jihad.rtr.wfp.exception.ResourceNotFoundException;
-import com.jihad.rtr.wfp.model.Division;
+import com.jihad.rtr.wfp.model.DIEmployee;
 import com.jihad.rtr.wfp.model.Employee;
-import com.jihad.rtr.wfp.repository.DivisionRepo;
+import com.jihad.rtr.wfp.repository.DIEmployeeRepo;
 import com.jihad.rtr.wfp.repository.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,24 +19,24 @@ import java.util.Optional;
 
 @Service
 @Transactional
-public class EmployeeService {
+public class DIEmployeeService {
 
     @Autowired
-    private EmployeeRepo employeeRepo;
+    private DIEmployeeRepo diEmployeeRepo;
 
-    //Create new employee
-    public Employee createEmployee(Employee employee) {
-        return employeeRepo.save(employee);
+    //Create new DIEmployee
+    public DIEmployee createDIEmployee(DIEmployee diEmployee) {
+        return diEmployeeRepo.save(diEmployee);
     }
 
-    //Get all employee
-    public List<Employee> getAllEmployee() {
-        return employeeRepo.findAll();
+    //Get all DIEmployee
+    public List<DIEmployee> getAllDIEmployee() {
+        return diEmployeeRepo.findAll();
     }
 
-    //Get employee with id
-    public Employee getEmployeeById(long id) {
-        Optional<Employee> employeeDB = employeeRepo.findById(id);
+    //Get DIEmployee with id
+    public DIEmployee getDIEmployeeById(long id) {
+        Optional<DIEmployee> employeeDB = diEmployeeRepo.findById(id);
         if (employeeDB.isPresent()) {
             return employeeDB.get();
         } else {
@@ -45,12 +45,12 @@ public class EmployeeService {
 
     }
 
-    //Update employee
-    public Employee updateEmployee(Employee employee) {
-        Optional<Employee> employeeDB = employeeRepo.findById(employee.getId());
+    //Update DIEmployee
+    public DIEmployee updateDIEmployee(DIEmployee employee) {
+        Optional<DIEmployee> employeeDB = diEmployeeRepo.findById(employee.getId());
 
         if (employeeDB.isPresent()) {
-            Employee employeeUpdate = employeeDB.get();
+            DIEmployee employeeUpdate = employeeDB.get();
             employeeUpdate.setId(employee.getId());
             employeeUpdate.setName(employee.getName());
             employeeUpdate.setBnName(employee.getBnName());
@@ -69,7 +69,7 @@ public class EmployeeService {
             employeeUpdate.setIsActive(employee.getIsActive());
             employeeUpdate.setIsDeleted(employee.getIsDeleted());
 
-            employeeRepo.save(employeeUpdate);
+            diEmployeeRepo.save(employeeUpdate);
 
             return employeeUpdate;
         } else {
@@ -77,12 +77,12 @@ public class EmployeeService {
         }
     }
 
-    //Delete division
-    public void deleteEmployee(long id) {
-        Optional<Employee> employeeDB = this.employeeRepo.findById(id);
+    //Delete DIEmployee
+    public void deleteDIEmployee(long id) {
+        Optional<DIEmployee> employeeDB = this.diEmployeeRepo.findById(id);
 
         if (employeeDB.isPresent()) {
-            this.employeeRepo.delete(employeeDB.get());
+            this.diEmployeeRepo.delete(employeeDB.get());
         } else {
             throw new ResourceNotFoundException("Record no found with id : " + id);
         }
