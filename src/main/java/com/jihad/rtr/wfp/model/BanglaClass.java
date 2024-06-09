@@ -88,7 +88,7 @@ public class BanglaClass extends BaseEntity {
     @Column(name = "total_present_boy")
     private int totalPresentBoy;
 
-    @Column(name = "note", length = 150)
+    @Column(name = "note", length = 300)
     private String note;
 
     @Column(name = "last_followup_topic1", length = 800)

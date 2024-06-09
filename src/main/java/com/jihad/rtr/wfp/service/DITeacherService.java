@@ -78,6 +78,12 @@ public class DITeacherService {
             teacherUpdate.setHeadteacherTraining(teacher.getHeadteacherTraining());
             teacherUpdate.setGoodGovernanceHeadteacher(teacher.getGoodGovernanceHeadteacher());
             teacherUpdate.setSchoolPerformanceHeadteacher(teacher.getSchoolPerformanceHeadteacher());
+
+            teacherUpdate.setGradeG1(teacher.getGradeG1());
+            teacherUpdate.setGradeG2(teacher.getGradeG2());
+            teacherUpdate.setGradePPrimary(teacher.getGradePPrimary());
+
+
             teacherUpdate.setTrainingYear(teacher.getTrainingYear());
             teacherUpdate.setActivity(teacher.getActivity());
 

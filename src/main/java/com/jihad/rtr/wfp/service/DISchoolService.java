@@ -66,6 +66,17 @@ public class DISchoolService {
             diSchoolUpdate.setGpsData(diSchool.getGpsData());
             diSchoolUpdate.setGsdId(diSchool.getGsdId());
             diSchoolUpdate.setAddress(diSchool.getAddress());
+
+            diSchoolUpdate.setAdmittedBoyG1(diSchool.getAdmittedBoyG1());
+            diSchoolUpdate.setAdmittedGirlG1(diSchool.getAdmittedGirlG1());
+            diSchoolUpdate.setAdmittedTotalG1(diSchool.getAdmittedTotalG1());
+            diSchoolUpdate.setAdmittedBoyG2(diSchool.getAdmittedBoyG2());
+            diSchoolUpdate.setAdmittedGirlG2(diSchool.getAdmittedGirlG2());
+            diSchoolUpdate.setAdmittedTotalG2(diSchool.getAdmittedTotalG2());
+            diSchoolUpdate.setAdmittedTotal(diSchool.getAdmittedTotal());
+            diSchoolUpdate.setSupportYear(diSchool.getSupportYear());
+
+
             diSchoolUpdate.setIsActive(diSchool.getIsActive());
             diSchoolUpdate.setIsDeleted(diSchool.getIsDeleted());
 

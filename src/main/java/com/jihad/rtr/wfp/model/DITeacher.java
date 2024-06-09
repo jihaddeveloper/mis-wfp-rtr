@@ -48,6 +48,7 @@ public class DITeacher extends BaseEntity {
     private String grade;
     @Column(name = "section")
     private String section;
+
     @Column(name = "teacher_training")
     private String teacherTraining;
 
@@ -66,6 +67,13 @@ public class DITeacher extends BaseEntity {
     private String goodGovernanceHeadteacher;
     @Column(name = "school_performance_headteacher")
     private String schoolPerformanceHeadteacher;
+
+    @Column(name = "grade_g1")
+    private String gradeG1;
+    @Column(name = "grade_g2")
+    private String gradeG2;
+    @Column(name = "grade_pprimary")
+    private String gradePPrimary;
 
 
     @Column(name = "training_year")
