@@ -74,6 +74,8 @@ public class DILibraryObservationService {
             libraryObservationUpdate.setRtrSchoolId(libraryObservation.getRtrSchoolId());
             libraryObservationUpdate.setYearOfSupport(libraryObservation.getYearOfSupport());
 
+            libraryObservationUpdate.setPhase(libraryObservation.getPhase());
+
 
             libraryObservationUpdate.setNote(libraryObservation.getNote());
 
