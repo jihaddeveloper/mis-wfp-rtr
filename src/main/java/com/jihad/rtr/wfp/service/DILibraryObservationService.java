@@ -75,6 +75,7 @@ public class DILibraryObservationService {
             libraryObservationUpdate.setYearOfSupport(libraryObservation.getYearOfSupport());
 
             libraryObservationUpdate.setPhase(libraryObservation.getPhase());
+            libraryObservationUpdate.setPointTeacher(libraryObservation.getPointTeacher());
 
 
             libraryObservationUpdate.setNote(libraryObservation.getNote());

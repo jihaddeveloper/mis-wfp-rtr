@@ -59,6 +59,9 @@ public class DILibraryObservation {
     @Column(name = "year", length = 50)
     private String year;
 
+    @Column(name = "point_teacher", length = 150)
+    private String pointTeacher;
+
     @Column(name = "phase", length = 50)
     private String phase;
 
