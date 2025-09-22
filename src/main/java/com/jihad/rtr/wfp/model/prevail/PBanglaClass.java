@@ -1,10 +1,12 @@
 //  Author: Mohammad Jihad Hossain
-//  Create Date: 16/02/2023
-//  Modify Date: 16/02/2023
-//  Description: Bangla class  model file
+//  Create Date: 07/09/2025
+//  Modify Date: 07/09/2025
+//  Description: PBanglaClass class  model file
 
-package com.jihad.rtr.wfp.model;
 
+package com.jihad.rtr.wfp.model.prevail;
+
+import com.jihad.rtr.wfp.model.BaseEntity;
 import lombok.*;
 
 import javax.persistence.*;
@@ -17,8 +19,8 @@ import java.sql.Date;
 @Builder
 @Entity
 @Data
-@Table(name = "di_bangla_class")
-public class DIBanglaClass extends BaseEntity {
+@Table(name = "p_bangla_class")
+public class PBanglaClass extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -48,12 +50,12 @@ public class DIBanglaClass extends BaseEntity {
     private String lpo;
     @Column(name = "lpo_name", length = 50)
     private String lpoName;
+    @Column(name = "school", length = 200)
+    private String school;
     @Column(name = "rtr_school_id", length = 50)
     private String rtrSchoolId;
     @Column(name = "year_of_support", length = 10)
     private String yearOfSupport;
-    @Column(name = "school", length = 200)
-    private String school;
     @Column(name = "visitor", length = 50)
     private String visitor;
     @Column(name = "visitor_designation", length = 30)
@@ -208,10 +210,7 @@ public class DIBanglaClass extends BaseEntity {
     private String student2;
     @Column(name = "student3", length = 50)
     private String student3;
-    @Column(name = "student4", length = 50)
-    private String student4;
-    @Column(name = "student5", length = 50)
-    private String student5;
+
     private int noRightFor1;
     private int noWrongFor1;
     private int totalFor1;
@@ -221,12 +220,7 @@ public class DIBanglaClass extends BaseEntity {
     private int noRightFor3;
     private int noWrongFor3;
     private int totalFor3;
-    private int noRightFor4;
-    private int noWrongFor4;
-    private int totalFor4;
-    private int noRightFor5;
-    private int noWrongFor5;
-    private int totalFor5;
+
 
     @Column(name = "teacher_status", length = 30)
     private String teacherStatus;
@@ -237,4 +231,5 @@ public class DIBanglaClass extends BaseEntity {
     private String isActive;
     @Column(name = "is_deleted", length = 10)
     private String isDeleted;
+
 }

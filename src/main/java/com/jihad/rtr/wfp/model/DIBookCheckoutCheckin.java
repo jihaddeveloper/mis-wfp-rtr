@@ -296,6 +296,8 @@ public class DIBookCheckoutCheckin extends BaseEntity {
     private Integer schoolTotalNoSpBookBCIn;
     //Total data
 
+    @Column(name = "is_checked", length = 10)
+    private String isChecked;
     @Column(name = "is_active", length = 10)
     private String isActive;
     @Column(name = "is_deleted", length = 10)

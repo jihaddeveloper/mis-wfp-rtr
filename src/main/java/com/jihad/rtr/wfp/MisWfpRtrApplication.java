@@ -15,5 +15,4 @@ public class MisWfpRtrApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MisWfpRtrApplication.class, args);
 	}
-
 }

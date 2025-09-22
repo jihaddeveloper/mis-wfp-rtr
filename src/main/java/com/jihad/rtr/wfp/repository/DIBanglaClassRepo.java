@@ -1,7 +1,7 @@
 //  Author: Mohammad Jihad Hossain
-//  Create Date: 22/02/2023
-//  Modify Date: 22/02/2023
-//  Description: PreprimaryIndicatorRepo file
+//  Create Date: 22/02/2024
+//  Modify Date: 22/02/2024
+//  Description: DI Bangla Class Repo file
 
 package com.jihad.rtr.wfp.repository;
 

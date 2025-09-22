@@ -1,12 +1,13 @@
 //  Author: Mohammad Jihad Hossain
-//  Create Date: 09/06/2024
-//  Modify Date: 09/06/2024
-//  Description: DI Library observation  model file
+//  Create Date: 07/09/2025
+//  Modify Date: 07/09/2025
+//  Description: PLibraryObservation  model file
 
 
-package com.jihad.rtr.wfp.model;
+package com.jihad.rtr.wfp.model.prevail;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.jihad.rtr.wfp.model.BaseEntity;
 import lombok.*;
 
 import javax.persistence.*;
@@ -19,8 +20,8 @@ import java.util.Date;
 @Builder
 @Entity
 @Data
-@Table(name = "di_library_observation")
-public class DILibraryObservation extends BaseEntity {
+@Table(name = "p_library_observation")
+public class PLibraryObservation extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -54,26 +55,29 @@ public class DILibraryObservation extends BaseEntity {
     private String lpoName;
     @Column(name = "school", length = 50)
     private String school;
-    @Column(name = "month", length = 50)
-    private String month;
-    @Column(name = "year", length = 50)
-    private String year;
-
-    @Column(name = "point_teacher", length = 150)
-    private String pointTeacher;
-
-    @Column(name = "phase", length = 50)
-    private String phase;
-
     @Column(name = "rtr_school_id", length = 50)
     private String rtrSchoolId;
     @Column(name = "year_of_support", length = 10)
     private String yearOfSupport;
-
+    @Column(name = "point_teacher", length = 100)
+    private String pointTeacher;
+    @Column(name = "year_of_established", length = 20)
+    private String yearOfEstablished;
+    @Column(name = "is_trained", length = 20)
+    private String isTrained;
+    @Column(name = "grade", length = 20)
+    private String grade;
+    @Column(name = "section", length = 20)
+    private String section;
+    @Column(name = "month", length = 50)
+    private String month;
+    @Column(name = "year", length = 50)
+    private String year;
+    @Column(name = "phase", length = 50)
+    private String phase;
 
     @Column(name = "note", length = 300)
     private String note;
-
 
     @Column(name = "last_followup_indicator1", length = 800)
     private String lastFollowupIndicator1;
@@ -120,7 +124,6 @@ public class DILibraryObservation extends BaseEntity {
     @Column(name = "ind5_book_register_updated", length = 20)
     private String ind5BookRegisterUpdated;
 
-
     @Column(name = "ind6_bookshelf_organized", length = 20)
     private String ind6BookshelfOrganized;
     @Column(name = "ind61_bookshelf_book_organized_by_grade", length = 20)
@@ -136,14 +139,12 @@ public class DILibraryObservation extends BaseEntity {
     @Column(name = "ind66_book_cover_viewable", length = 20)
     private String ind66BookCoverViewable;
 
-
     @Column(name = "ind7_print_rich_item_displayed", length = 20)
     private String ind7PrintRichItemDisplayed;
     @Column(name = "ind71_chart_poster_displayed", length = 20)
     private String ind71ChartPosterDisplayed;
     @Column(name = "ind72_chart_poster_compatible", length = 20)
     private String ind72ChartPosterCompatible;
-
 
     @Column(name = "ind8_book_checkout_functional", length = 20)
     private String ind8BookCheckoutFunctional;
