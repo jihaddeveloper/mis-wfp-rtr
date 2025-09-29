@@ -82,11 +82,7 @@ public class PBanglaClassService {
             pBanglaClassUpdate.setContentName(pBanglaClass.getContentName());
             pBanglaClassUpdate.setPeriodDay(pBanglaClass.getPeriodDay());
             pBanglaClassUpdate.setTotalAdmittedStudent(pBanglaClass.getTotalAdmittedStudent());
-            pBanglaClassUpdate.setTotalAdmittedGirl(pBanglaClass.getTotalAdmittedGirl());
-            pBanglaClassUpdate.setTotalAdmittedBoy(pBanglaClass.getTotalAdmittedBoy());
             pBanglaClassUpdate.setTotalPresentStudent(pBanglaClass.getTotalPresentStudent());
-            pBanglaClassUpdate.setTotalPresentGirl(pBanglaClass.getTotalPresentGirl());
-            pBanglaClassUpdate.setTotalPresentBoy(pBanglaClass.getTotalPresentBoy());
 
             pBanglaClassUpdate.setNote(pBanglaClass.getNote());
 

@@ -82,16 +82,9 @@ public class PBanglaClass extends BaseEntity {
     private String periodDay;
     @Column(name = "total_admitted_student")
     private int totalAdmittedStudent;
-    @Column(name = "total_admitted_girl")
-    private int totalAdmittedGirl;
-    @Column(name = "total_admitted_boy")
-    private int totalAdmittedBoy;
     @Column(name = "total_present_student")
     private int totalPresentStudent;
-    @Column(name = "total_present_girl")
-    private int totalPresentGirl;
-    @Column(name = "total_present_boy")
-    private int totalPresentBoy;
+
 
     @Column(name = "note", length = 500)
     private String note;

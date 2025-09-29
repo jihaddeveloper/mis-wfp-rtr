@@ -122,14 +122,13 @@ public class PLFObservationService {
 
             plfObservationUpdate.setLastFollowupIndicator1(plfObservation.getLastFollowupIndicator1());
             plfObservationUpdate.setLastFollowupIndicator2(plfObservation.getLastFollowupIndicator2());
-            plfObservationUpdate.setLastFollowupIndicator3(plfObservation.getLastFollowupIndicator3());
+
 
             plfObservationUpdate.setBestPracticeIndicator1(plfObservation.getBestPracticeIndicator1());
             plfObservationUpdate.setBestPracticeIndicator1Details(plfObservation.getBestPracticeIndicator1Details());
             plfObservationUpdate.setBestPracticeIndicator2(plfObservation.getBestPracticeIndicator2());
             plfObservationUpdate.setBestPracticeIndicator2Details(plfObservation.getBestPracticeIndicator2Details());
-            plfObservationUpdate.setBestPracticeIndicator3(plfObservation.getBestPracticeIndicator3());
-            plfObservationUpdate.setBestPracticeIndicator3Details(plfObservation.getBestPracticeIndicator3Details());
+
 
             plfObservationUpdate.setCoachingSupportIndicator1(plfObservation.getCoachingSupportIndicator1());
             plfObservationUpdate.setCoachingSupportIndicator1Details(plfObservation.getCoachingSupportIndicator1Details());
