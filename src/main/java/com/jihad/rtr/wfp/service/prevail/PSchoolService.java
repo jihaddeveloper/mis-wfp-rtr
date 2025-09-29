@@ -67,13 +67,28 @@ public class PSchoolService {
             diSchoolUpdate.setGsdId(diSchool.getGsdId());
             diSchoolUpdate.setAddress(diSchool.getAddress());
 
-            diSchoolUpdate.setAdmittedBoyG1(diSchool.getAdmittedBoyG1());
-            diSchoolUpdate.setAdmittedGirlG1(diSchool.getAdmittedGirlG1());
-            diSchoolUpdate.setAdmittedTotalG1(diSchool.getAdmittedTotalG1());
-            diSchoolUpdate.setAdmittedBoyG2(diSchool.getAdmittedBoyG2());
-            diSchoolUpdate.setAdmittedGirlG2(diSchool.getAdmittedGirlG2());
-            diSchoolUpdate.setAdmittedTotalG2(diSchool.getAdmittedTotalG2());
-            diSchoolUpdate.setAdmittedTotal(diSchool.getAdmittedTotal());
+
+            diSchoolUpdate.setPpBoy(diSchool.getPpBoy());
+            diSchoolUpdate.setPpGirl(diSchool.getPpGirl());
+            diSchoolUpdate.setPpTotal(diSchool.getPpTotal());
+            diSchoolUpdate.setG1Boy(diSchool.getG1Boy());
+            diSchoolUpdate.setG1Girl(diSchool.getG1Girl());
+            diSchoolUpdate.setG1Total(diSchool.getG1Total());
+            diSchoolUpdate.setG2Boy(diSchool.getG2Boy());
+            diSchoolUpdate.setG2Girl(diSchool.getG2Girl());
+            diSchoolUpdate.setG2Total(diSchool.getG2Total());
+            diSchoolUpdate.setG3Boy(diSchool.getG3Boy());
+            diSchoolUpdate.setG3Girl(diSchool.getG3Girl());
+            diSchoolUpdate.setG3Total(diSchool.getG3Total());
+            diSchoolUpdate.setG4Boy(diSchool.getG4Boy());
+            diSchoolUpdate.setG4Girl(diSchool.getG4Girl());
+            diSchoolUpdate.setG4Total(diSchool.getG4Total());
+            diSchoolUpdate.setG5Boy(diSchool.getG5Boy());
+            diSchoolUpdate.setG5Girl(diSchool.getG5Girl());
+            diSchoolUpdate.setG5Total(diSchool.getG5Total());
+
+            diSchoolUpdate.setSchoolTotal(diSchool.getSchoolTotal());
+
             diSchoolUpdate.setSupportYear(diSchool.getSupportYear());
 
 

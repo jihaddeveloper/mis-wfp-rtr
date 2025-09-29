@@ -45,20 +45,48 @@ public class PSchool extends BaseEntity {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "admitted_boy_g1")
-    private int admittedBoyG1;
-    @Column(name = "admitted_girl_g1")
-    private int admittedGirlG1;
-    @Column(name = "admitted_total_g1")
-    private int admittedTotalG1;
-    @Column(name = "admitted_boy_g2")
-    private int admittedBoyG2;
-    @Column(name = "admitted_girl_g2")
-    private int admittedGirlG2;
-    @Column(name = "admitted_total_g2")
-    private int admittedTotalG2;
-    @Column(name = "admitted_total")
-    private int admittedTotal;
+
+    @Column(name = "pp_boy")
+    private int ppBoy;
+    @Column(name = "pp_girl")
+    private int ppGirl;
+    @Column(name = "pp_total")
+    private int ppTotal;
+    @Column(name = "g1_boy")
+    private int g1Boy;
+    @Column(name = "g1_girl")
+    private int g1Girl;
+    @Column(name = "g1_total")
+    private int g1Total;
+    @Column(name = "g2_boy")
+    private int g2Boy;
+    @Column(name = "g2_girl")
+    private int g2Girl;
+    @Column(name = "g2_total")
+    private int g2Total;
+    @Column(name = "g3_boy")
+    private int g3Boy;
+    @Column(name = "g3_girl")
+    private int g3Girl;
+    @Column(name = "g3_total")
+    private int g3Total;
+    @Column(name = "g4_boy")
+    private int g4Boy;
+    @Column(name = "g4_girl")
+    private int g4Girl;
+    @Column(name = "g4_total")
+    private int g4Total;
+    @Column(name = "g5_boy")
+    private int g5Boy;
+    @Column(name = "g5_girl")
+    private int g5Girl;
+    @Column(name = "g5_total")
+    private int g5Total;
+
+    @Column(name = "school_total")
+    private int schoolTotal;
+
+
     @Column(name = "support_year")
     private int supportYear;
 
