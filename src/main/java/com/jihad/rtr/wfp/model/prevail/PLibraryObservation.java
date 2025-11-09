@@ -76,6 +76,7 @@ public class PLibraryObservation extends BaseEntity {
     @Column(name = "phase", length = 50)
     private String phase;
 
+
     @Column(name = "note", length = 300)
     private String note;
 

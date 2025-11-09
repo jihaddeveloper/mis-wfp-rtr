@@ -76,6 +76,9 @@ public class PLFObservationService {
             plfObservationUpdate.setSchoolEntryTime(plfObservation.getSchoolEntryTime());
             plfObservationUpdate.setSchoolExitTime(plfObservation.getSchoolExitTime());
 
+            plfObservationUpdate.setVisitor(plfObservation.getVisitor());
+            plfObservationUpdate.setVisitorDesignation(plfObservation.getVisitorDesignation());
+
             plfObservationUpdate.setNote(plfObservation.getNote());
 
             plfObservationUpdate.setInd11IsCarriedAllMaterialStatus(plfObservation.getInd11IsCarriedAllMaterialStatus());

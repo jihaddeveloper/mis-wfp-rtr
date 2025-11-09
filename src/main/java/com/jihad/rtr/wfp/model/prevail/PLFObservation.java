@@ -65,6 +65,11 @@ public class PLFObservation extends BaseEntity {
     @Column(name = "school_exit_time", length = 50)
     private String schoolExitTime;
 
+    @Column(name = "visitor", length = 50)
+    private String visitor;
+    @Column(name = "visitor_designation", length = 30)
+    private String visitorDesignation;
+
     @Column(name = "note", length = 250)
     private String note;
 

@@ -76,6 +76,9 @@ public class PLibraryObservationService {
             pLibraryObservationUpdate.setPhase(pLibraryObservation.getPhase());
             pLibraryObservationUpdate.setPointTeacher(pLibraryObservation.getPointTeacher());
 
+            pLibraryObservationUpdate.setVisitor(pLibraryObservation.getVisitor());
+            pLibraryObservationUpdate.setVisitorDesignation(pLibraryObservation.getVisitorDesignation());
+
             pLibraryObservationUpdate.setNote(pLibraryObservation.getNote());
 
             pLibraryObservationUpdate.setLastFollowupIndicator1(pLibraryObservation.getLastFollowupIndicator1());
