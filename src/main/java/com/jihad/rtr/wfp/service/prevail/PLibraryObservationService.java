@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 10/09/2025
-//  Modify Date: 10/09/2025
+//  Modify Date: 4/12/2025
 //  Description: PLibraryObservationService file
 
 package com.jihad.rtr.wfp.service.prevail;
@@ -132,11 +132,13 @@ public class PLibraryObservationService {
             pLibraryObservationUpdate.setInd93BookCheckoutOpportunity(pLibraryObservation.getInd93BookCheckoutOpportunity());
             pLibraryObservationUpdate.setInd94BookCheckoutNoticeHanged(pLibraryObservation.getInd94BookCheckoutNoticeHanged());
 
-            pLibraryObservationUpdate.setInd10TrainedLibraryObservationReadingHour(pLibraryObservation.getInd10TrainedLibraryObservationReadingHour());
 
-            pLibraryObservationUpdate.setInd11TeacherPerformReadingHourActivity(pLibraryObservation.getInd11TeacherPerformReadingHourActivity());
-            pLibraryObservationUpdate.setInd111ReadingHourRegisterUpdated(pLibraryObservation.getInd111ReadingHourRegisterUpdated());
-            pLibraryObservationUpdate.setInd112ReadingActivityListedRegister(pLibraryObservation.getInd112ReadingActivityListedRegister());
+            pLibraryObservationUpdate.setInd10TeacherPerformReadingHourActivity(pLibraryObservation.getInd10TeacherPerformReadingHourActivity());
+            pLibraryObservationUpdate.setInd101ReadingHourRegisterUpdated(pLibraryObservation.getInd101ReadingHourRegisterUpdated());
+            pLibraryObservationUpdate.setInd102ReadingActivityListedRegister(pLibraryObservation.getInd102ReadingActivityListedRegister());
+
+            pLibraryObservationUpdate.setInd11TrainedLibraryObservationReadingHour(pLibraryObservation.getInd11TrainedLibraryObservationReadingHour());
+
 
             pLibraryObservationUpdate.setInd12SchoolCommitteeDecisionAboutLibrary(pLibraryObservation.getInd12SchoolCommitteeDecisionAboutLibrary());
             pLibraryObservationUpdate.setInd121SchoolHasCommitteeAboutLibrary(pLibraryObservation.getInd121SchoolHasCommitteeAboutLibrary());
@@ -158,14 +160,12 @@ public class PLibraryObservationService {
             pLibraryObservationUpdate.setBestPracticeIndicator3(pLibraryObservation.getBestPracticeIndicator3());
 
             pLibraryObservationUpdate.setCoachingSupportIndicator1(pLibraryObservation.getCoachingSupportIndicator1());
-            pLibraryObservationUpdate.setCoachingSupportIndicator1Details(pLibraryObservation.getCoachingSupportIndicator1Details());
             pLibraryObservationUpdate.setCoachingSupportIndicator2(pLibraryObservation.getCoachingSupportIndicator2());
-            pLibraryObservationUpdate.setCoachingSupportIndicator2Details(pLibraryObservation.getCoachingSupportIndicator2Details());
             pLibraryObservationUpdate.setCoachingSupportIndicator3(pLibraryObservation.getCoachingSupportIndicator3());
-            pLibraryObservationUpdate.setCoachingSupportIndicator3Details(pLibraryObservation.getCoachingSupportIndicator3Details());
 
-            pLibraryObservationUpdate.setAgreedStatement1(pLibraryObservation.getAgreedStatement1());
-            pLibraryObservationUpdate.setAgreedStatement2(pLibraryObservation.getAgreedStatement2());
+
+            pLibraryObservationUpdate.setAgreedStatement(pLibraryObservation.getAgreedStatement());
+            pLibraryObservationUpdate.setAgreedSuggestion(pLibraryObservation.getAgreedSuggestion());
 
             pLibraryObservationUpdate.setLibraryStatus(pLibraryObservation.getLibraryStatus());
 

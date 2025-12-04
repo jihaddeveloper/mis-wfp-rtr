@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 07/09/2025
-//  Modify Date: 07/09/2025
+//  Modify Date: 4/12/2025
 //  Description: PLibraryObservation  model file
 
 
@@ -173,15 +173,18 @@ public class PLibraryObservation extends BaseEntity {
     @Column(name = "ind94_book_checkout_notice_hanged", length = 20)
     private String ind94BookCheckoutNoticeHanged;
 
-    @Column(name = "ind10_trained_library_observation_reading_hour", length = 20)
-    private String ind10TrainedLibraryObservationReadingHour;
 
-    @Column(name = "ind11_teacher_perform_reading_hour_activity", length = 20)
-    private String ind11TeacherPerformReadingHourActivity;
-    @Column(name = "ind111_reading_hour_register_updated", length = 20)
-    private String ind111ReadingHourRegisterUpdated;
-    @Column(name = "ind112_reading_activity_listed_register", length = 20)
-    private String ind112ReadingActivityListedRegister;
+    @Column(name = "ind10_teacher_perform_reading_hour_activity", length = 20)
+    private String ind10TeacherPerformReadingHourActivity;
+    @Column(name = "ind101_reading_hour_register_updated", length = 20)
+    private String ind101ReadingHourRegisterUpdated;
+    @Column(name = "ind102_reading_activity_listed_register", length = 20)
+    private String ind102ReadingActivityListedRegister;
+
+
+    @Column(name = "ind11_trained_library_observation_reading_hour", length = 20)
+    private String ind11TrainedLibraryObservationReadingHour;
+
 
     @Column(name = "ind12_school_committee_decision_about_library", length = 20)
     private String ind12SchoolCommitteeDecisionAboutLibrary;
@@ -210,36 +213,26 @@ public class PLibraryObservation extends BaseEntity {
 
     @Column(name = "best_practice_indicator1", length = 800)
     private String bestPracticeIndicator1;
-    @Column(name = "best_practice_indicator1_details", length = 500)
-    private String bestPracticeIndicator1Details;
     @Column(name = "best_practice_indicator2", length = 800)
     private String bestPracticeIndicator2;
-    @Column(name = "best_practice_indicator2_details", length = 500)
-    private String bestPracticeIndicator2Details;
     @Column(name = "best_practice_indicator3", length = 800)
     private String bestPracticeIndicator3;
-    @Column(name = "best_practice_indicator3_details", length = 500)
-    private String bestPracticeIndicator3Details;
+
 
 
     @Column(name = "coaching_support_indicator1", length = 800)
     private String coachingSupportIndicator1;
-    @Column(name = "coaching_support_indicator1_details", length = 500)
-    private String coachingSupportIndicator1Details;
     @Column(name = "coaching_support_indicator2", length = 800)
     private String coachingSupportIndicator2;
-    @Column(name = "coaching_support_indicator2_details", length = 500)
-    private String coachingSupportIndicator2Details;
     @Column(name = "coaching_support_indicator3", length = 800)
     private String coachingSupportIndicator3;
-    @Column(name = "coaching_support_indicator3_details", length = 500)
-    private String coachingSupportIndicator3Details;
 
 
-    @Column(name = "agreed_statement1", length = 800)
-    private String agreedStatement1;
-    @Column(name = "agreed_statement2", length = 800)
-    private String agreedStatement2;
+
+    @Column(name = "agreed_suggestion", length = 600)
+    private String agreedSuggestion;
+    @Column(name = "agreed_statement", length = 600)
+    private String agreedStatement;
 
     @Column(name = "library_status", length = 20)
     private String libraryStatus;
