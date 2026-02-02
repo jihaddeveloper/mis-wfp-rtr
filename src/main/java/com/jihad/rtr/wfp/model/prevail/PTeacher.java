@@ -91,7 +91,8 @@ public class PTeacher extends BaseEntity {
     @Column(name = "grade_g5")
     private String gradeG5;
 
-
+    @Column(name = "point_teacher")
+    private String pointTeacher;
 
     @Column(name = "training_year")
     private String trainingYear;

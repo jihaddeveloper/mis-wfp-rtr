@@ -89,6 +89,8 @@ public class PTeacherService {
             teacherUpdate.setGradeG4(teacher.getGradeG4());
             teacherUpdate.setGradeG5(teacher.getGradeG5());
 
+            teacherUpdate.setPointTeacher(teacher.getPointTeacher());
+
 
             teacherUpdate.setTrainingYear(teacher.getTrainingYear());
             teacherUpdate.setActivity(teacher.getActivity());
