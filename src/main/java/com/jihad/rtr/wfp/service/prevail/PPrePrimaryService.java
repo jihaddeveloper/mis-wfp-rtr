@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 05/01/2026
-//  Modify Date: 05/01/2026
+//  Modify Date: 22/02/2026
 //  Description: PPrePrimaryService file
 
 package com.jihad.rtr.wfp.service.prevail;
@@ -76,11 +76,27 @@ public class PPrePrimaryService {
             pPrePrimaryUpdate.setClassStartTime(pPrePrimary.getClassStartTime());
             pPrePrimaryUpdate.setClassEndTime(pPrePrimary.getClassEndTime());
             pPrePrimaryUpdate.setLessonNo(pPrePrimary.getLessonNo());
-            pPrePrimaryUpdate.setLessonName(pPrePrimary.getLessonName());
+
+
+            pPrePrimaryUpdate.setLessonName1(pPrePrimary.getLessonName1());
+            pPrePrimaryUpdate.setLessonName2(pPrePrimary.getLessonName2());
+            pPrePrimaryUpdate.setLessonName3(pPrePrimary.getLessonName3());
+            pPrePrimaryUpdate.setLessonName4(pPrePrimary.getLessonName4());
+
+
             pPrePrimaryUpdate.setStoryName(pPrePrimary.getStoryName());
             pPrePrimaryUpdate.setPictureName(pPrePrimary.getPictureName());
             pPrePrimaryUpdate.setCardName(pPrePrimary.getCardName());
             pPrePrimaryUpdate.setGameName(pPrePrimary.getGameName());
+
+            pPrePrimaryUpdate.setLesson1StartTime(pPrePrimary.getLesson1StartTime());
+            pPrePrimaryUpdate.setLesson1EndTime(pPrePrimary.getLesson1EndTime());
+            pPrePrimaryUpdate.setLesson2StartTime(pPrePrimary.getLesson2StartTime());
+            pPrePrimaryUpdate.setLesson2EndTime(pPrePrimary.getLesson2EndTime());
+            pPrePrimaryUpdate.setLesson3StartTime(pPrePrimary.getLesson3StartTime());
+            pPrePrimaryUpdate.setLesson3EndTime(pPrePrimary.getLesson3EndTime());
+            pPrePrimaryUpdate.setLesson4StartTime(pPrePrimary.getLesson4StartTime());
+            pPrePrimaryUpdate.setLesson4EndTime(pPrePrimary.getLesson4EndTime());
 
             pPrePrimaryUpdate.setClassStartTime(pPrePrimary.getClassStartTime());
             pPrePrimaryUpdate.setClassEndTime(pPrePrimary.getClassEndTime());

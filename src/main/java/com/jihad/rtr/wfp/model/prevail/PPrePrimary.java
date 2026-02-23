@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 04/01/2026
-//  Modify Date: 04/01/2026
+//  Modify Date: 22/02/2026
 //  Description: PPrePrimary  model file
 
 
@@ -70,8 +70,7 @@ public class PPrePrimary extends BaseEntity {
 
     @Column(name = "lesson_no", length = 50)
     private String lessonNo;
-    @Column(name = "lesson_name", length = 50)
-    private String lessonName;
+
     @Column(name = "story_name", length = 50)
     private String storyName;
     @Column(name = "picture_name", length = 50)
@@ -80,6 +79,32 @@ public class PPrePrimary extends BaseEntity {
     private String cardName;
     @Column(name = "game_name", length = 50)
     private String gameName;
+
+    @Column(name = "lesson_name1", length = 50)
+    private String lessonName1;
+    @Column(name = "lesson_name2", length = 50)
+    private String lessonName2;
+    @Column(name = "lesson_name3", length = 50)
+    private String lessonName3;
+    @Column(name = "lesson_name4", length = 50)
+    private String lessonName4;
+
+    @Column(name = "lesson1_start_time", length = 30)
+    private String lesson1StartTime;
+    @Column(name = "lesson1_end_time",length = 30)
+    private String lesson1EndTime;
+    @Column(name = "lesson2_start_time", length = 30)
+    private String lesson2StartTime;
+    @Column(name = "lesson2_end_time",length = 30)
+    private String lesson2EndTime;
+    @Column(name = "lesson3_start_time", length = 30)
+    private String lesson3StartTime;
+    @Column(name = "lesson3_end_time",length = 30)
+    private String lesson3EndTime;
+    @Column(name = "lesson4_start_time", length = 30)
+    private String lesson4StartTime;
+    @Column(name = "lesson4_end_time",length = 30)
+    private String lesson4EndTime;
 
     @Column(name = "class_start_time", length = 30)
     private String classStartTime;
