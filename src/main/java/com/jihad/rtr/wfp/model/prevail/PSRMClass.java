@@ -60,14 +60,22 @@ public class PSRMClass extends BaseEntity {
     private String yearOfSupport;
     @Column(name = "year_of_establish", length = 10)
     private String yearOfEstablish;
+
+
+    @Column(name = "grade", length = 10)
+    private String grade;
+    @Column(name = "section", length = 10)
+    private String section;
+    @Column(name = "class_teacher", length = 50)
+    private String classTeacher;
+
+
     @Column(name = "point_teacher", length = 50)
     private String pointTeacher;
     @Column(name = "visitor", length = 50)
     private String visitor;
     @Column(name = "visitor_designation", length = 30)
     private String visitorDesignation;
-
-
     @Column(name = "total_admitted_student")
     private int totalAdmittedStudent;
     @Column(name = "total_present_student")

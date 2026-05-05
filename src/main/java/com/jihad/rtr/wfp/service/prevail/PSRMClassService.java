@@ -1,6 +1,6 @@
 //  Author: Mohammad Jihad Hossain
 //  Create Date: 10/09/2025
-//  Modify Date: 4/12/2025
+//  Modify Date: 05/05/2026
 //  Description: PSRMClass Service file
 
 package com.jihad.rtr.wfp.service.prevail;
@@ -73,6 +73,12 @@ public class PSRMClassService {
             psrmClassUpdate.setYear(psrmClass.getYear());
             psrmClassUpdate.setRtrSchoolId(psrmClass.getRtrSchoolId());
             psrmClassUpdate.setYearOfSupport(psrmClass.getYearOfSupport());
+
+            psrmClassUpdate.setGrade(psrmClass.getGrade());
+            psrmClassUpdate.setSection(psrmClass.getSection());
+            psrmClassUpdate.setClassTeacher(psrmClass.getClassTeacher());
+
+            
             psrmClassUpdate.setPointTeacher(psrmClass.getPointTeacher());
             psrmClassUpdate.setYearOfEstablish(psrmClass.getYearOfEstablish());
             psrmClassUpdate.setPhase(psrmClass.getPhase());
